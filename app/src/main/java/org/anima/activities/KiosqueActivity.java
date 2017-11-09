@@ -46,9 +46,10 @@ public class KiosqueActivity extends AppCompatActivity{
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
     private Menu menudeux;
+
     private String url;
     private int n =56;
-    private int[] tab;
+    private String[] tab;
     private int t=0;
 
     @Override
@@ -71,7 +72,7 @@ public class KiosqueActivity extends AppCompatActivity{
             @Override
             public void onItemClick(AdapterView<?> parent, final View view,
                                     int position, long id) {
-                if (tab[position]==0) {
+                if (tab[position]=="") {
 
                 }else {
 
@@ -80,7 +81,7 @@ public class KiosqueActivity extends AppCompatActivity{
 
                     //url = "http://feucherolles.fr/docu/vav/0" + tab[position] + ".pdf";
                     //url = "http://dev.animacite.fr/images/anima.pdf";
-                    url = "http://dev.animacite.fr/images/anima" + tab[position] + ".pdf";
+                    url = tab[position];//"http://dev.animacite.fr/images/anima" + tab[position] + ".pdf";
                     //File pdfFile = new File(Environment.getExternalStorageDirectory() + "http://feucherolles.fr/docu/vav/056.pdf");  // -> filename = maven.pdf
                     //Uri path = Uri.fromFile(pdfFile);
                     Uri path = Uri.parse(url);
@@ -165,7 +166,7 @@ public class KiosqueActivity extends AppCompatActivity{
                         JSONArray jarray = obj.getJSONArray("kiosque");
                         int h=0;
                         int a=0;
-                        tab=new int[jarray.length()*2];
+                        tab=new String[jarray.length()*2];
 
 
                         for (int i = jarray.length()-1; i >= 0 ; i--) {
@@ -179,8 +180,8 @@ public class KiosqueActivity extends AppCompatActivity{
                                 a++;
                             }
 
-                            mAdapter.addItem(ConfigurationVille.KIOSQUE_PAPER_NAME +" Edition N°: "+object.getInt("edition"));
-                            tab[a]=object.getInt("edition");
+                            mAdapter.addItem(ConfigurationVille.KIOSQUE_PAPER_NAME +" Edition N°: "+object.getString("edition"));
+                            tab[a]=object.getString("lien");
 
                             a++;
 
@@ -223,6 +224,7 @@ public class KiosqueActivity extends AppCompatActivity{
             }
         });
     }
+
 
     private  void setupDrawerLayout(){
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);

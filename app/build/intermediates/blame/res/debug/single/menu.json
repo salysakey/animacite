@@ -16,8 +16,20 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\src\\main\\res\\menu\\menu_map.xml"
     },
     {
+        "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/menu/menu_consultation.xml",
+        "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/menu/menu_consultation.xml"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_consultation.xml",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\src\\main\\res\\menu\\menu_consultation.xml"
+    },
+    {
+        "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/menu/drawer.xml",
+        "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/menu/drawer.xml"
+    },
+    {
+        "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/menu/activity_main.xml",
+        "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/menu/activity_main.xml"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/menu/activity_main.xml",
@@ -26,6 +38,10 @@
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/menu/drawer.xml",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/src/main/res/menu/drawer.xml"
+    },
+    {
+        "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/menu/menu_map.xml",
+        "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/menu/menu_map.xml"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\menu\\drawer.xml",

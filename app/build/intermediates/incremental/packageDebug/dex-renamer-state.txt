@@ -1,7 +1,7 @@
-#Thu Nov 09 07:43:22 ICT 2017
-base.0=/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c7924423b64fc15a3e57c174426ca99cf508d736
+#Thu Nov 09 16:27:26 ICT 2017
+base.0=/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c74801840616a2ac5e245b9da70c5a19a7d47976/classes.dex
-base.1=/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c74801840616a2ac5e245b9da70c5a19a7d47976
-file.0=/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c7924423b64fc15a3e57c174426ca99cf508d736/classes.dex
+file.1=/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes2.dex
+base.1=/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+file.0=/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

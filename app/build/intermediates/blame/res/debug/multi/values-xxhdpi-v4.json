@@ -1,5 +1,219 @@
 [
     {
+        "outputFile": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xxhdpi-v4/values-xxhdpi-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 44,
+                    "endOffset": 95
+                },
+                "from": {
+                    "file": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/values-xxhdpi/dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 85,
+                        "endColumn": 44,
+                        "endOffset": 125
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 100,
+                    "endColumn": 45,
+                    "endOffset": 141
+                },
+                "from": {
+                    "file": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/values-xxhdpi/dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 130,
+                        "endColumn": 45,
+                        "endOffset": 171
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 146,
+                    "endColumn": 53,
+                    "endOffset": 195
+                },
+                "from": {
+                    "file": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/values-xxhdpi/dimens.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 176,
+                        "endColumn": 53,
+                        "endOffset": 225
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 200,
+                    "endColumn": 44,
+                    "endOffset": 240
+                },
+                "from": {
+                    "file": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/values-xxhdpi/dimens.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 572,
+                        "endColumn": 44,
+                        "endOffset": 612
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 245,
+                    "endColumn": 43,
+                    "endOffset": 284
+                },
+                "from": {
+                    "file": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/values-xxhdpi/dimens.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 617,
+                        "endColumn": 43,
+                        "endOffset": 656
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 289,
+                    "endColumn": 42,
+                    "endOffset": 327
+                },
+                "from": {
+                    "file": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/values-xxhdpi/dimens.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 484,
+                        "endColumn": 42,
+                        "endOffset": 522
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 332,
+                    "endColumn": 44,
+                    "endOffset": 372
+                },
+                "from": {
+                    "file": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/values-xxhdpi/dimens.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 527,
+                        "endColumn": 44,
+                        "endOffset": 567
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 377,
+                    "endColumn": 45,
+                    "endOffset": 418
+                },
+                "from": {
+                    "file": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/values-xxhdpi/dimens.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 350,
+                        "endColumn": 45,
+                        "endOffset": 391
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 423,
+                    "endColumn": 44,
+                    "endOffset": 463
+                },
+                "from": {
+                    "file": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/values-xxhdpi/dimens.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 305,
+                        "endColumn": 44,
+                        "endOffset": 345
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 468,
+                    "endColumn": 44,
+                    "endOffset": 508
+                },
+                "from": {
+                    "file": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/values-xxhdpi/dimens.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 396,
+                        "endColumn": 44,
+                        "endOffset": 436
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 513,
+                    "endColumn": 40,
+                    "endOffset": 549
+                },
+                "from": {
+                    "file": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/values-xxhdpi/dimens.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 264,
+                        "endColumn": 40,
+                        "endOffset": 300
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
         "map": [
             {
