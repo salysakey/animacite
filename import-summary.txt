@@ -1,0 +1,283 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* AndroidManifest.out.xml
+* OpenStreetMapViewer-3.0.8-aligned.apk
+* config.properties
+* doc/
+* doc/allclasses-frame.html
+* doc/allclasses-noframe.html
+* doc/constant-values.html
+* doc/deprecated-list.html
+* doc/help-doc.html
+* doc/index-files/
+* doc/index-files/index-1.html
+* doc/index-files/index-10.html
+* doc/index-files/index-11.html
+* doc/index-files/index-12.html
+* doc/index-files/index-13.html
+* doc/index-files/index-14.html
+* doc/index-files/index-15.html
+* doc/index-files/index-16.html
+* doc/index-files/index-17.html
+* doc/index-files/index-18.html
+* doc/index-files/index-19.html
+* doc/index-files/index-2.html
+* doc/index-files/index-20.html
+* doc/index-files/index-21.html
+* doc/index-files/index-3.html
+* doc/index-files/index-4.html
+* doc/index-files/index-5.html
+* doc/index-files/index-6.html
+* doc/index-files/index-7.html
+* doc/index-files/index-8.html
+* doc/index-files/index-9.html
+* doc/index.html
+* doc/org/
+* doc/org/lestaxinomes/
+* doc/org/lestaxinomes/les_taxinomes_android/
+* doc/org/lestaxinomes/les_taxinomes_android/BuildConfig.html
+* doc/org/lestaxinomes/les_taxinomes_android/R.attr.html
+* doc/org/lestaxinomes/les_taxinomes_android/R.color.html
+* doc/org/lestaxinomes/les_taxinomes_android/R.drawable.html
+* doc/org/lestaxinomes/les_taxinomes_android/R.html
+* doc/org/lestaxinomes/les_taxinomes_android/R.id.html
+* doc/org/lestaxinomes/les_taxinomes_android/R.layout.html
+* doc/org/lestaxinomes/les_taxinomes_android/R.menu.html
+* doc/org/lestaxinomes/les_taxinomes_android/R.string.html
+* doc/org/lestaxinomes/les_taxinomes_android/R.style.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/
+* doc/org/lestaxinomes/les_taxinomes_android/activities/BaseActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/BaseConsultationActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/BasePublicationActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/ConsultationActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/FullScreenImageActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/ImagePickActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/Login.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/MapActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/MyAccountActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/PublicationFormActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/SplashActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/class-use/
+* doc/org/lestaxinomes/les_taxinomes_android/activities/class-use/BaseActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/class-use/BaseConsultationActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/class-use/BasePublicationActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/class-use/ConsultationActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/class-use/FullScreenImageActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/class-use/ImagePickActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/class-use/Login.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/class-use/MapActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/class-use/MyAccountActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/class-use/PublicationFormActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/class-use/SplashActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/package-frame.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/package-summary.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/package-tree.html
+* doc/org/lestaxinomes/les_taxinomes_android/activities/package-use.html
+* doc/org/lestaxinomes/les_taxinomes_android/adapters/
+* doc/org/lestaxinomes/les_taxinomes_android/adapters/MediaListAdapter.ViewHolder.html
+* doc/org/lestaxinomes/les_taxinomes_android/adapters/MediaListAdapter.html
+* doc/org/lestaxinomes/les_taxinomes_android/adapters/class-use/
+* doc/org/lestaxinomes/les_taxinomes_android/adapters/class-use/MediaListAdapter.ViewHolder.html
+* doc/org/lestaxinomes/les_taxinomes_android/adapters/class-use/MediaListAdapter.html
+* doc/org/lestaxinomes/les_taxinomes_android/adapters/package-frame.html
+* doc/org/lestaxinomes/les_taxinomes_android/adapters/package-summary.html
+* doc/org/lestaxinomes/les_taxinomes_android/adapters/package-tree.html
+* doc/org/lestaxinomes/les_taxinomes_android/adapters/package-use.html
+* doc/org/lestaxinomes/les_taxinomes_android/class-use/
+* doc/org/lestaxinomes/les_taxinomes_android/class-use/BuildConfig.html
+* doc/org/lestaxinomes/les_taxinomes_android/class-use/R.attr.html
+* doc/org/lestaxinomes/les_taxinomes_android/class-use/R.color.html
+* doc/org/lestaxinomes/les_taxinomes_android/class-use/R.drawable.html
+* doc/org/lestaxinomes/les_taxinomes_android/class-use/R.html
+* doc/org/lestaxinomes/les_taxinomes_android/class-use/R.id.html
+* doc/org/lestaxinomes/les_taxinomes_android/class-use/R.layout.html
+* doc/org/lestaxinomes/les_taxinomes_android/class-use/R.menu.html
+* doc/org/lestaxinomes/les_taxinomes_android/class-use/R.string.html
+* doc/org/lestaxinomes/les_taxinomes_android/class-use/R.style.html
+* doc/org/lestaxinomes/les_taxinomes_android/dataConnexion/
+* doc/org/lestaxinomes/les_taxinomes_android/dataConnexion/ConnexionManager.html
+* doc/org/lestaxinomes/les_taxinomes_android/dataConnexion/XMLRPCConnexionManager.html
+* doc/org/lestaxinomes/les_taxinomes_android/dataConnexion/XMLRPCConnexionManagerAsynctask.html
+* doc/org/lestaxinomes/les_taxinomes_android/dataConnexion/class-use/
+* doc/org/lestaxinomes/les_taxinomes_android/dataConnexion/class-use/ConnexionManager.html
+* doc/org/lestaxinomes/les_taxinomes_android/dataConnexion/class-use/XMLRPCConnexionManager.html
+* doc/org/lestaxinomes/les_taxinomes_android/dataConnexion/class-use/XMLRPCConnexionManagerAsynctask.html
+* doc/org/lestaxinomes/les_taxinomes_android/dataConnexion/package-frame.html
+* doc/org/lestaxinomes/les_taxinomes_android/dataConnexion/package-summary.html
+* doc/org/lestaxinomes/les_taxinomes_android/dataConnexion/package-tree.html
+* doc/org/lestaxinomes/les_taxinomes_android/dataConnexion/package-use.html
+* doc/org/lestaxinomes/les_taxinomes_android/entities/
+* doc/org/lestaxinomes/les_taxinomes_android/entities/Author.html
+* doc/org/lestaxinomes/les_taxinomes_android/entities/GIS.html
+* doc/org/lestaxinomes/les_taxinomes_android/entities/Licence.html
+* doc/org/lestaxinomes/les_taxinomes_android/entities/Media.html
+* doc/org/lestaxinomes/les_taxinomes_android/entities/class-use/
+* doc/org/lestaxinomes/les_taxinomes_android/entities/class-use/Author.html
+* doc/org/lestaxinomes/les_taxinomes_android/entities/class-use/GIS.html
+* doc/org/lestaxinomes/les_taxinomes_android/entities/class-use/Licence.html
+* doc/org/lestaxinomes/les_taxinomes_android/entities/class-use/Media.html
+* doc/org/lestaxinomes/les_taxinomes_android/entities/package-frame.html
+* doc/org/lestaxinomes/les_taxinomes_android/entities/package-summary.html
+* doc/org/lestaxinomes/les_taxinomes_android/entities/package-tree.html
+* doc/org/lestaxinomes/les_taxinomes_android/entities/package-use.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/BaseFragment.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/BaseListFragment.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/MediaFragment.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/MediaListFragment.MediaActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/MediaListFragment.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/PublicationFormFragment.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/PublicationFragment.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/class-use/
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/class-use/BaseFragment.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/class-use/BaseListFragment.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/class-use/MediaFragment.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/class-use/MediaListFragment.MediaActivity.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/class-use/MediaListFragment.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/class-use/PublicationFormFragment.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/class-use/PublicationFragment.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/package-frame.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/package-summary.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/package-tree.html
+* doc/org/lestaxinomes/les_taxinomes_android/fragments/package-use.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/
+* doc/org/lestaxinomes/les_taxinomes_android/model/AuthorModel.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/CreateMediaModel.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/LicenceModel.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/MediaFullDocumentModel.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/MediaListModel.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/MediaModel.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/Model.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/UserModel.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/class-use/
+* doc/org/lestaxinomes/les_taxinomes_android/model/class-use/AuthorModel.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/class-use/CreateMediaModel.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/class-use/LicenceModel.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/class-use/MediaFullDocumentModel.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/class-use/MediaListModel.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/class-use/MediaModel.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/class-use/Model.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/class-use/UserModel.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/package-frame.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/package-summary.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/package-tree.html
+* doc/org/lestaxinomes/les_taxinomes_android/model/package-use.html
+* doc/org/lestaxinomes/les_taxinomes_android/package-frame.html
+* doc/org/lestaxinomes/les_taxinomes_android/package-summary.html
+* doc/org/lestaxinomes/les_taxinomes_android/package-tree.html
+* doc/org/lestaxinomes/les_taxinomes_android/package-use.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/
+* doc/org/lestaxinomes/les_taxinomes_android/utils/CurrentLocationListener.Myll.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/CurrentLocationListener.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/GISUtils.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/ImageViewLoading.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/LoginUtils.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/PropertyReader.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/class-use/
+* doc/org/lestaxinomes/les_taxinomes_android/utils/class-use/CurrentLocationListener.Myll.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/class-use/CurrentLocationListener.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/class-use/GISUtils.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/class-use/ImageViewLoading.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/class-use/LoginUtils.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/class-use/PropertyReader.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/package-frame.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/package-summary.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/package-tree.html
+* doc/org/lestaxinomes/les_taxinomes_android/utils/package-use.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/
+* doc/org/lestaxinomes/les_taxinomes_android/views/UpdatableAuthorView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/UpdatableCreateMediaView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/UpdatableGISListView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/UpdatableImageView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/UpdatableLicenceSingletonView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/UpdatableMediaFullScreenView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/UpdatableMediaListView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/UpdatableMediaView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/UpdatableMyAccountView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/UpdatableTextView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/UpdatableUserView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/UpdatableView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/class-use/
+* doc/org/lestaxinomes/les_taxinomes_android/views/class-use/UpdatableAuthorView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/class-use/UpdatableCreateMediaView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/class-use/UpdatableGISListView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/class-use/UpdatableImageView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/class-use/UpdatableLicenceSingletonView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/class-use/UpdatableMediaFullScreenView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/class-use/UpdatableMediaListView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/class-use/UpdatableMediaView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/class-use/UpdatableMyAccountView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/class-use/UpdatableTextView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/class-use/UpdatableUserView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/class-use/UpdatableView.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/package-frame.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/package-summary.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/package-tree.html
+* doc/org/lestaxinomes/les_taxinomes_android/views/package-use.html
+* doc/overview-frame.html
+* doc/overview-summary.html
+* doc/overview-tree.html
+* doc/package-list
+* doc/resources/
+* doc/resources/background.gif
+* doc/resources/tab.gif
+* doc/resources/titlebar.gif
+* doc/resources/titlebar_end.gif
+* doc/stylesheet.css
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets
+* libs/GoogleWrapperSample-3.0.8.jar => app/libs/GoogleWrapperSample-3.0.8.jar
+* libs/OpenStreetMapViewer-3.0.8.jar => app/libs/OpenStreetMapViewer-3.0.8.jar
+* libs/aXMLRPC_v1.4.0.jar => app/libs/aXMLRPC_v1.4.0.jar
+* libs/android-xmlrpc.jar => app/libs/android-xmlrpc.jar
+* libs/commons-codec-1.7.jar => app/libs/commons-codec-1.7.jar
+* libs/commons-io-2.4.jar => app/libs/commons-io-2.4.jar
+* libs/osmdroid-android-3.0.8.jar => app/libs/osmdroid-android-3.0.8.jar
+* libs/osmdroid-packager-3.0.8.jar => app/libs/osmdroid-packager-3.0.8.jar
+* libs/osmdroid-third-party-3.0.8.jar => app/libs/osmdroid-third-party-3.0.8.jar
+* libs/slf4j-api-1.7.2.jar => app/libs/slf4j-api-1.7.2.jar
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

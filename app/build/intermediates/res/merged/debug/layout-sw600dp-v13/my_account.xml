@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="4500dp"
+        android:background="@color/background"
+        android:scrollbars="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/includes_toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scrollviewprofil"
+            android:id="@+id/scrollView"
+            android:layout_below="@id/toolbar">
+
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_width="match_parent">
+
+                <!-- Email Label -->
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/profilhomme"
+                        android:layout_width="181dp"
+                        android:layout_height="109dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="17dp"
+                        android:visibility="gone"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/photo_profil_homme_noir"
+                        android:layout_weight="0.23" />
+
+                    <ImageView
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/profilfemme"
+                        android:layout_width="181dp"
+                        android:layout_height="109dp"
+                        android:visibility="gone"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="17dp"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/photo_profil_femme_noir"
+                        android:layout_weight="0.23" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/regular_text_color"
+                        android:id="@+id/pseudo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/profil_title"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="210dp"
+                        android:text="pseudo" />
+
+
+
+
+                    <RelativeLayout
+                        android:layout_below="@+id/pseudo"
+                        android:layout_width="600dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/avatarhomme"
+                        android:layout_marginLeft="@dimen/entrelogoetdetails"
+
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/gateau"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/birth"/>
+
+                        <TextView
+                            android:layout_marginTop="18dp"
+                            android:layout_toRightOf="@+id/gateau"
+                            android:textColor="@color/regular_text_color"
+                            android:id="@+id/age"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/profil_text"
+                            android:text="age"
+                            android:layout_marginLeft="10dp" />
+
+                        <ImageView
+                            android:layout_marginTop="@dimen/topgateau"
+                            android:id="@+id/work"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/work"/>
+
+                        <TextView
+                            android:layout_marginTop="@dimen/topgateau"
+                            android:layout_toRightOf="@+id/gateau"
+                            android:textColor="@color/regular_text_color"
+                            android:id="@+id/profession"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/profil_text"
+                            android:text="profession"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="10dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <!--
+
+                    <ImageButton
+                        android:src="@drawable/modifier"
+                        android:id="@+id/btnmodif"
+                        android:layout_toRightOf="@+id/welcomeImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="90dp"
+                        android:onClick="modifier"
+                        android:text="modifier"
+                        android:textColor="#fff" /> -->
+
+
+                </RelativeLayout>
+
+
+                <!--
+
+                <RelativeLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/largeurfleches"
+                        android:layout_height="44dp"
+                        android:id="@+id/Step1"
+                        android:src="@drawable/begin" />
+
+                    <ImageView
+                        android:layout_toRightOf="@+id/Step1"
+                        android:layout_width="98dp"
+                        android:layout_height="44dp"
+                        android:id="@+id/Step2"
+                        android:src="@drawable/atteint" />
+
+                    <ImageView
+                        android:layout_toRightOf="@+id/Step2"
+                        android:layout_width="98dp"
+                        android:layout_height="44dp"
+                        android:id="@+id/Step3"
+                        android:src="@drawable/expert" />
+
+                    <ImageView
+                        android:layout_toRightOf="@id/Step3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="44dp"
+                        android:id="@+id/Step4"
+                        android:src="@drawable/top"
+                        />
+
+                </RelativeLayout>
+
+                -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="@dimen/entreTitreClassement"
+                        android:id="@+id/statperso"
+                        android:gravity="center"
+                        android:textColor="@color/regular_text_color"
+                        android:layout_width="match_parent"
+                        android:text="Statistique sur vous :)"
+                        android:textSize="@dimen/profil_text"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:textSize="@dimen/profil_title"
+                        android:textColor="@color/regular_text_color"
+                        android:layout_width="match_parent"
+                        android:text="Classement"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <!--
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/favo"
+                        android:src="@drawable/fav"
+                        android:background="#00000000"
+                        android:layout_marginLeft="30dp"/>
+
+                    <ImageButton
+                        android:layout_toRightOf="@+id/favo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rech"
+                        android:src="@drawable/animal"
+                        android:background="#00000000"
+                        android:layout_marginLeft="@dimen/margedroiteimmagebuton"
+                        android:focusableInTouchMode="false" />
+
+
+                    <ImageButton
+                        android:layout_toRightOf="@+id/rech"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mappp"
+                        android:src="@drawable/mapicom"
+                        android:background="#00000000"
+                        android:layout_marginLeft="@dimen/margedroiteimmagebuton" />
+                </RelativeLayout>
+-->
+
+
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/largeurliste"
+                    android:layout_height="350dp">
+                </ListView>
+
+                <!-- <Button
+                    android:id="@+id/publicationbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/publishMedia" /> -->
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+        <!-- <Button
+            android:id="@+id/logoutbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="Modifier Profil" /> -->
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:background="@android:color/white"
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer"/>
+
+</android.support.v4.widget.DrawerLayout>
+

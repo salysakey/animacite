@@ -1,0 +1,30 @@
+<resources>
+    
+    <color name="gold">#c9a147</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#22254a</color>
+    <color name="orange">#ee7826</color>
+    <color name="orance_login">#ff6347</color>
+    <color name="grey">#d3d3d3</color>
+    <color name="dark_grey">#808080</color>
+
+    <color name="toolbar">#2c75ff</color>
+    <color name="background">#ffffff</color>
+    <color name="info_bar">#2c75ff</color>
+    <color name="consultation_bar">#57d53b</color>
+    <color name="commerce_bar">#20409A</color>
+
+    <color name="alerte">#ff3f45</color>
+    <color name="fonce">#242699</color>
+
+    <color name="textBackground">#FFF</color>
+    <color name="alert_dialog_text_color">#FFF</color>
+    <color name="colorPrimary">#242699</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="regular_text_color">#000</color>
+    <color name="vert">#61b457</color>
+    <color name="vert2">#66DCCC</color>
+    <color name="anima_blue">#22254a</color>
+    <color name="color_333554">#333554</color>
+
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:paddingRight="@dimen/login_layout_padding_lateral"
+    android:paddingLeft="@dimen/login_layout_padding_lateral"
+    android:background="@drawable/fondsecondaire2">
+
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/logofeuch"/>
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/red" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="text"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:hint="@string/input_pseudo_text"
+        android:background="@drawable/contourbouton"
+        android:textSize="15sp"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="@dimen/margintop_email">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/botummdp"
+        android:inputType="textPassword"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:background="@drawable/contourbouton"
+        android:hint="Mot de passe"
+        android:textColorHint="@color/white"
+        />
+
+
+    <!-- <ImageButton
+        android:layout_marginTop="@dimen/margintop_login"
+        android:onClick="loginUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginbutton"
+        android:src="@drawable/button_login"
+        android:background="#00ffffff"
+        android:adjustViewBounds="false"
+        android:scaleType="centerInside"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" /> -->
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_buttons_height"
+        android:background="@color/orange"
+        android:layout_marginBottom="10dp"
+        android:onClick="loginUser"
+        android:text="Se connecter"
+        android:textColor="#fff" />
+
+
+    <TextView
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mot de passe oublié?"
+        android:onClick="navigatetoForgetmdp"
+        android:id="@+id/ForgotPassword"
+        android:textColor="#EF9C82"
+        android:singleLine="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ou"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:singleLine="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_facebook_request"
+        android:gravity="center"
+        android:textSize="18sp"
+        />
+    <!--
+    A AJOUTER POUR FACEBOOK Changer height et width en fill_parent-->
+    <com.facebook.login.widget.LoginButton
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margintop_facebook"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/facebookbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:clickable="true"
+        android:onClick="navigatetoRegisterActivity"
+        android:id="@+id/SingUp"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_buttons_height"
+        android:background="@color/orange"
+        android:layout_marginBottom="10dp"
+        android:text="Créer un compte"
+        android:textColor="#fff" />
+
+    <!--
+
+    <TextView
+        android:clickable="true"
+        android:onClick="navigatetoActua"
+        android:layout_marginTop="@dimen/margintop_filactu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retourner au fil d'actualité !"
+        android:textColor="@color/white"
+        android:id="@+id/actu"
+        android:layout_gravity="center_horizontal" /> -->
+
+
+</LinearLayout>

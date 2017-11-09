@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/includes_toolbar" />
+
+        <!-- View Title Label -->
+
+        <!-- Name Label -->
+
+        <TextView
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Pseudo" />
+        <!-- Name TextField -->
+
+        <EditText
+            android:id="@+id/registerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Votre pseudo"/>
+
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Mon adresse mail" />
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Votre adresse mail"/>
+
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Ma profession" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profession"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Adresse" />
+
+        <EditText
+            android:id="@+id/adresse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Où habitez-vous ?"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Ville" />
+
+        <EditText
+            android:id="@+id/ville"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quelle ville ?"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nouveau mot de passe" />
+
+        <EditText
+            android:id="@+id/Newpassword"
+            android:layout_width="fill_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:hint="Un nouveau mot de passe ?"/>
+
+        <EditText
+            android:id="@+id/Newpassword2"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:hint="Répétez nouveau mot de passe "/>
+
+
+
+        <!-- Name TextField -->
+
+
+        <!--
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Adresse" />
+
+
+
+        <EditText
+            android:id="@+id/adresse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter your adresse"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Code postale" />
+
+
+        <EditText
+            android:id="@+id/Cp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter your Code postale"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Profession" />
+
+
+        <EditText
+            android:id="@+id/profession"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="Enter your profession"/>
+         -->
+        <!-- Email Label -->
+
+
+        <!-- Password Label -->
+
+
+
+        <!-- Error message -->
+
+        <TextView
+            android:id="@+id/register_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:textColor="#e30000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="#ff6347"
+            android:onClick="registerUser"
+            android:text="enregistrer"
+            android:textColor="#fff" />
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:onClick="navigatetoLoginActivity"
+            android:text="Précédent"
+            android:textColor="#228b22"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+    <android.support.design.widget.NavigationView
+        android:background="@android:color/white"
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer"/>
+
+</android.support.v4.widget.DrawerLayout>

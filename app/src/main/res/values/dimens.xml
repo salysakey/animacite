@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- layout login  -->
+    <dimen name="margintop_email">10dp</dimen>
+    <dimen name="margintop_motdepasse">30dp</dimen>
+    <dimen name="margintop_login">40dp</dimen>
+    <dimen name="botummdp">10dp</dimen>
+    <dimen name="margintop_facebook">10dp</dimen>
+    <dimen name="margintop_register">20dp</dimen>
+    <dimen name="margintop_filactu">50dp</dimen>
+    <dimen name="login_layout_padding_lateral">40dp</dimen>
+    <dimen name="login_buttons_height">40dp</dimen>
+
+
+    <!-- layout profil  -->
+    <dimen name="largeurProfil">99dp</dimen>
+    <dimen name="largeurfleches">98dp</dimen>
+    <dimen name="margedroiteimmagebuton">50dp</dimen>
+    <dimen name="entreTitreClassement">30dp</dimen>
+    <dimen name="scrollviewprofil">450dp</dimen>
+    <dimen name="largeurliste">300dp</dimen>
+    <dimen name="hauteurliste">200dp</dimen>
+    <dimen name="entrelogoetdetails">180dp</dimen>
+    <dimen name="topgateau">55dp</dimen>
+
+    <!-- layout actualite  -->
+    <integer name="nbcolone">2</integer>
+
+    <!-- layout detail dune tuile  -->
+    <dimen name="scrollview">500dp</dimen>
+    <dimen name="taille_image">260dp</dimen>
+    <dimen name="police_resume">16dp</dimen>
+    <dimen name="police_titre">20dp</dimen>
+
+    <!-- layout detail dune kiosque  -->
+    <dimen name="kiosquelongeur">500dp</dimen>
+
+    <!-- layout signalement -->
+    <dimen name="signalement_action_title">14sp</dimen>
+    <dimen name="signalement_layout_padding_lateral">20dp</dimen>
+
+
+</resources>

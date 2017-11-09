@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/9b28d3bb52adcd4f6c4c8f55e321ed4d26123675/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2482bfd874e8b3927f4141105674ad392ff83698">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0afea2a6811e1d161192e1e65db28fe5f6ddf490/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/9d976baeb3cb2ece234083aae7bb4f0eed26986c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1d39b5ac112e12ae76a14146e14feb1e40f7de67">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d4bb486203f810ff0f7f39314665bc63b89c814c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/libs/slf4j-api-1.7.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2530e5caa094f7d78a09a6dba850c37c206cc763">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/2/slf4j-api-1.7.2_e81654f09b8adda748d01d0db53b28dc92236479/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/libs/android-xmlrpc.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="893c16f85fb19d95fe1190e8a66178f854a470d3">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/2/android-xmlrpc_6ae35cd7857be18f857ca5b72cde486dd6a6fef5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/libs/openstreetmapviewer-3.0.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b10aa5267b527c623ab4be0549c9f32a5ccef5">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/2/openstreetmapviewer-3.0.8_99ea5b8f746bde5b7bd476bbe13c1cc44fc2e9e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/44ed392bade7bbe4ed4e0a01c21be7a8755d7f35/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53e8932b1ac8c7dfc35cfeda1f9efbc9822ceaf3">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7bb8dd3884322cda0a58ff7c799b8662ea89be02/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/532b02b65c6c7f917c4090f0a360fba03b25b65d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dc83ab7a5ce1e0296cf18a52a6edbcfef815e6cf">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_082a1e1bc82d03d49eb290d98652f8c291d24de4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/libs/universal-image-loader-1.9.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd9eeb557650c4ad7394df23f0f5cf27a7cfc697">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/2/universal-image-loader-1.9.4_fcb7f4f5c791b94d1fa54c4934d2b3c94f1cd4c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_09c55ad6e7a160a55890b5e8c77a6ebc7ec2418f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.3.0/73c49077166faa4c3c0059c5f583d1d7bd1475fe/core-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/core-3.3.0_0319ae703e5f3aa7d87888c69675678467e2aa14/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/449e94aca41b139eb434dbaa29aef489e49e7dd4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bbb8d84ccfbe63c5c8558a2a201a744a1a2f82c9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/libs/googlewrappersample-3.0.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6fac458bfb97423c0d8df6e9aa32e8c959b5fa6a">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/2/googlewrappersample-3.0.8_44aa28557deddf4bea052986e7f3e3277a8acc5c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/97d91d84fa7c360d57dbb734392d5f7cde1fd0d8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4c2356354ea8bb0064ac8f49eeecbfb4f2a37916/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/1fe4535cae331687bfdab168abf0e4c879e68e93/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e58dd24ae3d1b9c889a0c76c4c485f9a518e94c6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/13f3f30c3a18fe0d351dbac63e365d49527b1b2f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="287f4dec8dc2d40a238b12562b437438499cd2fb">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b345de91d684779038d5b789b41a5ea7c9cf612a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/libs/additionnal.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/2/additionnal_16592c2879983c7aa460f9477d6fbc9993d24242/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c74801840616a2ac5e245b9da70c5a19a7d47976/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_11d0f9d7f8644b285c6e29dd31ae41b25f722cfd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/430bd09e79bef0cb4ec63e6ee8732855f20b311f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ff71f05c4216369803d04a2556e3ee0ba4703bfc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/83954967d138ceb4ab76cb8aa72094a88fcc8121/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0d394688dd7030b83dea8eed3fa483410c24afe0">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_50a6f376b58d8438b45cf74dd1c94d41888cac39/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_c27807eea4c4c63baaca0c8a61a1a6fd595fc16b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/3778c1adb113a8fe2ebc34017de1e8aa2de0085f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="807751a24cf96566fd8675517c94d8463cf364db">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b22ca1efe9b7019a22faae2778be6185787f5b0d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/libs/osmdroid-third-party-3.0.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7fbd55d832ad5fd868d825c49094e1dc70e2135b">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/2/osmdroid-third-party-3.0.8_9041e3b5eb0467025505c44781b7d3cb569cc2b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/libs/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/2/picasso-2.5.2_2e4d177b26c447270c24859d06d412d0214a6211/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/libs/commons-codec-1.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9cd61d269c88f9fb0eb36cea1efcd596ab74772f">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/2/commons-codec-1.7_09a68f9efb2466376fc6129e566b8d1aa343d403/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/8043efa2a27af009a45418e53fe3adce2fea41b0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ab6e491b5d7bda2f47991a30f6bfe9a8b134ff8b">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_05ba3aa29e691d11ecb5df84d3b52d54a6254fd2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/929578411f37ec273c51086ad0f772f575286294/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4d6bbb901b0cd8f18ad56ec161ef694f02f7e174/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/libs/osmdroid-android-3.0.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4992d81fdbbb2065483d2c9ea063f4a539e7309d">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/2/osmdroid-android-3.0.8_2dcc9f6d4fb74215df134e5c8a92aa022b57b15e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3c76cfd83926e1f61205ad9d53dcb6d9da0a09ef">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c7924423b64fc15a3e57c174426ca99cf508d736/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/168277628f0cb98960a52f8ec8fe69dc813f02fb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b5ecd944c81566861ba6f474b673bb47334c24f8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_e1b7d974d161fc11bcd7859cb4e317ff1b34b838/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/libs/android-async-http-1.4.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3bae85a076241828810bf8fbcc12e5891d5fc34c">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/2/android-async-http-1.4.4_a48037edc0e7297cd13d5fa214c0245d2bec78d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/libs/mail.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/2/mail_bae1f704878dd28dda250372f455297429b8f76b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/libs/aXMLRPC_v1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ca7b74143c0b94aba664cf4da72913e764c38cb7">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/2/aXMLRPC_v1.4.0_fa17f88887cf3cf5da24620cfcac9273c682e398/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/0de13fe6c05ced9979ea1805d55493b665a8d13a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_41c0f53ae708799a58ab9cc216153cd4371defc0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/96ab7d23b7c61bff0c905a9db6f7810179c00719/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8869f29b8fbf4425cf9449ca9aaab97a3325eccf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/6281ffe6389a0926f38412bb8d4975f72aaa8d80/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_187610fd83aaac7030ec5527aaf3590ef58d5cfd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/7729a4f0c6f5e93e42a6d6bf1d22537444145e91/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_73e016941fbe6448735b1cc2912aadf05e9ee736/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/libs/activation.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/2/activation_f7b9d26f1811f5de9aa12f71f37c34431bf7239c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/181bb1a9bd186ce07b40149831d13f3cd0ff4988/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_00265c8a672dc54c464c71c1d16fac0f94812994/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/31c330b903b235a81711693d7ee0e58b12f8a445/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b8b26b28aae0ba8e2db55ad9fe0ebc770530c5ef">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6e9603613d27e22af3ba36c57f5ff296cbcd024f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/3dd32726de8862f033b91ea04ffc24b41a1537d4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c2079d90eebbb6d321d02be4a3d345f555aa4561/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/macbookpro/.android/build-cache/ea10c0cbaa026d8611da1b3a48ddfef3a4dad0bf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="82ea5a937ab84229fbd2f3fc8cf2a72cbdf0ee0f">
+        <dex dex="/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7b5353ff8817abd19a0ff96eb18fbd5bc6eb5151/classes.dex" />
+    </item>
+
+</items>

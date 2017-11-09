@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- layout profil  -->
+
+
+    <dimen name="largeurProfil">99dp</dimen>
+    <dimen name="largeurfleches">60dp</dimen>
+    <dimen name="margedroiteimmagebuton">30dp</dimen>
+
+    <!-- layout actualite  -->
+
+
+    <integer name="nbcolone">2</integer>
+
+    <!-- layout detail dune tuile  -->
+
+    <dimen name="scrollview">520dp</dimen>
+    <dimen name="taille_image">200dp</dimen>
+    <dimen name="police_resume">18dp</dimen>
+    <dimen name="police_titre">17dp</dimen>
+
+
+
+
+
+
+</resources>

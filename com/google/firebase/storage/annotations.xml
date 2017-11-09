@@ -1,0 +1,6 @@
+<root>
+    <item
+        name='com.google.firebase.storage.UploadTask.TaskSnapshot android.net.Uri getDownloadUrl()'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>
