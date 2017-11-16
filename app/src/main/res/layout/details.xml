@@ -17,193 +17,213 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/info_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:background="@color/info_bar"
-                android:id="@+id/info_bar">
+                android:orientation="horizontal">
 
                 <ImageButton
-                    android:visibility="gone"
-                    android:src="@drawable/bloquer48"
                     android:id="@+id/Comment4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
                     android:background="@color/info_bar"
-                    />
+                    android:src="@drawable/bloquer48"
+                    android:visibility="gone" />
+
                 <ImageButton
-                    android:visibility="gone"
-                    android:src="@drawable/ic_delete_follow"
                     android:id="@+id/Comment5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
                     android:background="@color/info_bar"
-                    />
+                    android:src="@drawable/ic_delete_follow"
+                    android:visibility="gone" />
 
                 <ImageButton
-                    android:visibility="gone"
-                    android:padding="5dp"
-                    android:src="@drawable/ic_plus_white"
                     android:id="@+id/Comment2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/info_bar"
-                    />
-                <ImageButton
-                    android:visibility="gone"
                     android:padding="5dp"
-                    android:src="@drawable/ic_thumbs_up_full"
+                    android:src="@drawable/ic_plus_white"
+                    android:visibility="gone" />
+
+                <ImageButton
                     android:id="@+id/like"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/info_bar"
-                    />
-                <ImageButton
-                    android:visibility="gone"
                     android:padding="5dp"
-                    android:src="@drawable/ic_thumbs_up_empty"
+                    android:src="@drawable/ic_thumbs_up_full"
+                    android:visibility="gone" />
+
+                <ImageButton
                     android:id="@+id/unlike"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/info_bar"
-                    />
-                <ImageButton
-                    android:visibility="gone"
                     android:padding="5dp"
-                    android:src="@drawable/calendar"
+                    android:src="@drawable/ic_thumbs_up_empty"
+                    android:visibility="gone" />
+
+                <ImageButton
                     android:id="@+id/calendrier"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/info_bar"
-                    />
-                <ImageButton
-                    android:visibility="gone"
                     android:padding="5dp"
-                    android:src="@drawable/participe"
+                    android:src="@drawable/calendar"
+                    android:visibility="gone" />
+
+                <ImageButton
                     android:id="@+id/jeparticipe"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/info_bar"
-                    />
+                    android:padding="5dp"
+                    android:src="@drawable/participe"
+                    android:visibility="gone" />
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
-                        android:visibility="gone"
-                        android:padding="10dp"
-                        android:textColor="@color/white"
                         android:id="@+id/titre_info"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="@dimen/police_titre"
-                        android:text="Titre"
                         android:layout_alignParentRight="true"
-                        android:background="@color/info_bar" />
+                        android:background="@color/info_bar"
+                        android:padding="10dp"
+                        android:text="Titre"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/police_titre"
+                        android:visibility="gone" />
                 </RelativeLayout>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/consultation_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:background="@color/consultation_bar"
-                android:id="@+id/consultation_bar"
-                >
+                android:orientation="horizontal">
+
                 <ImageButton
-                    android:visibility="gone"
-                    android:padding="8dp"
-                    android:src="@drawable/ic_comment"
                     android:id="@+id/Comment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/consultation_bar"
-                    />
-                <ImageButton
-                    android:visibility="gone"
                     android:padding="8dp"
-                    android:src="@drawable/ic_show_stat"
+                    android:src="@drawable/ic_comment"
+                    android:visibility="gone" />
+
+                <ImageButton
                     android:id="@+id/show_result"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/consultation_bar"
-                    />
+                    android:padding="8dp"
+                    android:src="@drawable/ic_show_stat"
+                    android:visibility="gone" />
+
                 <ImageButton
-                    android:visibility="gone"
-                    android:src="@drawable/ic_delete_follow"
                     android:id="@+id/delete_follow_consultation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
                     android:background="@color/consultation_bar"
-                    />
+                    android:src="@drawable/ic_delete_follow"
+                    android:visibility="gone" />
 
                 <ImageButton
-                    android:visibility="gone"
-                    android:padding="5dp"
-                    android:src="@drawable/ic_plus_white"
                     android:id="@+id/follow_consultation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/consultation_bar"
-                    />
+                    android:padding="5dp"
+                    android:src="@drawable/ic_plus_white"
+                    android:visibility="gone" />
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
-                        android:visibility="gone"
-                        android:padding="10dp"
-                        android:textColor="@color/white"
                         android:id="@+id/titre_consultation"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="@dimen/police_titre"
-                        android:text="Titre"
                         android:layout_alignParentRight="true"
-                        android:background="@color/consultation_bar" />
+                        android:background="@color/consultation_bar"
+                        android:padding="10dp"
+                        android:text="Titre"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/police_titre"
+                        android:visibility="gone" />
                 </RelativeLayout>
             </LinearLayout>
 
             <ImageView
-                android:visibility="gone"
                 android:id="@+id/img"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/taille_image"
+                android:layout_gravity="center"
                 android:src="@drawable/default_avatar"
-                android:layout_gravity="center"/>
+                android:visibility="gone" />
 
-            <ImageButton
-                android:id="@+id/fcbkshare"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="2dp"
-                android:src="@drawable/facebookshare"
-                android:background="#EBECEC"
-                android:layout_alignParentRight="true"
-                android:layout_centerInParent="true"
-                />
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageButton
+                    android:id="@+id/fcbkshare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/btn_goto_question"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/facebookshare" />
+
+                <Button
+                    android:id="@+id/btn_goto_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:baselineAligned="false"
+                    android:text="Passer aux questions"
+                    android:textAllCaps="false"
+                    android:textColorHint="@color/consultation_bar"
+                    android:visibility="invisible" />
+            </RelativeLayout>
 
             <TextView
-                android:padding="@dimen/abc_text_size_body_2_material"
-                android:textColor="@color/regular_text_color"
                 android:id="@+id/resume"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/police_resume"
-                android:textColorLink="@color/fonce"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
                 android:gravity="left"
+                android:padding="@dimen/abc_text_size_body_2_material"
                 android:text="Il n'y a pas de description pour ce post..."
-                />
+                android:textColor="@color/regular_text_color"
+                android:textColorLink="@color/fonce"
+                android:textSize="@dimen/police_resume" />
         </LinearLayout>
 
     </ScrollView>

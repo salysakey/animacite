@@ -171,8 +171,10 @@ public class ImagePickActivity extends ActionBarActivity {
 	}
 
 	//Affichage de la tuile selectionnée
+	// Select Item
     public void showPickActivity(int index) {
 
+		// Where "EmptyActivity.class" is Item Detail Activity or Consultation
 		Intent intent = new Intent( ImagePickActivity.this , EmptyActivity.class);
 		Food selectedFood = listFood.get(index);
 
@@ -242,7 +244,7 @@ public class ImagePickActivity extends ActionBarActivity {
 	public void decision( int index){
 
 		Food selectedFood = listFood.get(index);
-
+		// Which Sondage.class is Consultantation Activity
 		Intent intent = new Intent( ImagePickActivity.this , Sondage.class);
 
 		Bundle b = new Bundle();

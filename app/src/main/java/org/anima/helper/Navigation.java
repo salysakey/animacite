@@ -98,28 +98,34 @@ public class Navigation {
                     //         Intent intent4 = new Intent(MyAccountActivity.this, Follows.class);
                     //         startActivity(intent4);
                     //         break;
-                    case R.id.my_account:
 
+                    //"Moi citoyen"
+                    case R.id.my_account:
                         Intent intent8 = new Intent(context.getApplicationContext(), MyAccountActivity.class);
                         context.startActivity(intent8);
                         break;
+                    // "Concours"
                     case R.id.concours:
                         context.startActivity(new Intent(context.getApplicationContext(), ConcoursActivity.class));
                         break;
 
+                    // "Unknown"
                     case R.id.compte:
                         Intent intent5 = new Intent(context.getApplicationContext(), InfoContactActivity.class);
                         context.startActivity(intent5);
                         break;
+
+                    // "Unknown"
                     case R.id.map_filter:
                         break;
-                    case R.id.panier:
+                    // "Mes coups de coeur"
+                   case R.id.panier:
                         Intent intent4 = new Intent(context.getApplicationContext(), FollowActivity.class);
                         context.startActivity(intent4);
                         break;
 
+                    // "Mes evenements"
                     case R.id.evenements:
-
                         if (PrefManager.getRatingStatus(context.getApplicationContext())==1) {
                             Intent intent9 = new Intent(context.getApplicationContext(), CalendarActivity.class);
                             context.startActivity(intent9);
@@ -127,13 +133,13 @@ public class Navigation {
 
                         }else{
                             break;
-
                         }
-                    case R.id.maps:
 
+                    case R.id.maps:
                         Intent intent9 = new Intent(context.getApplicationContext(), MapActivity.class);
                         context.startActivity(intent9);
                         break;
+
                     case R.id.infopratique:
                         if (PrefManager.getRatingStatus(context.getApplicationContext())==1) {
                             Intent pratique = new Intent(context.getApplicationContext(), PratiqueActivity.class);
@@ -143,6 +149,8 @@ public class Navigation {
                             break;
 
                         }
+
+                    //"Kiosque"
                     case R.id.kiosque:
 
                         if (PrefManager.getRatingStatus(context.getApplicationContext())==1) {
@@ -154,10 +162,13 @@ public class Navigation {
                         }else{
                             break;
                         }
+
+                     // "Dans ma ville"
                     case R.id.actu:
                         Intent intent7 = new Intent(context.getApplicationContext(), ImagePickActivity.class);
                         context.startActivity(intent7);
                         break;
+
                     case R.id.login:
                         Intent intent = new Intent(context.getApplicationContext(), LoginActivity.class);
                         context.startActivity(intent);

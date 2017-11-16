@@ -1078,7 +1078,11 @@
         ]
     },
     {
+<<<<<<< Updated upstream
         "outputFile": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+=======
+        "outputFile": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
         "map": [
             {
                 "to": {
@@ -1090,7 +1094,11 @@
                     "endOffset": 187
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/2ad7d698630ac1dd09902585f8415717d22945d2/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/a37fb5a36771075e48776c6d04a44dea33dd3ce9/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -1111,7 +1119,11 @@
                     "endOffset": 606
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -1132,7 +1144,11 @@
                     "endOffset": 1031
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -1153,7 +1169,11 @@
                     "endOffset": 1459
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -1174,7 +1194,11 @@
                     "endOffset": 1885
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -1195,7 +1219,11 @@
                     "endOffset": 2312
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -1216,7 +1244,11 @@
                     "endOffset": 2737
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -1236,7 +1268,11 @@
                     "endOffset": 2826
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 38,
                         "startColumn": 4,
@@ -1256,7 +1292,11 @@
                     "endOffset": 3072
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 39,
                         "startColumn": 4,
@@ -1277,7 +1317,11 @@
                     "endOffset": 3321
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 43,
                         "startColumn": 4,
@@ -1297,7 +1341,11 @@
                     "endOffset": 3422
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 47,
                         "startColumn": 4,
@@ -1317,7 +1365,11 @@
                     "endOffset": 3674
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 48,
                         "startColumn": 4,
@@ -1338,7 +1390,11 @@
                     "endOffset": 3929
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 52,
                         "startColumn": 4,
@@ -1358,7 +1414,11 @@
                     "endOffset": 4032
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 56,
                         "startColumn": 4,
@@ -1378,7 +1438,11 @@
                     "endOffset": 4285
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 57,
                         "startColumn": 4,
@@ -1399,7 +1463,11 @@
                     "endOffset": 4693
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 61,
                         "startColumn": 4,
@@ -1420,7 +1488,11 @@
                     "endOffset": 5113
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 66,
                         "startColumn": 4,
@@ -1441,7 +1513,11 @@
                     "endOffset": 5535
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 71,
                         "startColumn": 4,
@@ -1462,7 +1538,11 @@
                     "endOffset": 5642
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 76,
                         "startColumn": 4,
@@ -1483,7 +1563,11 @@
                     "endOffset": 5771
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 78,
                         "startColumn": 4,
@@ -1503,7 +1587,11 @@
                     "endOffset": 5842
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 80,
                         "startColumn": 4,
@@ -1522,7 +1610,11 @@
                     "endOffset": 5925
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 81,
                         "startColumn": 4,
@@ -1542,7 +1634,11 @@
                     "endOffset": 9950
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 82,
                         "startColumn": 4,
@@ -1563,7 +1659,11 @@
                     "endOffset": 14118
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 136,
                         "startColumn": 4,
@@ -1583,7 +1683,11 @@
                     "endOffset": 14209
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-v11/values-v11.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-v11/values-v11.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 191,
                         "startColumn": 4,
@@ -1603,7 +1707,11 @@
                     "endOffset": 14335
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/c3c9ada7cc45dd0167d523b5ab0b26bb280a5730/output/res/values-v11/values.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16055316fa69d158c7222f1d5ed5ce57c253e51f/output/res/values-v11/values.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,

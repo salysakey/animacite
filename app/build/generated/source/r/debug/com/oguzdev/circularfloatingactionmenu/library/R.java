@@ -8,25 +8,25 @@ package com.oguzdev.circularfloatingactionmenu.library;
 
 public final class R {
     public static final class dimen {
-        public static final int action_button_content_margin = 0x7f09007f;
-        public static final int action_button_margin = 0x7f090080;
-        public static final int action_button_size = 0x7f090081;
-        public static final int action_menu_radius = 0x7f090082;
-        public static final int sub_action_button_content_margin = 0x7f090104;
-        public static final int sub_action_button_size = 0x7f090105;
+        public static final int action_button_content_margin = 0x7f07004a;
+        public static final int action_button_margin = 0x7f07004b;
+        public static final int action_button_size = 0x7f07004c;
+        public static final int action_menu_radius = 0x7f07004d;
+        public static final int sub_action_button_content_margin = 0x7f0700ff;
+        public static final int sub_action_button_size = 0x7f070100;
     }
     public static final class drawable {
-        public static final int button_action = 0x7f02005f;
-        public static final int button_action_dark = 0x7f020060;
-        public static final int button_action_dark_selector = 0x7f020061;
-        public static final int button_action_dark_touch = 0x7f020062;
-        public static final int button_action_selector = 0x7f020063;
-        public static final int button_action_touch = 0x7f020064;
-        public static final int button_sub_action = 0x7f020068;
-        public static final int button_sub_action_dark = 0x7f020069;
-        public static final int button_sub_action_dark_selector = 0x7f02006a;
-        public static final int button_sub_action_dark_touch = 0x7f02006b;
-        public static final int button_sub_action_selector = 0x7f02006c;
-        public static final int button_sub_action_touch = 0x7f02006d;
+        public static final int button_action = 0x7f080065;
+        public static final int button_action_dark = 0x7f080066;
+        public static final int button_action_dark_selector = 0x7f080067;
+        public static final int button_action_dark_touch = 0x7f080068;
+        public static final int button_action_selector = 0x7f080069;
+        public static final int button_action_touch = 0x7f08006a;
+        public static final int button_sub_action = 0x7f08006e;
+        public static final int button_sub_action_dark = 0x7f08006f;
+        public static final int button_sub_action_dark_selector = 0x7f080070;
+        public static final int button_sub_action_dark_touch = 0x7f080071;
+        public static final int button_sub_action_selector = 0x7f080072;
+        public static final int button_sub_action_touch = 0x7f080073;
     }
 }

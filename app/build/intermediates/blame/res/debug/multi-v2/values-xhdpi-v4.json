@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xhdpi-v4/values-xhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/values-xhdpi/dimens.xml",
+                    "from": {
+                        "startLines": "14,15,16,4,7,9,6,5,8,30,31,28,29,21,20,22,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "409,454,500,83,229,329,182,130,279,893,938,805,848,672,627,717,586",
+                        "endColumns": "44,45,53,46,49,48,46,51,49,44,43,42,44,44,44,44,40",
+                        "endOffsets": "449,495,549,125,274,373,224,177,324,933,977,843,888,712,667,757,622"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,100,146,200,247,297,346,393,445,495,540,584,627,672,717,762,807",
+                        "endColumns": "44,45,53,46,49,48,46,51,49,44,43,42,44,44,44,44,40",
+                        "endOffsets": "95,141,195,242,292,341,388,440,490,535,579,622,667,712,757,802,843"
+                    }
+                }
+            ]
+        }
+    ]
+}

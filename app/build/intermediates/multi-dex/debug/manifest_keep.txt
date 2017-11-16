@@ -1,0 +1,3 @@
+# Referenced at /Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:50
+-keep class org.anima.activities.Analytics { <init>(...); }
+

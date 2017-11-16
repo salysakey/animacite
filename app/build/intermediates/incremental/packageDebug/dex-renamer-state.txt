@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 #Thu Nov 09 16:27:26 ICT 2017
 base.0=/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.1=classes2.dex
@@ -5,3 +6,12 @@ renamed.0=classes.dex
 file.1=/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes2.dex
 base.1=/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 file.0=/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+=======
+#Thu Nov 16 13:54:41 ICT 2017
+base.0=/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_43c6b835619bf1e86f9730deeb48720a85fc76c2
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_553774a11e18d3107e2ecfe82adf4b5e5f38c91c/classes.dex
+base.1=/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_553774a11e18d3107e2ecfe82adf4b5e5f38c91c
+file.0=/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_43c6b835619bf1e86f9730deeb48720a85fc76c2/classes.dex
+>>>>>>> Stashed changes

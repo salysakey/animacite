@@ -689,7 +689,11 @@
         ]
     },
     {
+<<<<<<< Updated upstream
         "outputFile": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az-rAZ/values-az-rAZ.xml",
+=======
+        "outputFile": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
         "map": [
             {
                 "to": {
@@ -700,7 +704,11 @@
                     "endOffset": 158
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -719,7 +727,11 @@
                     "endOffset": 266
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -738,7 +750,11 @@
                     "endOffset": 389
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -757,7 +773,11 @@
                     "endOffset": 488
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -776,7 +796,11 @@
                     "endOffset": 600
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -795,7 +819,11 @@
                     "endOffset": 688
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -814,7 +842,11 @@
                     "endOffset": 795
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -833,7 +865,11 @@
                     "endOffset": 909
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -852,7 +888,11 @@
                     "endOffset": 990
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -871,7 +911,11 @@
                     "endOffset": 1069
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -890,7 +934,11 @@
                     "endOffset": 1154
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -909,7 +957,11 @@
                     "endOffset": 1261
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -928,7 +980,11 @@
                     "endOffset": 1368
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -947,7 +1003,11 @@
                     "endOffset": 1468
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -966,7 +1026,11 @@
                     "endOffset": 1577
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -985,7 +1049,11 @@
                     "endOffset": 1681
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -1004,7 +1072,11 @@
                     "endOffset": 1791
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -1023,7 +1095,11 @@
                     "endOffset": 1888
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -1042,7 +1118,11 @@
                     "endOffset": 1990
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -1061,7 +1141,11 @@
                     "endOffset": 2088
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -1080,7 +1164,11 @@
                     "endOffset": 2178
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -1099,7 +1187,11 @@
                     "endOffset": 2277
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -1118,7 +1210,11 @@
                     "endOffset": 2381
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -1137,7 +1233,11 @@
                     "endOffset": 2479
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -1156,7 +1256,11 @@
                     "endOffset": 2581
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -1175,7 +1279,11 @@
                     "endOffset": 2681
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -1194,7 +1302,11 @@
                     "endOffset": 2780
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -1213,7 +1325,11 @@
                     "endOffset": 2893
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -1232,7 +1348,11 @@
                     "endOffset": 3008
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -1251,7 +1371,11 @@
                     "endOffset": 3095
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -1270,7 +1394,11 @@
                     "endOffset": 3179
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -1289,7 +1417,11 @@
                     "endOffset": 3274
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -1308,7 +1440,11 @@
                     "endOffset": 3360
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -1327,7 +1463,11 @@
                     "endOffset": 3455
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -1346,7 +1486,11 @@
                     "endOffset": 3538
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -1365,7 +1509,11 @@
                     "endOffset": 3639
                 },
                 "from": {
+<<<<<<< Updated upstream
                     "file": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/values-az-rAZ/values-az-rAZ.xml",
+=======
+                    "file": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/values-az-rAZ/values-az-rAZ.xml",
+>>>>>>> Stashed changes
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,

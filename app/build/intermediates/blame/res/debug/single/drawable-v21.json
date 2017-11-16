@@ -1,7 +1,12 @@
 [
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
         "source": "/Users/djisse/.android/build-cache/bbac3e79351b86d293a762cf92ad91e6c3c2181d/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
@@ -52,6 +57,46 @@
         "source": "/Users/djisse/.android/build-cache/bbac3e79351b86d293a762cf92ad91e6c3c2181d/output/res/drawable-v21/avd_hide_password.xml"
     },
     {
+        "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
+        "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\ea73361dfd3c7287f7fe058e6560a505703f5833\\output\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
+        "source": "/Users/macbookpro/.android/build-cache/7729a4f0c6f5e93e42a6d6bf1d22537444145e91/output/res/drawable-v21/avd_show_password.xml"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/Users/macbookpro/.android/build-cache/7729a4f0c6f5e93e42a6d6bf1d22537444145e91/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
+        "source": "/Users/macbookpro/.android/build-cache/7729a4f0c6f5e93e42a6d6bf1d22537444145e91/output/res/drawable-v21/design_password_eye.xml"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
+        "source": "/Users/macbookpro/.android/build-cache/7729a4f0c6f5e93e42a6d6bf1d22537444145e91/output/res/drawable-v21/avd_hide_password.xml"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
+        "source": "/Users/macbookpro/.android/build-cache/7729a4f0c6f5e93e42a6d6bf1d22537444145e91/output/res/drawable-v21/design_password_eye.xml"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
+        "source": "/Users/macbookpro/.android/build-cache/7729a4f0c6f5e93e42a6d6bf1d22537444145e91/output/res/drawable-v21/avd_show_password.xml"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
+        "source": "/Users/macbookpro/.android/build-cache/7729a4f0c6f5e93e42a6d6bf1d22537444145e91/output/res/drawable-v21/avd_hide_password.xml"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\ea73361dfd3c7287f7fe058e6560a505703f5833\\output\\res\\drawable-v21\\design_password_eye.xml"
     },
@@ -64,22 +109,35 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\42d396e36503ad1af0874589d78b5cef3d3414ec\\output\\res\\drawable-v21\\notification_action_background.xml"
     },
     {
+<<<<<<< Updated upstream
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+>>>>>>> Stashed changes
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\ea73361dfd3c7287f7fe058e6560a505703f5833\\output\\res\\drawable-v21\\avd_show_password.xml"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
         "source": "/Users/djisse/.android/build-cache/bbac3e79351b86d293a762cf92ad91e6c3c2181d/output/res/drawable-v21/design_password_eye.xml"
     },
     {
+=======
+>>>>>>> Stashed changes
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
         "source": "/Users/macbookpro/.android/build-cache/7729a4f0c6f5e93e42a6d6bf1d22537444145e91/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-v21/abc_edit_text_material.xml"
     },
     {
+=======
+>>>>>>> Stashed changes
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\42d396e36503ad1af0874589d78b5cef3d3414ec\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
@@ -92,7 +150,12 @@
         "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-v21/notification_action_background.xml"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-v21/abc_btn_colored_material.xml"
+>>>>>>> Stashed changes
     }
 ]

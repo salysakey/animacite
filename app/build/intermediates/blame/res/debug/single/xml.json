@@ -4,8 +4,13 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/src/main/res/xml/app_tracker.xml"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/xml/global_tracker.xml",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/xml/global_tracker.xml"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/xml/global_tracker.xml",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/xml/global_tracker.xml"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\xml\\app_tracker.xml",
@@ -16,12 +21,21 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/src/main/res/xml/global_tracker.xml"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/xml/app_tracker.xml",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/xml/app_tracker.xml"
     },
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/xml/ecommerce_tracker.xml",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/xml/ecommerce_tracker.xml"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/xml/app_tracker.xml",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/xml/app_tracker.xml"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/xml/ecommerce_tracker.xml",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/xml/ecommerce_tracker.xml"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\xml\\ecommerce_tracker.xml",

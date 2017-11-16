@@ -1,7 +1,119 @@
+<<<<<<< Updated upstream
 -injars /Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
 -outjars /Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/multi-dex/debug/componentClasses.jar
 
 -libraryjars /Users/djisse/Documents/android-sdk-macosx/build-tools/25.0.0/lib/shrinkedAndroid.jar
+=======
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/libs/googlewrappersample-3.0.8.jar(**.class)
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/libs/openstreetmapviewer-3.0.8.jar(**.class)
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/libs/aXMLRPC_v1.4.0.jar(**.class)
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/libs/android-xmlrpc.jar(**.class)
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/libs/commons-codec-1.7.jar(**.class)
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/libs/osmdroid-android-3.0.8.jar(**.class)
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/libs/osmdroid-packager-3.0.8.jar(**.class)
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/libs/osmdroid-third-party-3.0.8.jar(**.class)
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/libs/slf4j-api-1.7.2.jar(**.class)
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/libs/android-async-http-1.4.4.jar(**.class)
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/libs/picasso-2.5.2.jar(**.class)
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/libs/universal-image-loader-1.9.4.jar(**.class)
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/libs/activation.jar(**.class)
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/libs/additionnal.jar(**.class)
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/libs/mail.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/library-2.4.1.aar/f228059a95cf37b35a0690b4ab0a4c42/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/31f4077b6262d2babd47e413f8d6609f/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/easypermissions-0.1.5.aar/8070935312c2df94d952338df413e150/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.28.0.aar/d2be51c3700366b9f420b528983841b9/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/facebook-login-4.28.0.aar/0d7a5588c571ad6fb03ab6807609da5f/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/facebook-share-4.28.0.aar/934022ef128af95bf5b4fa14156a4a86/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/facebook-common-4.28.0.aar/895e3cdb5114f17acb183eb2b944e5b2/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-10.2.0.aar/0e0535eefe9ff79cd5e64b40b01e0c75/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-10.2.0.aar/a0c0c96c7b98e57fad3ba5996a1475c2/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-cast-10.2.0.aar/837bd302c9f8cf6a473ab9449409da52/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-24.0.0.aar/13f8eed0e70d3386d7f06caede894af3/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-24.0.0.aar/13f8eed0e70d3386d7f06caede894af3/jars/libs/internal_impl-24.0.0.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/770be9c88b95576c8b0984ecb94674b2/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/library-1.0.5.aar/761761259b62ed3a8a9eabe7e66c1c2c/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-analytics-10.2.0.aar/c35db58f3b3fc949ddc850fd8c7f69b2/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/Custom-Calendar-View-v1.0.aar/6471b3462b13eaa86c159da2c207c70c/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/CircularFloatingActionMenu-1.0.2.aar/4ba92fec7dc7096e0c9a2c95823b23b1/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/firebase-storage-10.2.0.aar/658753a8b56dbd6e6e07c6e329c46fa2/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/firebase-messaging-10.2.0.aar/762dc2533597cf764dfbfd5572d96d7b/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/65ca6eec3c081a58adfe5302500a4dcd/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/afa443a05c00d04d7f91f88623e4db27/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/firebase-core-10.2.0.aar/4b8ef8fa217db4514fceb2fe507b7a85/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/58a5ecf2b6ec6b919a72770b8de55515/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-ads-10.2.0.aar/d8e0deebb011780534c80c5b3e8b80a5/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-10.2.0.aar/2d4e81b9942a6e77965f1c115c0fca9c/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-10.2.0.aar/579e01bf0347d0eb17445dae13eabf28/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-10.2.0.aar/f837e488be27ae865dc876ce7b82df61/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-10.2.0.aar/8c7dba65775020579477f179cd7c90b1/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-10.2.0.aar/15494d03ae5849c3bfccb3293df01e6f/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-10.2.0.aar/e3784747585f38eb15266e79ad818d56/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-10.2.0.aar/0cda45b92017efd3048e6a8afb4b0285/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-10.2.0.aar/d49125232d88ffbea8b20b4409135cb3/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/firebase-config-10.2.0.aar/3d72cf8b334d2927f164c507589ce332/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-awareness-10.2.0.aar/268eb7fc17690001db75bd0700f620ca/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-games-10.2.0.aar/9266f0f97918224153e5a56a631acc6a/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-drive-10.2.0.aar/460ec2b8d9f360917fdde59ed6826362/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/firebase-auth-10.2.0.aar/9465d71187d4decb9daee24301f313b7/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-fitness-10.2.0.aar/a416ad998e61b2c76a62c25e6bf43b79/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-gcm-10.2.0.aar/2b7e6fee3bdf026d14c1aa7739389b68/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-10.2.0.aar/f64b21b81897caca768d380af1b8eb1f/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-wallet-10.2.0.aar/90acaada1abcfadf4f5511f117f12a6d/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-identity-10.2.0.aar/9f5cd6c506f5cb10324e4a2b06bbb9fb/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-iid-10.2.0.aar/f9e799bd4b128177a95311bc29d26e31/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-10.2.0.aar/a5e4cf5d4b6edaabefed193c2422998d/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-location-10.2.0.aar/321438f8c95f566cb23befb25625ea2b/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-places-10.2.0.aar/368d26f573bf304c8f97214e89fa6634/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.2.0.aar/7bdd852564c72a51d2fa030b01754850/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-nearby-10.2.0.aar/b5f2c92ea2888222e5de07f063ae9bf7/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-panorama-10.2.0.aar/248fd7fb7f3732347ba74c6d4b244d4c/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-plus-10.2.0.aar/c9cde7bdacb8aa283697e80426520498/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-10.2.0.aar/6514a2d6cc7319cc50832bcadf307230/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-vision-10.2.0.aar/c27f773eedbe5376c0f73d7b6717b394/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-wearable-10.2.0.aar/6107c16be2238ebf9c368133306518fa/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.0.aar/f5348dab799f642a9f955fc85a6dab66/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/firebase-crash-10.2.0.aar/900165f0dc96481fad195560e62678ac/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/firebase-database-10.2.0.aar/af07d31b1d86d41dd51626ec75375f67/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-10.2.0.aar/47f95f1097303bf0e27800ffae481f68/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-10.2.0.aar/879fec99583f648873be03fbbdfbdd44/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/firebase-analytics-10.2.0.aar/d701c50ac27485a5ebc7b3ac80cd8fb2/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-10.2.0.aar/46f6c8eea965122eb19467e7f9f0603d/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/firebase-iid-10.2.0.aar/36d5d0b077403025af1a94dd09f37159/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-10.2.0.aar/325679a3ad2d96cd117f429ce3e269ac/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/firebase-common-10.2.0.aar/8971c451a284dc39e0ad08c81dd80c2b/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-gass-10.2.0.aar/2028d4a1f1b4160a43912b3444dd9902/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.2.0.aar/cf814fa720defe67d3593d967d7fc846/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.0.aar/1e2a6f9aa2b32417e691d21cbd3fb4d2/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/palette-v7-24.0.0.aar/8d28dbd224748cd682a7b901ac781ee6/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/1f140c180e1f827d04d8365a340d2471/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/42b979b656b11ffa5cca8e5d23c9a481/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/facebook-places-4.28.0.aar/a509d145ac3d24887bfaeb4707dd8e94/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.28.0.aar/fc00f85326f8248d908013fff1294bde/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.28.0.aar/cebba0a516fd393a082c61edf3c86440/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/facebook-core-4.28.0.aar/7023e44a37ae6fd0170789eaace206ac/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/b15094206cf694252da771d5a5e2a974/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/d41d2089ffee5c974a666b2eac313bae/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/0a7ab6cbd098b26eef178034b5bcb016/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/customtabs-25.3.1.aar/5a1a3eb0ece0d25ac7ac7007b189faf2/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/0b7edf510a8c8836a53b101a39c69acc/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/ed3207d4a7ef5f0de19fc85ab5b1a26d/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/a35d2cf9169d21483f29334ab7731125/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/9aac1f3c164caa3fd60afbe54024e42e/jars/classes.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/bd86c1c53a826fd578dc44a3a9393824/jars/classes.jar(**.class)
+-injars /Users/macbookpro/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar(**.class)
+-injars /Users/macbookpro/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.4.0/cc174c559b5177982887bf6e1b76003aebad9516/bolts-android-1.4.0.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.3.0/73c49077166faa4c3c0059c5f583d1d7bd1475fe/core-3.3.0.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar(**.class)
+-injars /Users/macbookpro/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar(**.class)
+-injars /Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/classes/debug(**.class)
+-outjars /Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/multi-dex/debug/componentClasses.jar
+
+-libraryjars /Users/macbookpro/Library/Android/sdk/build-tools/26.0.2/lib/shrinkedAndroid.jar
+>>>>>>> Stashed changes
 
 -forceprocessing
 -dontoptimize
@@ -10,8 +122,17 @@
 -dontpreverify
 -dontnote **
 -dontwarn **
+<<<<<<< Updated upstream
 -printconfiguration /Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/multi-dex/debug/components.flags
+=======
+-printconfiguration /Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/multi-dex/debug/components.flags
+>>>>>>> Stashed changes
 
+
+# Referenced at /Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:50
+-keep class org.anima.activities.Analytics {
+    <init>(...);
+}
 
 -keep public class * extends android.app.Instrumentation {
     <init>();
@@ -31,7 +152,7 @@
     <methods>;
 }
 
--keep class com.android.tools.fd.** {
+-keep class com.android.tools.ir.** {
     <fields>;
     <methods>;
 }

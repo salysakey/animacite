@@ -1,7 +1,12 @@
 [
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-v23/abc_control_background_material.xml"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-v23/abc_control_background_material.xml"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",

@@ -1,9 +1,12 @@
 [
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
+=======
+>>>>>>> Stashed changes
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\42d396e36503ad1af0874589d78b5cef3d3414ec\\output\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
@@ -14,6 +17,7 @@
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\42d396e36503ad1af0874589d78b5cef3d3414ec\\output\\res\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+<<<<<<< Updated upstream
     },
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_pause_white_24.png",
@@ -22,10 +26,20 @@
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png"
+=======
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_forward_30_white_24.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_forward_30_white_24.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_refresh_white_24.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_refresh_white_24.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png",
@@ -40,6 +54,10 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6691cbe59b6663edf0a6164ee54b15425d0bbf6e\\output\\res\\drawable-xxxhdpi-v4\\ic_collapse_00002.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00015.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00015.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png"
     },
@@ -52,12 +70,21 @@
         "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_bigtop_updates_white_24.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_bigtop_updates_white_24.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_skip_previous_white_24.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_skip_previous_white_24.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00002.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_collapse_00002.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00009.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00009.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_play_arrow_white_24.png",
@@ -76,22 +103,44 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6691cbe59b6663edf0a6164ee54b15425d0bbf6e\\output\\res\\drawable-xxxhdpi-v4\\ic_expand_00005.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_stop_white_24.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_stop_white_24.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00006.png",
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00006.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00013.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_expand_00013.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_pause_circle_filled_white_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_pause_circle_filled_white_36.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/cast_abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/cast_abc_scrubber_control_to_pressed_mtrl_005.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_play_circle_filled_grey600_36.png",
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_play_circle_filled_grey600_36.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_skip_previous_grey600_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_skip_previous_grey600_36.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00013.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00013.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_collapse_00000.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6691cbe59b6663edf0a6164ee54b15425d0bbf6e\\output\\res\\drawable-xxxhdpi-v4\\ic_collapse_00000.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
     },
@@ -102,6 +151,18 @@
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_volume_off_white_36.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_volume_off_white_36.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00007.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00007.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_replay_30_white_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_replay_30_white_36.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00012.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00012.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_skip_previous_white_24.png",
@@ -124,8 +185,13 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\42d396e36503ad1af0874589d78b5cef3d3414ec\\output\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00001.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_expand_00001.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_stop_grey600_36.png",
@@ -140,6 +206,7 @@
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00007.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/button_action_dark.png",
         "source": "/Users/djisse/.android/build-cache/f9a1eb1d6937178c6dc51c159bf85d0e9a7877e3/output/res/drawable-xxxhdpi-v4/button_action_dark.png"
     },
@@ -150,6 +217,10 @@
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png",
@@ -168,6 +239,10 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_volume_off_white_36.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_cast_white.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_cast_white.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_replay_white_24.png",
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_replay_white_24.png"
     },
@@ -176,10 +251,13 @@
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00008.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/powered_by_google_light.png",
         "source": "/Users/djisse/.android/build-cache/3ef4c6dc1177eca7c423b4ca6541e8c110e2bfe4/output/res/drawable-xxxhdpi-v4/powered_by_google_light.png"
     },
     {
+=======
+>>>>>>> Stashed changes
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_expand_00007.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6691cbe59b6663edf0a6164ee54b15425d0bbf6e\\output\\res\\drawable-xxxhdpi-v4\\ic_expand_00007.png"
     },
@@ -188,16 +266,24 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\42d396e36503ad1af0874589d78b5cef3d3414ec\\output\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00000.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_collapse_00000.png"
     },
     {
+=======
+>>>>>>> Stashed changes
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_cast_white.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6691cbe59b6663edf0a6164ee54b15425d0bbf6e\\output\\res\\drawable-xxxhdpi-v4\\ic_cast_white.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_forward_30_white_24.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_forward_30_white_24.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_collapse_00014.png",
@@ -212,20 +298,37 @@
         "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_cast_grey.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_cast_grey.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\powered_by_google_dark.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6728e03bd897b5f662998ddee80cf25f48e6f197\\output\\res\\drawable-xxxhdpi-v4\\powered_by_google_dark.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00014.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00014.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_play_arrow_grey600_36.png",
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_play_arrow_grey600_36.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png",
         "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_cast_connected_white_24.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_cast_connected_white_24.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_close_light.png",
@@ -240,8 +343,13 @@
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_stop_grey600_48.png",
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_stop_grey600_48.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_keyboard_arrow_down_white_36.png",
@@ -260,6 +368,10 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6691cbe59b6663edf0a6164ee54b15425d0bbf6e\\output\\res\\drawable-xxxhdpi-v4\\ic_collapse_00004.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_volume_up_white_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_volume_up_white_36.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/design_ic_visibility.png",
         "source": "/Users/macbookpro/.android/build-cache/7729a4f0c6f5e93e42a6d6bf1d22537444145e91/output/res/drawable-xxxhdpi-v4/design_ic_visibility.png"
     },
@@ -268,16 +380,29 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_cast_connected_white_24.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/button_sub_action.png",
+        "source": "/Users/macbookpro/.android/build-cache/5f4f2f783a2c2c55239cbeed9df70179c1711811/output/res/drawable-xxxhdpi-v4/button_sub_action.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00011.png",
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00011.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00008.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_expand_00008.png"
     },
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00003.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00003.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_replay_white_24.png",
@@ -292,12 +417,21 @@
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00005.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_forward_30_grey600_36.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_forward_30_grey600_36.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_closed_caption_grey600_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_closed_caption_grey600_36.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_cast_white.png",
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_cast_white.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_pause_light.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_pause_light.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
@@ -320,12 +454,17 @@
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_replay_30_white_36.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\42d396e36503ad1af0874589d78b5cef3d3414ec\\output\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00004.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_collapse_00004.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/button_action.png",
+        "source": "/Users/macbookpro/.android/build-cache/5f4f2f783a2c2c55239cbeed9df70179c1711811/output/res/drawable-xxxhdpi-v4/button_action.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/cast_abc_scrubber_control_to_pressed_mtrl_000.png",
@@ -360,6 +499,10 @@
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_play_arrow_grey600_48.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00002.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00002.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_skip_next_white_36.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_skip_next_white_36.png"
     },
@@ -368,6 +511,7 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_volume_up_grey600_36.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00011.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_expand_00011.png"
     },
@@ -378,10 +522,30 @@
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/button_sub_action_dark_touch.png",
         "source": "/Users/djisse/.android/build-cache/f9a1eb1d6937178c6dc51c159bf85d0e9a7877e3/output/res/drawable-xxxhdpi-v4/button_sub_action_dark_touch.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_replay_30_white_24.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_replay_30_white_24.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_black_36dp.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_play_light.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_play_light.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_closed_caption_grey600_36.png",
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_closed_caption_grey600_36.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/places_ic_search.png",
+        "source": "/Users/macbookpro/.android/build-cache/a529ec60df86431496b5deaddf399f07b3e538b9/output/res/drawable-xxxhdpi-v4/places_ic_search.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00005.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00005.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_skip_next_grey600_36.png",
@@ -400,6 +564,7 @@
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/cast_abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00011.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_collapse_00011.png"
     },
@@ -418,18 +583,31 @@
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00009.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_collapse_00009.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_black_16dp.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_forward_30_white_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_forward_30_white_36.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00014.png",
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00014.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_collapse_00007.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6691cbe59b6663edf0a6164ee54b15425d0bbf6e\\output\\res\\drawable-xxxhdpi-v4\\ic_collapse_00007.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_expand_00013.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6691cbe59b6663edf0a6164ee54b15425d0bbf6e\\output\\res\\drawable-xxxhdpi-v4\\ic_expand_00013.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/places_ic_clear.png",
+        "source": "/Users/macbookpro/.android/build-cache/a529ec60df86431496b5deaddf399f07b3e538b9/output/res/drawable-xxxhdpi-v4/places_ic_clear.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
@@ -438,6 +616,10 @@
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_volume_off_grey600_36.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_volume_off_grey600_36.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_expand_00013.png",
+        "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6691cbe59b6663edf0a6164ee54b15425d0bbf6e\\output\\res\\drawable-xxxhdpi-v4\\ic_expand_00013.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00000.png",
@@ -454,6 +636,17 @@
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/design_ic_visibility_off.png",
         "source": "/Users/macbookpro/.android/build-cache/7729a4f0c6f5e93e42a6d6bf1d22537444145e91/output/res/drawable-xxxhdpi-v4/design_ic_visibility_off.png"
+<<<<<<< Updated upstream
+=======
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
@@ -484,6 +677,10 @@
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_skip_next_white_36.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_pause_grey600_48.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_pause_grey600_48.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_volume_up_white_36.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_volume_up_white_36.png"
     },
@@ -508,8 +705,13 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_refresh_white_24.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_light.png",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/button_action_dark_touch.png",
+        "source": "/Users/macbookpro/.android/build-cache/5f4f2f783a2c2c55239cbeed9df70179c1711811/output/res/drawable-xxxhdpi-v4/button_action_dark_touch.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_collapse_00009.png",
@@ -528,14 +730,20 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\42d396e36503ad1af0874589d78b5cef3d3414ec\\output\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/places_ic_clear.png",
         "source": "/Users/djisse/.android/build-cache/3ef4c6dc1177eca7c423b4ca6541e8c110e2bfe4/output/res/drawable-xxxhdpi-v4/places_ic_clear.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00015.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00015.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_volume_off_grey600_36.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_volume_off_grey600_36.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_skip_previous_white_24.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_skip_previous_white_24.png"
     },
@@ -550,6 +758,18 @@
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00007.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_expand_00007.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00005.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00005.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00001.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00001.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_light.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_light.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_replay_30_white_36.png",
@@ -560,8 +780,20 @@
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00001.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_skip_next_grey600_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_skip_next_grey600_36.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_forward_10_white_24.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_forward_10_white_24.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00015.png",
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00015.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/cast_abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/cast_abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
@@ -596,6 +828,7 @@
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_replay_10_white_24.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_stop_white_24.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_stop_white_24.png"
     },
@@ -606,14 +839,31 @@
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_volume_up_grey600_36.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_volume_up_grey600_36.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_stop_grey600_48.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_stop_grey600_48.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00006.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00006.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_forward_30_grey600_36.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_forward_30_grey600_36.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_bigtop_updates_white_24.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_bigtop_updates_white_24.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/design_ic_visibility_off.png",
+        "source": "/Users/macbookpro/.android/build-cache/7729a4f0c6f5e93e42a6d6bf1d22537444145e91/output/res/drawable-xxxhdpi-v4/design_ic_visibility_off.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_collapse_00012.png",
@@ -622,6 +872,14 @@
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\button_action_dark_touch.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\ab5ca6fb61f23ebd2a6b272ce8ad8ee18fe52408\\output\\res\\drawable-xxxhdpi-v4\\button_action_dark_touch.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/button_action_dark.png",
+        "source": "/Users/macbookpro/.android/build-cache/5f4f2f783a2c2c55239cbeed9df70179c1711811/output/res/drawable-xxxhdpi-v4/button_action_dark.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00000.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00000.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
@@ -634,6 +892,10 @@
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/button_action.png",
         "source": "/Users/macbookpro/.android/build-cache/5f4f2f783a2c2c55239cbeed9df70179c1711811/output/res/drawable-xxxhdpi-v4/button_action.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_dark.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_black_48dp.png",
@@ -660,8 +922,13 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6691cbe59b6663edf0a6164ee54b15425d0bbf6e\\output\\res\\drawable-xxxhdpi-v4\\ic_expand_00009.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/cast_ic_stop_circle_filled_grey600.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/cast_ic_stop_circle_filled_grey600.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_volume_up_white_36.png",
@@ -736,12 +1003,21 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\ab5ca6fb61f23ebd2a6b272ce8ad8ee18fe52408\\output\\res\\drawable-xxxhdpi-v4\\button_sub_action.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/button_sub_action.png",
         "source": "/Users/djisse/.android/build-cache/f9a1eb1d6937178c6dc51c159bf85d0e9a7877e3/output/res/drawable-xxxhdpi-v4/button_sub_action.png"
     },
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_closed_caption_grey600_36.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_closed_caption_grey600_36.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00004.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00004.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_close_light.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_close_light.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_skip_previous_white_36.png",
@@ -752,8 +1028,13 @@
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_forward_30_white_36.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00000.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_expand_00000.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00010.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00010.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_play_circle_filled_white_36.png",
@@ -764,6 +1045,10 @@
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_pause_grey600_36.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_keyboard_arrow_down_white_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_keyboard_arrow_down_white_36.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_pause_grey600_48.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_pause_grey600_48.png"
     },
@@ -772,16 +1057,32 @@
         "source": "/Users/macbookpro/.android/build-cache/5f4f2f783a2c2c55239cbeed9df70179c1711811/output/res/drawable-xxxhdpi-v4/button_sub_action_touch.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/button_sub_action_dark.png",
+        "source": "/Users/macbookpro/.android/build-cache/5f4f2f783a2c2c55239cbeed9df70179c1711811/output/res/drawable-xxxhdpi-v4/button_sub_action_dark.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00006.png",
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00006.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00011.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00011.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_play_arrow_grey600_36.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_play_arrow_grey600_36.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00000.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00000.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\42d396e36503ad1af0874589d78b5cef3d3414ec\\output\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_skip_previous_white_24.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_skip_previous_white_24.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_art_track_grey600_48.png",
@@ -792,12 +1093,25 @@
         "source": "/Users/macbookpro/.android/build-cache/5f4f2f783a2c2c55239cbeed9df70179c1711811/output/res/drawable-xxxhdpi-v4/button_action_touch.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_pause_grey600_36.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_pause_grey600_36.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/design_ic_visibility.png",
+        "source": "/Users/macbookpro/.android/build-cache/7729a4f0c6f5e93e42a6d6bf1d22537444145e91/output/res/drawable-xxxhdpi-v4/design_ic_visibility.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_play_arrow_grey600_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_play_arrow_grey600_36.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_light.png",
@@ -812,12 +1126,17 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_pause_white_24.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_light.png",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_light.png"
     },
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_replay_white_24.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_replay_white_24.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_collapse_00015.png",
@@ -826,6 +1145,10 @@
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_stop_white_24.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_stop_white_24.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00014.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00014.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_pause_circle_filled_grey600_36.png",
@@ -844,6 +1167,7 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6691cbe59b6663edf0a6164ee54b15425d0bbf6e\\output\\res\\drawable-xxxhdpi-v4\\ic_collapse_00003.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/places_ic_search.png",
         "source": "/Users/djisse/.android/build-cache/3ef4c6dc1177eca7c423b4ca6541e8c110e2bfe4/output/res/drawable-xxxhdpi-v4/places_ic_search.png"
     },
@@ -854,26 +1178,56 @@
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_volume_off_white_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_volume_off_white_36.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_play_arrow_grey600_48.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_play_arrow_grey600_48.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00002.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00002.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00010.png",
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00010.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/powered_by_google_dark.png",
+        "source": "/Users/macbookpro/.android/build-cache/a529ec60df86431496b5deaddf399f07b3e538b9/output/res/drawable-xxxhdpi-v4/powered_by_google_dark.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_forward_30_white_24.png",
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_forward_30_white_24.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_cast_white_36.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_cast_white_36.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/cast_ic_stop_circle_filled_white.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/cast_ic_stop_circle_filled_white.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/button_sub_action_dark_touch.png",
+        "source": "/Users/macbookpro/.android/build-cache/5f4f2f783a2c2c55239cbeed9df70179c1711811/output/res/drawable-xxxhdpi-v4/button_sub_action_dark_touch.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00005.png",
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00005.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/button_sub_action_touch.png",
         "source": "/Users/djisse/.android/build-cache/f9a1eb1d6937178c6dc51c159bf85d0e9a7877e3/output/res/drawable-xxxhdpi-v4/button_sub_action_touch.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_skip_previous_white_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_skip_previous_white_36.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\powered_by_google_light.png",
@@ -896,14 +1250,20 @@
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00004.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/powered_by_google_light.png",
+        "source": "/Users/macbookpro/.android/build-cache/a529ec60df86431496b5deaddf399f07b3e538b9/output/res/drawable-xxxhdpi-v4/powered_by_google_light.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_collapse_00013.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6691cbe59b6663edf0a6164ee54b15425d0bbf6e\\output\\res\\drawable-xxxhdpi-v4\\ic_collapse_00013.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_close_light.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_close_light.png"
     },
@@ -922,6 +1282,22 @@
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_art_track_grey600_48.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_art_track_grey600_48.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_skip_next_white_24.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_skip_next_white_24.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00009.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00009.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_pause_grey600_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_pause_grey600_36.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\button_action_dark.png",
@@ -938,6 +1314,10 @@
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_light.png",
         "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_replay_10_white_24.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_replay_10_white_24.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png",
@@ -984,8 +1364,13 @@
         "source": "/Users/macbookpro/.android/build-cache/a529ec60df86431496b5deaddf399f07b3e538b9/output/res/drawable-xxxhdpi-v4/places_ic_clear.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00013.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_collapse_00013.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_art_track_grey600_48.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_art_track_grey600_48.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png",
@@ -1056,6 +1441,10 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6691cbe59b6663edf0a6164ee54b15425d0bbf6e\\output\\res\\drawable-xxxhdpi-v4\\ic_expand_00011.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_stop_white_24.png",
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_stop_white_24.png"
     },
@@ -1092,12 +1481,28 @@
         "source": "/Users/macbookpro/.android/build-cache/5f4f2f783a2c2c55239cbeed9df70179c1711811/output/res/drawable-xxxhdpi-v4/button_action_dark.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/cast_ic_stop_circle_filled_grey600.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/cast_ic_stop_circle_filled_grey600.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_skip_next_white_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_skip_next_white_36.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\cast_ic_stop_circle_filled_white.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\cast_ic_stop_circle_filled_white.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\42d396e36503ad1af0874589d78b5cef3d3414ec\\output\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_replay_30_grey600_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_replay_30_grey600_36.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_pause_grey600_36.png",
@@ -1112,12 +1517,21 @@
         "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_skip_previous_white_36.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_skip_previous_white_36.png"
     },
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_closed_caption_white_36.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_closed_caption_white_36.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00012.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00012.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00008.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00008.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\button_action_touch.png",
@@ -1144,20 +1558,41 @@
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_pause_circle_filled_white_36.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\42d396e36503ad1af0874589d78b5cef3d3414ec\\output\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_collapse_00010.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6691cbe59b6663edf0a6164ee54b15425d0bbf6e\\output\\res\\drawable-xxxhdpi-v4\\ic_collapse_00010.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_stop_grey600_36.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_stop_grey600_36.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_pause_circle_filled_grey600_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_pause_circle_filled_grey600_36.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00014.png",
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00014.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_forward_30_grey600_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_forward_30_grey600_36.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00003.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00003.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
@@ -1168,8 +1603,16 @@
         "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_closed_caption_white_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_closed_caption_white_36.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/places_ic_search.png",
         "source": "/Users/macbookpro/.android/build-cache/a529ec60df86431496b5deaddf399f07b3e538b9/output/res/drawable-xxxhdpi-v4/places_ic_search.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00006.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00006.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_cast_grey.png",
@@ -1180,12 +1623,29 @@
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_closed_caption_white_36.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00004.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00004.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_volume_off_white_36.png",
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_volume_off_white_36.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_play_arrow_grey600_48.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_play_arrow_grey600_48.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00008.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00008.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_play_arrow_white_24.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_play_arrow_white_24.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_play_circle_filled_white_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_play_circle_filled_white_36.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_closed_caption_white_36.png",
@@ -1196,16 +1656,34 @@
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_play_light.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_play_circle_filled_grey600_36.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_play_circle_filled_grey600_36.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00010.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00010.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00013.png",
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00013.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/button_sub_action_dark.png",
         "source": "/Users/djisse/.android/build-cache/f9a1eb1d6937178c6dc51c159bf85d0e9a7877e3/output/res/drawable-xxxhdpi-v4/button_sub_action_dark.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_play_circle_filled_grey600_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_play_circle_filled_grey600_36.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_clear_white_24.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_clear_white_24.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_expand_00015.png",
@@ -1232,12 +1710,21 @@
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00002.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00006.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_collapse_00006.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_forward_10_white_24.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_forward_10_white_24.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_stop_grey600_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_stop_grey600_36.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png",
@@ -1264,6 +1751,10 @@
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00012.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_volume_off_grey600_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_volume_off_grey600_36.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\42d396e36503ad1af0874589d78b5cef3d3414ec\\output\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
@@ -1272,12 +1763,24 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\6691cbe59b6663edf0a6164ee54b15425d0bbf6e\\output\\res\\drawable-xxxhdpi-v4\\ic_expand_00010.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/button_sub_action_touch.png",
+        "source": "/Users/macbookpro/.android/build-cache/5f4f2f783a2c2c55239cbeed9df70179c1711811/output/res/drawable-xxxhdpi-v4/button_sub_action_touch.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\button_sub_action_dark_touch.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\ab5ca6fb61f23ebd2a6b272ce8ad8ee18fe52408\\output\\res\\drawable-xxxhdpi-v4\\button_sub_action_dark_touch.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_pause_white_24.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_pause_white_24.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_skip_next_white_24.png",
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_skip_next_white_24.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_light.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\button_sub_action_touch.png",
@@ -1312,6 +1815,10 @@
         "source": "/Users/macbookpro/.android/build-cache/5f4f2f783a2c2c55239cbeed9df70179c1711811/output/res/drawable-xxxhdpi-v4/button_sub_action.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_cast_white_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_cast_white_36.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_pause_circle_filled_white_36.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_pause_circle_filled_white_36.png"
     },
@@ -1324,8 +1831,17 @@
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00009.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00005.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_collapse_00005.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00011.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00011.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
@@ -1340,8 +1856,13 @@
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00003.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_skip_next_white_24.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_skip_next_white_24.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_forward_30_white_24.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_forward_30_white_24.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\quantum_ic_play_arrow_grey600_48.png",
@@ -1360,8 +1881,13 @@
         "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00009.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
         "source": "/Users/djisse/.android/build-cache/8470fbc7510a8e2b92a716355fe78f8f25270314/output/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/button_action_touch.png",
+        "source": "/Users/macbookpro/.android/build-cache/5f4f2f783a2c2c55239cbeed9df70179c1711811/output/res/drawable-xxxhdpi-v4/button_action_touch.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_skip_next_grey600_36.png",
@@ -1412,12 +1938,17 @@
         "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_skip_previous_grey600_36.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_skip_previous_grey600_36.png"
     },
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00015.png",
         "source": "/Users/djisse/.android/build-cache/10f45a01fe3aff19aa75f0c3c7075a07be46b8c6/output/res/drawable-xxxhdpi-v4/ic_collapse_00015.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_play_arrow_white_24.png",
@@ -1456,11 +1987,32 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\.android\\build-cache\\bd7378ebedd767734617172147953f4f2a238a59\\output\\res\\drawable-xxxhdpi-v4\\quantum_ic_forward_30_white_36.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00001.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00001.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_collapse_00007.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_collapse_00007.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_pause_white_24.png",
         "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_pause_white_24.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_play_arrow_white_24.png",
         "source": "/Users/djisse/.android/build-cache/69a7a70982a16b420de3c0fe83cf18dbdb7394e4/output/res/drawable-xxxhdpi-v4/quantum_ic_play_arrow_white_24.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "/Users/macbookpro/.android/build-cache/abebbab995f5b5bcf9fc8183342b7719593f72fd/output/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/quantum_ic_volume_up_grey600_36.png",
+        "source": "/Users/macbookpro/.android/build-cache/da262444b13f8d64f89ffb7ca4abadc061066c5b/output/res/drawable-xxxhdpi-v4/quantum_ic_volume_up_grey600_36.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_expand_00013.png",
+        "source": "/Users/macbookpro/.android/build-cache/16d6957475f828c88d113cc7e94c04577109f003/output/res/drawable-xxxhdpi-v4/ic_expand_00013.png"
+>>>>>>> Stashed changes
     }
 ]

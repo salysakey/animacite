@@ -18,6 +18,7 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -38,6 +39,7 @@ import org.anima.utils.PrefManager;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import static android.view.View.VISIBLE;
 
 
 /**
@@ -196,6 +198,14 @@ public class EmptyActivity extends AppCompatActivity {
 
 
         if(tipe==1) {
+            Button gotoQuestion =(Button) findViewById(R.id.btn_goto_question);
+            gotoQuestion.setVisibility(VISIBLE);
+            gotoQuestion.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    decision();
+                }
+            });
             z = (ImageButton) findViewById(R.id.follow_consultation);
             alreadyfollow =(ImageButton) findViewById(R.id.delete_follow_consultation);
             if (PrefManager.getRatingStatus(getApplicationContext())!=0) {
@@ -207,13 +217,13 @@ public class EmptyActivity extends AppCompatActivity {
                 z.setVisibility(View.GONE);
             }
             if(date<=0){
-                show_result_button.setVisibility(View.VISIBLE);
+                show_result_button.setVisibility(VISIBLE);
             }
             else {
-                x.setVisibility(View.VISIBLE);
+                x.setVisibility(VISIBLE);
             }
             TextView txtTitre = (TextView) findViewById(R.id.titre_consultation);
-            txtTitre.setVisibility(View.VISIBLE);
+            txtTitre.setVisibility(VISIBLE);
             if (!TextUtils.isEmpty("Titre : " + description)) {
                 txtTitre.setText(description);
             }
@@ -230,12 +240,12 @@ public class EmptyActivity extends AppCompatActivity {
                 invokeWSVeri2(params);
 
             }else{
-                unlike.setVisibility(View.VISIBLE);
+                unlike.setVisibility(VISIBLE);
             }
 
 
             TextView txtTitre = (TextView) findViewById(R.id.titre_info);
-            txtTitre.setVisibility(View.VISIBLE);
+            txtTitre.setVisibility(VISIBLE);
             if (!TextUtils.isEmpty("Titre : " + description)) {
                 txtTitre.setText(description);
             }
@@ -265,7 +275,7 @@ public class EmptyActivity extends AppCompatActivity {
 
 
             TextView txtTitre = (TextView) findViewById(R.id.titre_info);
-            txtTitre.setVisibility(View.VISIBLE);
+            txtTitre.setVisibility(VISIBLE);
             if (!TextUtils.isEmpty("Titre : " + description)) {
                 txtTitre.setText(description);
             }
@@ -277,7 +287,7 @@ public class EmptyActivity extends AppCompatActivity {
         // avatar.setImageResource(pictureUrl);
         if(pictureUrl.length()!=4){
             Picasso.with(this).load(pictureUrl).into(avatar);
-            avatar.setVisibility(View.VISIBLE);
+            avatar.setVisibility(VISIBLE);
         }
 
         // Verifier si description est null or vide
@@ -644,7 +654,7 @@ public class EmptyActivity extends AppCompatActivity {
 
                         //On désactive le bouton
                         z.setVisibility(View.GONE);
-                        alreadyfollow.setVisibility(View.VISIBLE);
+                        alreadyfollow.setVisibility(VISIBLE);
                     }
                     // Else display error message
                     else {
@@ -797,7 +807,7 @@ public class EmptyActivity extends AppCompatActivity {
 
                         //On désactive le bouton
                         z.setVisibility(View.GONE);
-                        alreadyfollow.setVisibility(View.VISIBLE);
+                        alreadyfollow.setVisibility(VISIBLE);
                     }
                     // Else display error message
                     else {
@@ -892,7 +902,7 @@ public class EmptyActivity extends AppCompatActivity {
 
 
                         //On désactive le bouton
-                        z.setVisibility(View.VISIBLE);
+                        z.setVisibility(VISIBLE);
                         alreadyfollow.setVisibility(View.GONE);
 
                     }
@@ -970,7 +980,7 @@ public class EmptyActivity extends AppCompatActivity {
 
 
                         //On désactive le bouton
-                        z.setVisibility(View.VISIBLE);
+                        z.setVisibility(VISIBLE);
                         alreadyfollow.setVisibility(View.GONE);
 
                     }
@@ -1098,12 +1108,12 @@ public class EmptyActivity extends AppCompatActivity {
 
                         //Toast.makeText(getApplicationContext(), "Merci ! Vous suivez ce projet!", Toast.LENGTH_LONG).show();
                         //On désactive le bouton
-                        like.setVisibility(View.VISIBLE);
+                        like.setVisibility(VISIBLE);
                         unlike.setVisibility(View.GONE);
                     }
                     // Else display error message
                     else {
-                        unlike.setVisibility(View.VISIBLE);
+                        unlike.setVisibility(VISIBLE);
                         like.setVisibility(View.GONE);
 
                         //Toast.makeText(getApplicationContext(), obj.getString("error_msg"), Toast.LENGTH_LONG).show();
@@ -1157,11 +1167,11 @@ public class EmptyActivity extends AppCompatActivity {
 
                         //Toast.makeText(getApplicationContext(), "Merci ! Vous suivez ce projet!", Toast.LENGTH_LONG).show();
                         //On désactive le bouton
-                        unlike.setVisibility(View.VISIBLE);
+                        unlike.setVisibility(VISIBLE);
                     }
                     // Else display error message
                     else {
-                        like.setVisibility(View.VISIBLE);
+                        like.setVisibility(VISIBLE);
                         //Toast.makeText(getApplicationContext(), obj.getString("error_msg"), Toast.LENGTH_LONG).show();
                     }
                 } catch (JSONException e) {
@@ -1210,7 +1220,7 @@ public class EmptyActivity extends AppCompatActivity {
                     JSONObject obj = new JSONObject(response);
                     // When the JSON response has status boolean value assigned with true
                     if (obj.getBoolean("status")) {
-                        z.setVisibility(View.VISIBLE);
+                        z.setVisibility(VISIBLE);
                         alreadyfollow.setVisibility(View.GONE);
 
                         //Toast.makeText(getApplicationContext(), "Merci ! Vous suivez ce projet!", Toast.LENGTH_LONG).show();
@@ -1219,7 +1229,7 @@ public class EmptyActivity extends AppCompatActivity {
                     // Else display error message
                     else {
                         z.setVisibility(View.GONE);
-                        alreadyfollow.setVisibility(View.VISIBLE);
+                        alreadyfollow.setVisibility(VISIBLE);
                         //Toast.makeText(getApplicationContext(), obj.getString("error_msg"), Toast.LENGTH_LONG).show();
                     }
                 } catch (JSONException e) {
@@ -1268,7 +1278,7 @@ public class EmptyActivity extends AppCompatActivity {
                     JSONObject obj = new JSONObject(response);
                     // When the JSON response has status boolean value assigned with true
                     if (obj.getBoolean("status")) {
-                        z.setVisibility(View.VISIBLE);
+                        z.setVisibility(VISIBLE);
                         alreadyfollow.setVisibility(View.GONE);
 
                         //Toast.makeText(getApplicationContext(), "Merci ! Vous suivez ce projet!", Toast.LENGTH_LONG).show();
@@ -1277,7 +1287,7 @@ public class EmptyActivity extends AppCompatActivity {
                     // Else display error message
                     else {
                         z.setVisibility(View.GONE);
-                        alreadyfollow.setVisibility(View.VISIBLE);
+                        alreadyfollow.setVisibility(VISIBLE);
                         //Toast.makeText(getApplicationContext(), obj.getString("error_msg"), Toast.LENGTH_LONG).show();
                     }
                 } catch (JSONException e) {

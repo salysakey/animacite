@@ -1,5 +1,17 @@
 [
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/home48.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/home48.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/birth.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/birth.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/work.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/work.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-sw600dp\\like48.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\src\\main\\res\\drawable-sw600dp\\like48.png"
     },
@@ -40,12 +52,25 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\src\\main\\res\\drawable-sw600dp\\ic_comment.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/addlist48.png",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/drawable-sw600dp/addlist48.png"
     },
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_show_stat.png",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/drawable-sw600dp/ic_show_stat.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_plus_white.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/ic_plus_white.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/logo48.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/logo48.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/photo_profil_homme_noir.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/photo_profil_homme_noir.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_delete.png",
@@ -56,10 +81,13 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\src\\main\\res\\drawable-sw600dp\\logo48.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_thumbs_up_full.png",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/drawable-sw600dp/ic_thumbs_up_full.png"
     },
     {
+=======
+>>>>>>> Stashed changes
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_alerte.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/src/main/res/drawable-sw600dp/ic_alerte.png"
     },
@@ -76,6 +104,7 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/src/main/res/drawable-sw600dp/home48.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/birth.png",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/drawable-sw600dp/birth.png"
     },
@@ -88,6 +117,8 @@
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/drawable-sw600dp/home48.png"
     },
     {
+=======
+>>>>>>> Stashed changes
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_comment.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/src/main/res/drawable-sw600dp/ic_comment.png"
     },
@@ -102,6 +133,18 @@
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-sw600dp\\birth.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\src\\main\\res\\drawable-sw600dp\\birth.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_alerte.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/ic_alerte.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_thumbs_up_full.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/ic_thumbs_up_full.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/addlist48.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/addlist48.png"
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_show_stat.png",
@@ -124,6 +167,10 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/src/main/res/drawable-sw600dp/photo_profil_femme_noir.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/launch_screen.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/launch_screen.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-sw600dp\\ic_plus_white.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\src\\main\\res\\drawable-sw600dp\\ic_plus_white.png"
     },
@@ -140,16 +187,29 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\src\\main\\res\\drawable-sw600dp\\ic_thumbs_up_empty.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/check48.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/check48.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/like48.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/like48.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-sw600dp\\ic_launcher.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\src\\main\\res\\drawable-sw600dp\\ic_launcher.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/photo_profil_homme_noir.png",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/drawable-sw600dp/photo_profil_homme_noir.png"
     },
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_delete_follow.png",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/drawable-sw600dp/ic_delete_follow.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_thumbs_up_empty.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/ic_thumbs_up_empty.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-sw600dp\\work.png",
@@ -168,12 +228,25 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\src\\main\\res\\drawable-sw600dp\\photo_profil_femme_noir.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/photo_profil_femme_noir.png",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/drawable-sw600dp/photo_profil_femme_noir.png"
     },
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_alerte.png",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/drawable-sw600dp/ic_alerte.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/unlike48.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/unlike48.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_thumbs_up_white.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/ic_thumbs_up_white.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/photo_profil_femme_noir.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/photo_profil_femme_noir.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-sw600dp/photo_profil_homme_noir.png",
@@ -184,8 +257,13 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\src\\main\\res\\drawable-sw600dp\\launch_screen.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_delete.png",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/drawable-sw600dp/ic_delete.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/bloquer48.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/bloquer48.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-sw600dp\\photo_profil_homme_blanc.png",
@@ -204,8 +282,13 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/src/main/res/drawable-sw600dp/check48.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_plus_white.png",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/drawable-sw600dp/ic_plus_white.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/question48.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/question48.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-sw600dp\\ic_show_stat.png",
@@ -220,6 +303,10 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/src/main/res/drawable-sw600dp/ic_thumbs_up_orange.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_launcher.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/ic_launcher.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-sw600dp\\addlist48.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\src\\main\\res\\drawable-sw600dp\\addlist48.png"
     },
@@ -228,20 +315,34 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/src/main/res/drawable-sw600dp/ic_launcher.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/work.png",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/drawable-sw600dp/work.png"
     },
     {
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_thumbs_up_empty.png",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/drawable-sw600dp/ic_thumbs_up_empty.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_comment.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/ic_comment.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-sw600dp/logo48.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/src/main/res/drawable-sw600dp/logo48.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/launch_screen.png",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/drawable-sw600dp/launch_screen.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_delete_follow.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/ic_delete_follow.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_delete.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/ic_delete.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_thumbs_up_full.png",
@@ -308,8 +409,13 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/C:\\Users\\Vaashiny\\Desktop\\Android app\\animacite-android-v1.0\\app\\src\\main\\res\\drawable-sw600dp\\ic_delete.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/delete48.png",
         "source": "/Users/djisse/Documents/nagawork/nagadev/animacite/app/src/main/res/drawable-sw600dp/delete48.png"
+=======
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_thumbs_up_orange.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/ic_thumbs_up_orange.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-sw600dp/photo_profil_femme_blanc.png",
@@ -320,7 +426,23 @@
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/src/main/res/drawable-sw600dp/photo_profil_homme_blanc.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_show_stat.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/ic_show_stat.png"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/build/intermediates/res/merged/debug/drawable-sw600dp/ic_thumbs_up_white.png",
         "source": "/Users/macbookpro/Documents/New Comp/animacite-android-v0.0.1/app/src/main/res/drawable-sw600dp/ic_thumbs_up_white.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/photo_profil_homme_blanc.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/photo_profil_homme_blanc.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/delete48.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/delete48.png"
+    },
+    {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable-sw600dp/photo_profil_femme_blanc.png",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable-sw600dp/photo_profil_femme_blanc.png"
     }
 ]
