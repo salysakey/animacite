@@ -5,6 +5,7 @@ import org.anima.utils.ConfigurationVille;
 import org.anima.animacite.R;
 
 import android.Manifest;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -16,9 +17,12 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.StrictMode;
 import android.os.SystemClock;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.view.GravityCompat;
@@ -62,6 +66,7 @@ import org.anima.utils.UploadFileSuccessEvent;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
@@ -95,6 +100,8 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
     private static final int MY_PERMISSIONS_REQUESTS_POSITION = MY_PERMISSIONS_REQUEST_READ_CONTACTS + 1;
     private static final int MY_PERMISSIONS_REQUESTS_CAMERA = MY_PERMISSIONS_REQUEST_READ_CONTACTS + 2;
     private static final int MY_PERMISSIONS_SIGNALEMENT = MY_PERMISSIONS_REQUEST_READ_CONTACTS + 2;
+    private static final int REQUEST_WRITE_EXTERNAL_STORAGE=19;
+    private static final int REQUEST_LOCATION_PERMISSION=20;
 
     // The minimum time between updates in milliseconds
     private static final long MIN_TIME_BW_UPDATES = 1; // 1 minute
@@ -151,6 +158,8 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         // Set Cancelable as False
         prgDialog.setCancelable(false);
 
+        checkStoragePermission();
+        checkLocationPermission();
         LocationManager locManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
         LocationListener locationChangeListener = new LocationListener() {
@@ -250,8 +259,132 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         //initializeControls();
     }
 
+    /**
+     *
+     */
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    public void requestLocation() {
+
+        LocationManager locManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        LocationListener locationChangeListener = new LocationListener() {
+            public void onLocationChanged(Location l) {
+                if (l != null) {
+                    Log.i("SuperMap", "Location changed : Lat: " + l.getLatitude() + " Lng: " +
+                            l.getLongitude());
+                }
+            }
+
+            public void onProviderEnabled(String p) {
+            }
+
+            public void onProviderDisabled(String p) {
+            }
+
+            public void onStatusChanged(String p, int status, Bundle extras) {
+            }
+
+        };
+
+
+    }// end function getLocation
+    /**
+     * @author salysakey
+     * @param context
+     */
+    private static void requestPermission(final Context context){
+        if(ActivityCompat.shouldShowRequestPermissionRationale((Activity)context,Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+            // Provide an additional rationale to the user if the permission was not granted
+            // and the user would benefit from additional context for the use of the permission.
+            // For example if the user has previously denied the permission.
+
+            new AlertDialog.Builder(context)
+                    .setMessage("Please allow access to storage")
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            ActivityCompat.requestPermissions((Activity) context,
+                                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                                    REQUEST_WRITE_EXTERNAL_STORAGE);
+                        }
+                    }).show();
+
+        }else {
+            // permission has not been granted yet. Request it directly.
+            ActivityCompat.requestPermissions((Activity)context,
+                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                    REQUEST_WRITE_EXTERNAL_STORAGE);
+        }
+    }
+
+    public void checkLocationPermission(){
+        LocationManager locManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        LocationListener locationChangeListener = new LocationListener() {
+            public void onLocationChanged(Location l) {
+                if (l != null) {
+                    Log.i("SuperMap", "Location changed : Lat: " + l.getLatitude() + " Lng: " +
+                            l.getLongitude());
+                }
+            }
+
+            public void onProviderEnabled(String p) {
+            }
+
+            public void onProviderDisabled(String p) {
+            }
+
+            public void onStatusChanged(String p, int status, Bundle extras) {
+            }
+
+        };
+        if (locManager.isProviderEnabled(LocationManager.GPS_PROVIDER) == false &&
+                locManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER) == false) {
+            AlertDialog.Builder alertDialog = new AlertDialog.Builder(SignalementActivity.this);
+            // Setting Dialog Title
+            alertDialog.setTitle("Activer la localisation pour participer.");
+            alertDialog.setIcon(R.drawable.petite_image);
+            alertDialog.setNegativeButton("Ok",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+            // Showing Alert Message
+            AlertDialog alert = alertDialog.create();
+            alert.show();
+        }
+    }
+    /**
+     * @author salysakey
+     */
+    public void checkStoragePermission(){
+        File storageDir = null;
+        if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
+            //RUNTIME PERMISSION Android M
+            if(PackageManager.PERMISSION_GRANTED==ActivityCompat.checkSelfPermission(getApplicationContext(),Manifest.permission.WRITE_EXTERNAL_STORAGE)){
+                storageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "");
+            }else{
+                requestPermission(SignalementActivity.this);
+            }
+
+        }// end if
+    }// end function
+
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         Log.d(TAG, " - onRequestPermissionsResult");
+
+        // check storage permission (salysakey)
+        if (requestCode == REQUEST_WRITE_EXTERNAL_STORAGE){
+            if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(getApplicationContext(),"Storage Permission is granted.",
+                        Toast.LENGTH_SHORT).show();
+
+            } else {
+                Toast.makeText(getApplicationContext(),"No permission on storage",
+                        Toast.LENGTH_SHORT).show();
+                super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+            }
+            return;
+        }// end if request code
 
         //Demande d'autorisations pour le Signalement LOCALISATION + CAMERA
         if (requestCode == MY_PERMISSIONS_SIGNALEMENT && grantResults[0] == MY_PERMISSIONS_GRANTED && grantResults[1] == MY_PERMISSIONS_GRANTED) {
@@ -276,7 +409,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
 
             };
 
-            locManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, locationChangeListener);
+            //locManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, locationChangeListener);
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                 // TODO: Consider calling
                 //    ActivityCompat#requestPermissions
