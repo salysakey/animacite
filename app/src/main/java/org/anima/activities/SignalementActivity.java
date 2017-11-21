@@ -5,7 +5,6 @@ import org.anima.utils.ConfigurationVille;
 import org.anima.animacite.R;
 
 import android.Manifest;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -18,7 +17,7 @@ import android.location.LocationManager;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Environment;
+import android.os.StrictMode;
 import android.os.SystemClock;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
@@ -63,7 +62,6 @@ import org.anima.utils.UploadFileSuccessEvent;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
@@ -94,11 +92,9 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
     private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 1; // 10 meters
     private static final int MY_PERMISSIONS_GRANTED = 0;
     private static final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 1;
-    private static final int REQUEST_WRITE_EXTERNAL_STORAGE=19;
     private static final int MY_PERMISSIONS_REQUESTS_POSITION = MY_PERMISSIONS_REQUEST_READ_CONTACTS + 1;
     private static final int MY_PERMISSIONS_REQUESTS_CAMERA = MY_PERMISSIONS_REQUEST_READ_CONTACTS + 2;
     private static final int MY_PERMISSIONS_SIGNALEMENT = MY_PERMISSIONS_REQUEST_READ_CONTACTS + 2;
-
 
     // The minimum time between updates in milliseconds
     private static final long MIN_TIME_BW_UPDATES = 1; // 1 minute
@@ -135,6 +131,8 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
+        StrictMode.setVmPolicy(builder.build());
         EventBus.getDefault().register(this);
 
         setupDrawerLayout();
@@ -152,7 +150,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         prgDialog.setMessage("Please wait...");
         // Set Cancelable as False
         prgDialog.setCancelable(false);
-        checkPermission();
+
         LocationManager locManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
         LocationListener locationChangeListener = new LocationListener() {
@@ -163,20 +161,13 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
                 }
             }
 
-            public void onProviderEnabled(String p) {
-            }
-
-            public void onProviderDisabled(String p) {
-            }
-
-            public void onStatusChanged(String p, int status, Bundle extras) {
-            }
-
+            public void onProviderEnabled(String p) {}
+            public void onProviderDisabled(String p) {}
+            public void onStatusChanged(String p, int status, Bundle extras) {}
         };
 
 
         if (locManager.isProviderEnabled(LocationManager.GPS_PROVIDER) == false && locManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER) == false) {
-
             AlertDialog.Builder alertDialog = new AlertDialog.Builder(SignalementActivity.this);
             // Setting Dialog Title
             alertDialog.setTitle("Veuillez activer votre localisation");
@@ -196,9 +187,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
             alert.show();
 
         } else {
-
             if ((ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ) && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-
                 ActivityCompat.requestPermissions(SignalementActivity.this,
                         new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.CAMERA},
                         MY_PERMISSIONS_SIGNALEMENT);
@@ -212,16 +201,13 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
                 if (location == null) {
                     locManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, locationChangeListener);
                     location = locManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-
                 }
 
                 if (location != null) {
-
                     longitude = location.getLongitude();
                     latitude = location.getLatitude();
 
                 } else {
-
                     AlertDialog.Builder alertDialog = new AlertDialog.Builder(SignalementActivity.this);
                     // Setting Dialog Title
                     alertDialog.setTitle("Veuillez activer votre localisation");
@@ -264,57 +250,9 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         //initializeControls();
     }
 
-    private static void requestPermission(final Context context){
-        if(ActivityCompat.shouldShowRequestPermissionRationale((Activity)context,Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-            // Provide an additional rationale to the user if the permission was not granted
-            // and the user would benefit from additional context for the use of the permission.
-            // For example if the user has previously denied the permission.
-
-            new AlertDialog.Builder(context)
-                    .setMessage("Please allow access to storage")
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            ActivityCompat.requestPermissions((Activity) context,
-                                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                                    REQUEST_WRITE_EXTERNAL_STORAGE);
-                        }
-                    }).show();
-
-        }else {
-            // permission has not been granted yet. Request it directly.
-            ActivityCompat.requestPermissions((Activity)context,
-                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                    REQUEST_WRITE_EXTERNAL_STORAGE);
-        }
-    }
-    public void checkPermission(){
-        File storageDir = null;
-        if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
-            //RUNTIME PERMISSION Android M
-            if(PackageManager.PERMISSION_GRANTED==ActivityCompat.checkSelfPermission(getApplicationContext(),Manifest.permission.WRITE_EXTERNAL_STORAGE)){
-                storageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "");
-            }else{
-                requestPermission(SignalementActivity.this);
-            }
-
-        }
-    }
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         Log.d(TAG, " - onRequestPermissionsResult");
 
-        if (requestCode == REQUEST_WRITE_EXTERNAL_STORAGE){
-            if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(getApplicationContext(),"Storage Permission is granted.",
-                        Toast.LENGTH_SHORT).show();
-
-            } else {
-                Toast.makeText(getApplicationContext(),"No permission on storage",
-                        Toast.LENGTH_SHORT).show();
-                super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-            }
-            return;
-        }
         //Demande d'autorisations pour le Signalement LOCALISATION + CAMERA
         if (requestCode == MY_PERMISSIONS_SIGNALEMENT && grantResults[0] == MY_PERMISSIONS_GRANTED && grantResults[1] == MY_PERMISSIONS_GRANTED) {
             Log.d(TAG, " - onRequestPermissionsResult.LOCALISATION");
@@ -381,7 +319,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         else if(requestCode == MY_PERMISSIONS_SIGNALEMENT && (grantResults[0] != MY_PERMISSIONS_GRANTED || grantResults[1] != MY_PERMISSIONS_GRANTED)){
             Intent intent4 = new Intent(SignalementActivity.this, ImagePickActivity.class);
             startActivity(intent4);
-            Toast.makeText(getApplicationContext(), "Veuillez autoriser les permissions.", Toast.LENGTH_LONG).show();
+            //Toast.makeText(getApplicationContext(), "Veuillez autoriser les permissions.", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -399,12 +337,9 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
     }
 
     public void addItemsOnSpinner() {
-
-
-        //list.add("Bris");
-        //list.add("Nid-de-poule");
-
-        list.add("TravauxPublics");
+        list.add("Bris");
+        list.add("Nid-de-poule");
+        //list.add("TravauxPublics");
         list.add("Autres");
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, list);
@@ -444,22 +379,14 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
 
             try {
                 description = URLEncoder.encode(description, "utf-8");
-
             } catch (UnsupportedEncodingException e) {
-
                 e.printStackTrace();
             }
             showProgressDialog("Merci de votre participation citoyenne, veuillez patienter une petite minute.");
-
-
             enregistrementBdd();
-
             //  sendWS();
-
             // envoyer mail
-
         }
-
     }
 
     @SuppressWarnings("unused")
@@ -605,145 +532,6 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
 
     }
 
-    /*
-    private void setupDrawerLayout() {
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-
-        NavigationView view = (NavigationView) findViewById(R.id.navigation_view);
-        View headerLayout = view.getHeaderView(0);
-        ImageView avatarhomme = (ImageView) headerLayout.findViewById(R.id.avatarhomme);
-        ImageView avatarfemme = (ImageView) headerLayout.findViewById(R.id.avatarfemme);
-        if(PrefManager.getUserSexe(getApplicationContext()).equals("F")){
-            avatarfemme.setVisibility(View.VISIBLE);
-        }else{
-            avatarhomme.setVisibility(View.VISIBLE);
-        }
-        String phone=PrefManager.getUserMail(getApplicationContext());
-        String name = PrefManager.getUserName(getApplicationContext());
-
-        TextView txtUserName = (TextView)headerLayout.findViewById(R.id.user_name);
-        TextView txtUserMail = (TextView)headerLayout.findViewById(R.id.user_email);
-
-        if (!TextUtils.isEmpty(phone)) {
-            txtUserMail.setText(phone);
-        }
-
-        if (!TextUtils.isEmpty(name)) {
-            txtUserName.setText(name);
-        }
-
-        menudeux = view.getMenu();
-        if (PrefManager.getRatingStatus(getApplicationContext())==1) {
-            menudeux.findItem(R.id.logout).setVisible(true);
-            menudeux.findItem(R.id.my_account).setVisible(true);
-            menudeux.findItem(R.id.maps).setVisible(true);
-            menudeux.findItem(R.id.evenements).setVisible(true);
-            //menudeux.findItem(R.id.stat).setVisible(true);
-            menudeux.findItem(R.id.kiosque).setVisible(true);
-            //menudeux.findItem(R.id.parametre).setVisible(true);
-            //menudeux.findItem(R.id.infopratique).setVisible(true);
-            menudeux.findItem(R.id.actu).setVisible(true);
-            menudeux.findItem(R.id.panier).setVisible(true);
-            menudeux.findItem(R.id.concours).setVisible(true);
-        }else{
-            menudeux.findItem(R.id.login).setVisible(true);
-
-        }
-
-
-
-
-        view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(MenuItem menuItem) {
-                drawerLayout.closeDrawers();
-                //fab.setVisibility(View.GONE);
-
-                switch (menuItem.getItemId()) {
-                    case R.id.concours:
-                        startActivity(new Intent(SignalementActivity.this, ConcoursActivity.class));
-                        break;
-                    case R.id.panier:
-                        PrefManager.setImageUrl(getApplicationContext(),null);
-                        Intent intent4 = new Intent(SignalementActivity.this, FollowActivity.class);
-                        startActivity(intent4);
-                        break;
-                    case R.id.my_account:
-                        PrefManager.setImageUrl(getApplicationContext(),null);
-                        Intent intent3 = new Intent(SignalementActivity.this, MyAccountActivity.class);
-                        startActivity(intent3);
-                        break;
-                    case R.id.actu:
-                        PrefManager.setImageUrl(getApplicationContext(),null);
-                        Intent intent5 = new Intent(SignalementActivity.this, ImagePickActivity.class);
-                        startActivity(intent5);
-                        break;
-                    case R.id.evenements:
-
-                        if (PrefManager.getRatingStatus(getApplicationContext()) == 1) {
-                            PrefManager.setImageUrl(getApplicationContext(),null);
-
-                            Intent intent8 = new Intent(SignalementActivity.this, CalendarActivity.class);
-                            startActivity(intent8);
-                            break;
-
-                        } else {
-                            break;
-                        }
-
-                    case R.id.maps:
-
-                        Intent intent9 = new Intent(SignalementActivity.this, MapActivity.class);
-                        PrefManager.setImageUrl(getApplicationContext(),null);
-                        startActivity(intent9);
-                        break;
-                    case R.id.infopratique:
-                        if (PrefManager.getRatingStatus(getApplicationContext()) == 1) {
-                            PrefManager.setImageUrl(getApplicationContext(),null);
-                            Intent pratique = new Intent(SignalementActivity.this, PratiqueActivity.class);
-                            startActivity(pratique);
-                            break;
-
-                        } else {
-                            break;
-
-                        }
-                    case R.id.kiosque:
-
-                        if (PrefManager.getRatingStatus(getApplicationContext()) == 1) {
-                            PrefManager.setImageUrl(getApplicationContext(),null);
-                            Intent intent6 = new Intent(SignalementActivity.this, KiosqueActivity.class);
-                            startActivity(intent6);
-
-                            break;
-
-                        } else {
-                            break;
-                        }
-                    case R.id.logout:
-                        FacebookSdk.sdkInitialize(getApplicationContext());
-                        LoginManager loginManager = LoginManager.getInstance();
-                        loginManager.logOut();
-                        LoginManager.getInstance().logOut();
-
-                        Intent intent2 = new Intent(SignalementActivity.this, LoginActivity.class);
-                        PrefManager.setRatingStatus(getApplicationContext(), 0);
-                        PrefManager.setUserId(getApplicationContext(), 0);
-                        PrefManager.setUserName(getApplicationContext(), null);
-                        PrefManager.setUserMail(getApplicationContext(), null);
-                        PrefManager.setUserProfession(getApplicationContext(), null);
-                        PrefManager.setUserAdresse(getApplicationContext(), null);
-                        PrefManager.setLatitude(getApplicationContext(), null);
-                        PrefManager.setLongitude(getApplicationContext(), null);
-                        PrefManager.setImageUrl(getApplicationContext(),null);
-                        startActivity(intent2);
-
-                        break;
-                }
-                return true;
-            }
-        });
-    }*/
     /**
      * Refactored by Saly Sakey November-07-2017
      */

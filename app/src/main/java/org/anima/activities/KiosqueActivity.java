@@ -180,7 +180,7 @@ public class KiosqueActivity extends AppCompatActivity{
                                 a++;
                             }
 
-                            mAdapter.addItem(ConfigurationVille.KIOSQUE_PAPER_NAME +" Edition N°: "+object.getString("edition"));
+                            mAdapter.addItem(ConfigurationVille.KIOSQUE_PAPER_NAME +" "+object.getString("edition"));
                             tab[a]=object.getString("lien");
 
                             a++;

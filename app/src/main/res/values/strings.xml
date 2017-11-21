@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_package">org.anima.animacite</string>
-    <string name="app_name">Anima</string>
-    <string name="facebook_app_id">1015592301868020</string>
-    <string name="fb_login_protocol_scheme">fb1015592301868020</string>
+    <string name="app_package">org.riviereduloup.animacite</string>
+    <string name="app_name">VilleRDL</string>
+    <string name="facebook_app_id">409623132731323</string>
+    <string name="fb_login_protocol_scheme">fb409623132731323</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="city_actu">Dans ma ville</string>

@@ -125,8 +125,8 @@
         android:layout_marginTop="@dimen/margintop_facebook"
         android:layout_marginBottom="10dp"
         android:id="@+id/facebookbutton"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_centerInParent="true"
         />
 

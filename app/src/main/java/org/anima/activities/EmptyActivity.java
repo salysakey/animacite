@@ -200,10 +200,60 @@ public class EmptyActivity extends AppCompatActivity {
         if(tipe==1) {
             Button gotoQuestion =(Button) findViewById(R.id.btn_goto_question);
             gotoQuestion.setVisibility(VISIBLE);
+            //ACCES SONDAGE VIA BOUTON TEXTE
             gotoQuestion.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    decision();
+                    if (PrefManager.getRatingStatus(getApplicationContext())==0) {
+
+                        mTracker.send(new HitBuilders.EventBuilder()
+                                .setCategory("Navigation")
+                                .setAction("goLoginFromTuile")
+                                .setLabel("goLoginFromTuile")
+                                .build());
+
+                        AlertDialog.Builder alertDialog = new AlertDialog.Builder(EmptyActivity.this);
+                        // Setting Dialog Title
+                        alertDialog.setTitle("Vous n'etes pas connecté");
+                        alertDialog.setIcon(R.drawable.petite_image);
+                        // Setting Dialog Message
+                        alertDialog.setMessage("Voulez-vous vous connecter ?");
+                        // Setting Positive "Yes" Button
+                        alertDialog.setPositiveButton("OUI",
+                                new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        //Move to Next screen
+                                        Intent chnIntent = new Intent(EmptyActivity.this, LoginActivity.class);
+                                        startActivity(chnIntent);
+                                    }
+                                });
+                        // Setting Negative "NO" Button
+                        alertDialog.setNegativeButton("NON",
+                                new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        // Cancel Dialog
+                                        dialog.cancel();
+                                    }
+                                });
+                        // Showing Alert Message
+                        AlertDialog alert = alertDialog.create();
+                        alert.show();
+
+                    }else{
+
+                        mTracker.send(new HitBuilders.EventBuilder()
+                                .setCategory("Navigation")
+                                .setAction("AccessVoteByFooterButton")
+                                .setLabel("AccessVote")
+                                .build());
+
+                        RequestParams params = new RequestParams();
+                        params.put("idp", "" + id);
+                        params.put("userId", ""+PrefManager.getUserId(getApplicationContext()));
+                        invokeWS3(params);
+                    }
+
+
                 }
             });
             z = (ImageButton) findViewById(R.id.follow_consultation);
@@ -258,8 +308,6 @@ public class EmptyActivity extends AppCompatActivity {
                 z.setVisibility(View.GONE);
                 alreadyfollow.setVisibility(View.GONE);
             }else {
-
-
                 if (PrefManager.getRatingStatus(getApplicationContext()) != 0) {
                     RequestParams params = new RequestParams();
 
@@ -417,8 +465,6 @@ public class EmptyActivity extends AppCompatActivity {
                         invokeWSUnParticipate(params2);
 
                     }
-
-
                 }
             }
         });
@@ -446,8 +492,6 @@ public class EmptyActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                //   Food newOne = new Food(id, titre, pictureUrl, description, tipe);
-                //   FollowModel.getInstance().addToList(newOne);
 
                 if (PrefManager.getRatingStatus(getApplicationContext())==0) {
 
@@ -638,7 +682,7 @@ public class EmptyActivity extends AppCompatActivity {
                         //Toast.makeText(getApplicationContext(), "Merci ! Vous suivez ce projet!", Toast.LENGTH_LONG).show();
                         AlertDialog.Builder alertDialog = new AlertDialog.Builder(EmptyActivity.this);
                         // Setting Dialog Title
-                        alertDialog.setTitle("Vous pouvez me consulter dans vos favoris");
+                        alertDialog.setTitle("Ajouté aux coups de coeur");
                         alertDialog.setIcon(R.drawable.petite_image);
                         // Setting Dialog Message
                         alertDialog.setNegativeButton("Merci",
@@ -1050,11 +1094,7 @@ public class EmptyActivity extends AppCompatActivity {
                     }
                     // Else display error message
                     else {
-
                         decision2();
-
-
-
                     }
                 } catch (JSONException e) {
                     // TODO Auto-generated catch block

@@ -491,7 +491,7 @@ public class MapActivity extends AppCompatActivity implements GoogleMap.OnMarker
         map = googleMap;
         LatLng city = new LatLng(ConfigurationVille.LATITUDE_VILLE, ConfigurationVille.LONGITUDE_VILLE);
 
-        map.setMyLocationEnabled(true);
+        //map.setMyLocationEnabled(true);
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(city, 13));
 
         map.addMarker(new MarkerOptions()

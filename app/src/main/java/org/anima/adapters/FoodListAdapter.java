@@ -119,11 +119,11 @@ public class FoodListAdapter extends BaseAdapter {
                     .findViewById(R.id.picture);
             if(listFood.get(position).getPictureUrl()!="null" && !listFood.get(position).getPictureUrl().equals("null")){
                 holder.pictureView.setHeightRatio(0.75);
-
             }
 
             if(!"".equals(listFood.get(position).getCouleur())) {
-                String color = listFood.get(position).getCouleur();
+                String color = " ";
+                color = listFood.get(position).getCouleur();
                 if(color.substring(0, 1).equals("#"))
                     holder.nomView.setBackgroundColor(Color.parseColor(color));
             }

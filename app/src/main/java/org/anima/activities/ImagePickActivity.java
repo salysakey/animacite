@@ -147,7 +147,7 @@ public class ImagePickActivity extends ActionBarActivity {
 		prgDialog.setCancelable(false);
         //prgDialog.hide(); A ENLEVER
 
-        setFilter(); //Mise en place du filtre en bas à droite
+        //setFilter(); //Mise en place du filtre en bas à droite
         setScrollRefresh(); //Mise en place de rafraichissement en tirant en bas
 
 		if (PrefManager.getRatingStatus(ImagePickActivity.this)==1){
@@ -214,14 +214,9 @@ public class ImagePickActivity extends ActionBarActivity {
 			}else{
 
 				decision(index);
-
-
 			}
 
-
-
 		}else{
-
 
 			Bundle b = new Bundle();
 			b.putString("description", selectedFood.getName());
@@ -272,11 +267,11 @@ public class ImagePickActivity extends ActionBarActivity {
 			prgDialog.show();
 		}
 		else{
-            Log.d(TAG, " - invokeWS prgis not showing");
+            Log.d(TAG, " - invokeWS progs not showing");
         }
 		// Make RESTful webservice call using AsyncHttpClient object
 		AsyncHttpClient client = new AsyncHttpClient();
-        Log.d(TAG, " - invokeWS beforeGet doQctu");
+        Log.d(TAG, " - invokeWS beforeGet doActu");
 		client.get(ConfigurationVille.Debut_WS + "/actu/doactu", new AsyncHttpResponseHandler() {
 			//client.get("http://192.168.0.10:8080/Anima/rest/actu/doactu", new AsyncHttpResponseHandler() {
 			// When the response returned by REST has Http response code '200'
@@ -351,6 +346,7 @@ public class ImagePickActivity extends ActionBarActivity {
                         prgDialog.hide();
                         Log.d(TAG, " - After 2 hide");
 						listFood = null;
+                        prgDialog.hide();
 						init();
 
 
@@ -371,12 +367,14 @@ public class ImagePickActivity extends ActionBarActivity {
                         Log.d(TAG, " - End of invokeWS No Status");
 						Toast.makeText(getApplicationContext(), obj.getString("error_msg"), Toast.LENGTH_LONG).show();
 						prgDialog.hide();
+                        prgDialog.hide();
 					}
 				} catch (JSONException e) {
 					// TODO Auto-generated catch block
-					Toast.makeText(getApplicationContext(), "Une erreur s'est produite lors du chargements des publications, vérifiez votre connection internet et réessayez.", Toast.LENGTH_LONG).show();
+                    prgDialog.hide();
+                    prgDialog.hide();
+					Toast.makeText(getApplicationContext(), "Une erreur s'est produite lors du chargement des publications, vérifiez votre connection internet et réessayez.", Toast.LENGTH_LONG).show();
 					e.printStackTrace();
-
 				}
 			}
 
@@ -389,10 +387,10 @@ public class ImagePickActivity extends ActionBarActivity {
 				if (listFood != null && listFood.size() > 0) {
 					init();
 				}
-
-
 				// Hide Progress Dialog
 				prgDialog.hide();
+                Log.d(TAG, " - After hide");
+                prgDialog.hide();
 				// When Http response code is '404'
 				if (statusCode == 404) {
 					Toast.makeText(getApplicationContext(), "Requested resource not found", Toast.LENGTH_LONG).show();
@@ -407,6 +405,7 @@ public class ImagePickActivity extends ActionBarActivity {
 				}
 			}
 		});
+
 	}
 
 	public void invokeWSRegistration(RequestParams params) {
@@ -424,7 +423,6 @@ public class ImagePickActivity extends ActionBarActivity {
 			@Override
 			public void onFailure(int statusCode, Throwable error,
 								  String content) {
-				// Hide Progress Dialog
 
 				// When Http response code is '404'
 				if (statusCode == 404) {
@@ -886,186 +884,6 @@ public class ImagePickActivity extends ActionBarActivity {
 		}.execute(null, null, null);
 	}
 
-	/*
-	private void setupDrawerLayout() {
-
-
-		drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-
-		NavigationView view2 = (NavigationView) findViewById(R.id.navigation_view);
-
-		View headerLayout = view2.getHeaderView(0);
-
-
-		ImageView avatarH = (ImageView) headerLayout.findViewById(R.id.avatarhomme);
-		ImageView avatarF = (ImageView) headerLayout.findViewById(R.id.avatarfemme);
-		if(PrefManager.getUserSexe(getApplicationContext()).equals("F")){
-			avatarF.setVisibility(View.VISIBLE);
-		}else{
-			avatarH.setVisibility(View.VISIBLE);
-		}
-
-
-		TextView txtUserName = (TextView)headerLayout.findViewById(R.id.user_name);
-		TextView txtUserMail = (TextView)headerLayout.findViewById(R.id.user_email);
-
-		if (PrefManager.getRatingStatus(getApplicationContext())==1) {
-			txtUserMail.setText(PrefManager.getUserMail(getApplicationContext()));
-			txtUserName.setText(PrefManager.getUserName(getApplicationContext()));
-			//	txtUserName2.setText(PrefManager.getUserName(getApplicationContext()));
-		}
-		//menu.findItem(R.id.navigation_view);
-		//menu.setGroupVisible(R.id.my_account,true);
-		menudeux = view2.getMenu();
-
-		if (PrefManager.getRatingStatus(getApplicationContext())==1) {
-
-			menudeux.findItem(R.id.logout).setVisible(true);
-			menudeux.findItem(R.id.my_account).setVisible(true);
-			menudeux.findItem(R.id.maps).setVisible(true);
-			menudeux.findItem(R.id.evenements).setVisible(true);
-			//menudeux.findItem(R.id.stat).setVisible(true);
-			menudeux.findItem(R.id.kiosque).setVisible(true);
-			//menudeux.findItem(R.id.parametre).setVisible(true);
-			//menudeux.findItem(R.id.infopratique).setVisible(true);
-			menudeux.findItem(R.id.actu).setVisible(true);
-			menudeux.findItem(R.id.panier).setVisible(true);
-			menudeux.findItem(R.id.concours).setVisible(true);
-		}else {
-			menudeux.findItem(R.id.login).setVisible(true);
-		}
-
-		view2.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-			@Override
-			public boolean onNavigationItemSelected(MenuItem menuItem) {
-
-
-				drawerLayout.closeDrawers();
-
-
-				//fab.setVisibility(View.GONE);
-
-				switch (menuItem.getItemId()) {
-					case R.id.concours:
-						startActivity(new Intent(ImagePickActivity.this, ConcoursActivity.class));
-						break;
-
-					case R.id.my_account:
-						if (PrefManager.getRatingStatus(getApplicationContext())==1) {
-
-							Intent intent4 = new Intent(ImagePickActivity.this, MyAccountActivity.class);
-							startActivity(intent4);
-							break;
-
-						}else{
-							break;
-						}
-
-
-					case R.id.panier:
-
-						Intent intent = new Intent(ImagePickActivity.this, FollowActivity.class);
-						startActivity(intent);
-						break;
-
-
-					case R.id.stat:
-
-						if (PrefManager.getRatingStatus(getApplicationContext())==1) {
-
-							break;
-
-						}else{
-							break;
-						}
-					case R.id.maps:
-
-						Intent intent4 = new Intent(ImagePickActivity.this, MapActivity.class);
-						startActivity(intent4);
-						break;
-
-
-					case R.id.kiosque:
-
-						if (PrefManager.getRatingStatus(getApplicationContext())==1) {
-							Intent intent6 = new Intent(ImagePickActivity.this, KiosqueActivity.class);
-							startActivity(intent6);
-
-							break;
-
-						}else{
-							break;
-						}
-
-
-					case R.id.compte:
-
-						if (PrefManager.getRatingStatus(getApplicationContext())==1) {
-							Intent intent5 = new Intent(ImagePickActivity.this, InfoContactActivity.class);
-							startActivity(intent5);
-							break;
-
-						}else{
-							break;
-
-						}
-					case R.id.evenements:
-
-						if (PrefManager.getRatingStatus(getApplicationContext())==1) {
-							Intent intent5 = new Intent(ImagePickActivity.this, CalendarActivity.class);
-							startActivity(intent5);
-							break;
-
-						}else{
-							break;
-
-						}
-					case R.id.infopratique:
-						if (PrefManager.getRatingStatus(getApplicationContext())==1) {
-							Intent pratique = new Intent(ImagePickActivity.this, PratiqueActivity.class);
-							startActivity(pratique);
-							break;
-
-						}else{
-							break;
-
-						}
-
-					case R.id.logout:
-						FacebookSdk.sdkInitialize(getApplicationContext());
-						LoginManager loginManager = LoginManager.getInstance();
-						loginManager.logOut();
-						LoginManager.getInstance().logOut();
-
-
-						Intent intent2 = new Intent(ImagePickActivity.this, LoginActivity.class);
-
-
-						PrefManager.setRatingStatus(getApplicationContext(), 0);
-						PrefManager.setUserName(getApplicationContext(), null);
-						PrefManager.setUserId(getApplicationContext(),0);
-						PrefManager.setUserMail(getApplicationContext(), null);
-						PrefManager.setUserProfession(getApplicationContext(), null);
-						PrefManager.setUserAdresse(getApplicationContext(), null);
-						PrefManager.setLatitude(getApplicationContext(), null);
-						PrefManager.setLongitude(getApplicationContext(), null);
-						startActivity(intent2);
-
-						break;
-					case R.id.login:
-
-						Intent intent3 = new Intent(ImagePickActivity.this, LoginActivity.class);
-
-						startActivity(intent3);
-
-						break;
-				}
-
-
-				return true;
-			}
-		});
-	}*/
 	/**
 	 * Refactored by Saly Sakey November-07-2017
 	 */
