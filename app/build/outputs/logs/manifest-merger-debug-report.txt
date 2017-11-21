@@ -1,9 +1,20 @@
 -- Merging decision tree log ---
+provider#android.support.v4.content.FileProvider
+INJECTED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:217:9-225:20
+	android:grantUriPermissions
+		ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:221:13-47
+	android:authorities
+		INJECTED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml
+		ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:219:13-60
+	android:exported
+		ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:220:13-37
+	android:name
+		ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:218:13-67
 manifest
-ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:2:1-219:12
-INJECTED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:2:1-219:12
-INJECTED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:2:1-219:12
-INJECTED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:2:1-219:12
+ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:2:1-228:12
+INJECTED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:2:1-228:12
+INJECTED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:2:1-228:12
+INJECTED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:2:1-228:12
 MERGED from [:library-2.4.1:] /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/library-2.4.1.aar/f228059a95cf37b35a0690b4ab0a4c42/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:25.3.1] /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/31f4077b6262d2babd47e413f8d6609f/AndroidManifest.xml:17:1-31:12
 MERGED from [pub.devrel:easypermissions:0.1.5] /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/easypermissions-0.1.5.aar/8070935312c2df94d952338df413e150/AndroidManifest.xml:2:1-14:12
@@ -85,9 +96,9 @@ MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/macbook
 MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/a35d2cf9169d21483f29334ab7731125/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-compat:25.3.1] /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/9aac1f3c164caa3fd60afbe54024e42e/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:cardview-v7:25.3.1] /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/bd86c1c53a826fd578dc44a3a9393824/AndroidManifest.xml:17:1-28:12
-INJECTED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:2:1-219:12
-INJECTED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:2:1-219:12
-INJECTED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:2:1-219:12
+INJECTED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:2:1-228:12
+INJECTED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:2:1-228:12
+INJECTED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:2:1-228:12
 	package
 		ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:3:5-34
 		INJECTED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml
@@ -417,7 +428,7 @@ ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidMani
 	android:name
 		ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:37:22-77
 application
-ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:39:5-217:19
+ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:39:5-226:19
 MERGED from [com.android.support:design:25.3.1] /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/31f4077b6262d2babd47e413f8d6609f/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:design:25.3.1] /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/31f4077b6262d2babd47e413f8d6609f/AndroidManifest.xml:29:5-20
 MERGED from [pub.devrel:easypermissions:0.1.5] /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/easypermissions-0.1.5.aar/8070935312c2df94d952338df413e150/AndroidManifest.xml:12:5-20
@@ -894,6 +905,12 @@ ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidMani
 		ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:216:13-49
 	android:name
 		ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:215:13-56
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:222:13-224:57
+	android:resource
+		ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:224:17-55
+	android:name
+		ADDED from /Users/macbookpro/Documents/GitHub/animacite/app/src/main/AndroidManifest.xml:223:17-67
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:25.3.1] /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/31f4077b6262d2babd47e413f8d6609f/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/macbookpro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/770be9c88b95576c8b0984ecb94674b2/AndroidManifest.xml:25:5-27:34

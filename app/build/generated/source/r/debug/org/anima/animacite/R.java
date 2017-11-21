@@ -19508,5 +19508,6 @@ public final class R {
     public static final int app_tracker=0x7f110000;
     public static final int ecommerce_tracker=0x7f110001;
     public static final int global_tracker=0x7f110002;
+    public static final int provider_paths=0x7f110003;
   }
 }

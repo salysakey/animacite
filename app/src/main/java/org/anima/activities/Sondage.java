@@ -204,30 +204,31 @@ public class Sondage extends AppCompatActivity {
                         int p=0;
                         int h=0;
 
-                        List<Question> questions = new ArrayList<>();
+                        List<Question> questions = new ArrayList<Question>();
                         for (int i = 0; i < jarray.length(); i++) {
-                            Log.d(TAG," - In the for question");
+                            //Log.d(TAG," - In the for question"+i);
                             JSONObject object = jarray.getJSONObject(i);
                             Question question = new Question();
 
                             question.setName(object.getString("Titre"));
                             question.setType(object.getInt("nbr_solution"));
                             question.setId(object.getInt("id_question"));
-                            List<Proposition> propositions = new ArrayList<>();
+                            List<Proposition> propositions = new ArrayList<Proposition>();
                             JSONArray jarray2 = object.getJSONArray("propositions");
 
                             for (int y = 0; y < jarray2.length(); y++) {
-                                Log.d(TAG," - In the for proposition");
+                                //Log.d(TAG," - In the for proposition");
                                 Proposition proposition = new Proposition();
                                 JSONObject object2 = jarray2.getJSONObject(y);
                                 proposition.setId(object2.getInt("id_proposition"));
                                 if(question.getType()!=0) {
                                     proposition.setRank(object2.getString("text_proposition"));
-                                    Log.d(TAG," - Recuperation proposition");
+                                    //Log.d(TAG," - Recuperation proposition");
                                 }
                                 propositions.add(proposition);
                             }
-
+                            Log.d(TAG, "question number: "+(i+1));
+                            Log.d(TAG," prop size: "+propositions.size());
                             question.setPropositions(propositions);
                             questions.add(question);
 

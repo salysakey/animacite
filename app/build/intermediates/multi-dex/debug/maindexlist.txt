@@ -723,13 +723,8 @@ com/google/android/gms/internal/zzra$zza.class
 com/google/android/gms/internal/zzaw.class
 org/apache/commons/codec/language/Caverphone.class
 android/support/v4/view/MenuCompat.class
-<<<<<<< Updated upstream
-android/support/v4/media/session/MediaControllerCompat.class
-=======
 com/google/gson/JsonNull.class
->>>>>>> Stashed changes
 com/google/android/gms/wallet/NotifyTransactionStatusRequest.class
-com/google/gson/JsonNull.class
 com/google/android/gms/internal/zzjz.class
 com/google/android/gms/internal/zzde$zza.class
 com/google/android/gms/internal/zzqr.class
@@ -741,8 +736,8 @@ com/google/android/gms/internal/zzef.class
 com/google/android/gms/internal/zzol.class
 com/google/android/gms/ads/internal/zzm$zza.class
 com/google/ads/mediation/MediationBannerListener.class
-com/google/android/gms/location/FusedLocationProviderApi.class
 com/google/android/gms/internal/zzzk$zza.class
+com/google/android/gms/location/FusedLocationProviderApi.class
 com/google/android/gms/ads/internal/zzl.class
 com/google/android/gms/ads/internal/overlay/zzf.class
 com/google/android/gms/internal/zzbmx.class
@@ -755,16 +750,9 @@ com/google/android/gms/internal/zzgg.class
 com/facebook/share/model/ShareLinkContent$Builder.class
 com/google/ads/mediation/customevent/CustomEventInterstitial.class
 com/google/android/gms/internal/zzdc.class
-<<<<<<< Updated upstream
-com/google/android/gms/internal/zztc.class
-android/support/customtabs/CustomTabsSession.class
-com/google/android/gms/internal/zzqw.class
-android/support/annotation/Dimension.class
-=======
 com/google/android/gms/internal/zzqw.class
 com/google/android/gms/internal/zztc.class
 android/support/customtabs/CustomTabsSession.class
->>>>>>> Stashed changes
 com/google/android/gms/internal/zzpj.class
 com/google/ads/mediation/customevent/CustomEventListener.class
 org/osmdroid/views/MapView$Projection.class
@@ -772,13 +760,8 @@ android/support/v4/app/ActionBarDrawerToggle.class
 com/google/android/gms/ads/internal/purchase/GInAppPurchaseManagerInfoParcel.class
 com/google/android/gms/internal/zziw.class
 com/google/android/gms/nearby/connection/AppMetadata.class
-<<<<<<< Updated upstream
-com/google/android/gms/common/SignInButton$ColorScheme.class
-=======
 com/google/android/gms/ads/internal/overlay/zzk.class
->>>>>>> Stashed changes
 com/google/android/gms/internal/zzasb.class
-com/google/android/gms/ads/internal/overlay/zzk.class
 com/google/android/gms/internal/zzek.class
 com/google/android/gms/internal/zzmk.class
 android/support/v4/app/FragmentActivity.class
@@ -812,44 +795,18 @@ com/google/android/gms/internal/zzgq.class
 com/google/android/gms/internal/zzkj.class
 com/google/android/gms/ads/internal/purchase/zzc.class
 com/google/ads/AdSize.class
-<<<<<<< Updated upstream
-android/support/v4/view/ViewCompat$Api24ViewCompatImpl.class
-com/google/android/gms/drive/query/Query$Builder.class
-com/facebook/share/model/AppInviteContent$Builder$Destination.class
-com/facebook/share/widget/JoinAppGroupDialog.class
-android/support/annotation/RequiresPermission$Read.class
-android/support/v4/app/NotificationCompat$NotificationVisibility.class
-android/support/v7/app/AppCompatCallback.class
-android/support/v4/app/NotificationCompatBase$Action.class
-android/support/v7/widget/RecyclerView$Recycler.class
-=======
 com/facebook/share/model/AppInviteContent$Builder$Destination.class
 com/facebook/share/widget/JoinAppGroupDialog.class
 com/google/android/gms/drive/query/Query$Builder.class
->>>>>>> Stashed changes
 com/google/android/gms/wallet/zza.class
 com/google/android/gms/internal/zzdr.class
 com/google/android/gms/ads/internal/purchase/zzb.class
 android/support/v4/widget/SlidingPaneLayout.class
-<<<<<<< Updated upstream
-android/support/v4/text/util/LinkifyCompat.class
-com/google/android/gms/common/api/GoogleApiClient.class
-android/support/design/widget/SnackbarManager.class
-android/support/design/widget/BaseTransientBottomBar$BaseCallback$DismissEvent.class
-com/google/firebase/storage/StorageException$ErrorCode.class
-com/google/android/gms/analytics/Logger$LogLevel.class
-com/google/android/gms/internal/zzbus.class
-com/google/android/gms/internal/zzjb.class
-com/google/android/gms/ads/internal/overlay/zza.class
-android/support/v4/media/MediaBrowserServiceCompat$BrowserRoot.class
-android/support/v4/media/MediaMetadataCompat$TextKey.class
-=======
 com/google/android/gms/internal/zzjb.class
 com/google/android/gms/analytics/Logger$LogLevel.class
 com/google/android/gms/internal/zzbus.class
 com/google/android/gms/ads/internal/overlay/zza.class
 android/support/v4/media/MediaBrowserServiceCompat$BrowserRoot.class
->>>>>>> Stashed changes
 com/google/android/gms/internal/zzhy.class
 com/google/android/gms/internal/zzrb.class
 com/google/android/gms/internal/zzoq.class
@@ -920,31 +877,15 @@ com/google/android/gms/common/zzh.class
 com/google/android/gms/internal/zznc.class
 com/google/android/gms/cast/framework/CastContext.class
 com/google/android/gms/cast/Cast$CastApi$zza.class
-<<<<<<< Updated upstream
-android/support/v4/media/MediaBrowserCompat$MediaBrowserServiceCallbackImpl.class
-android/support/annotation/DrawableRes.class
-com/google/android/gms/internal/zzzf$1.class
-=======
 com/google/android/gms/auth/zze.class
->>>>>>> Stashed changes
 com/google/android/gms/maps/GoogleMap$OnMyLocationChangeListener.class
-com/google/android/gms/auth/zze.class
 com/google/android/gms/internal/zzlm.class
 com/google/android/gms/internal/zzgk.class
 com/google/android/gms/internal/zzps.class
 com/google/android/gms/internal/zzmg.class
 com/google/android/gms/ads/internal/zzg.class
-<<<<<<< Updated upstream
-android/support/annotation/FloatRange.class
-com/google/android/gms/internal/zzbvh.class
-android/support/v4/view/ViewPager$MyAccessibilityDelegate.class
-com/google/android/gms/common/internal/zzf.class
-android/support/v4/app/NotificationCompat$MessagingStyle.class
-=======
 com/google/android/gms/internal/zzll.class
->>>>>>> Stashed changes
 com/google/android/gms/wallet/MaskedWallet$Builder.class
-com/google/android/gms/internal/zzll.class
 com/google/android/gms/ads/internal/overlay/zzu.class
 com/google/android/gms/wallet/fragment/BuyButtonText.class
 com/google/android/gms/internal/zzqn.class
@@ -955,10 +896,6 @@ com/google/android/gms/internal/zzil.class
 com/google/android/gms/internal/zzno.class
 com/facebook/share/model/ShareMedia$Builder.class
 android/support/v4/widget/SimpleCursorAdapter.class
-<<<<<<< Updated upstream
-android/support/v4/app/NotificationCompatApi24$Builder.class
-=======
->>>>>>> Stashed changes
 com/google/android/gms/nearby/connection/AppIdentifier.class
 com/google/android/gms/wearable/NodeApi.class
 com/google/ads/mediation/AbstractAdViewAdapter.class
@@ -1000,13 +937,6 @@ com/google/android/gms/internal/zzul$zza.class
 com/google/android/gms/internal/zznh.class
 com/google/android/gms/internal/zziv.class
 com/google/android/gms/internal/zzds.class
-<<<<<<< Updated upstream
-android/support/v7/widget/RecyclerView$LayoutManager$LayoutPrefetchRegistry.class
-android/support/v4/media/MediaMetadataCompat$1.class
-com/google/android/gms/awareness/AwarenessOptions.class
-com/google/android/gms/maps/GoogleMap$OnCameraChangeListener.class
-=======
->>>>>>> Stashed changes
 com/facebook/share/internal/LikeBoxCountView.class
 com/google/android/gms/awareness/AwarenessOptions.class
 com/google/android/gms/maps/GoogleMap$OnCameraChangeListener.class
@@ -1026,11 +956,6 @@ com/google/android/gms/ads/internal/zzp.class
 com/google/android/gms/internal/zzqv.class
 com/google/android/gms/location/places/zzo$zze.class
 com/google/android/gms/internal/zzis.class
-<<<<<<< Updated upstream
-android/support/design/widget/TabLayout$ViewPagerOnTabSelectedListener.class
-com/google/android/gms/fitness/data/Goal$ObjectiveType.class
-=======
->>>>>>> Stashed changes
 com/google/android/gms/ads/MobileAds$Settings.class
 com/google/android/gms/common/GoogleApiAvailability.class
 com/facebook/share/internal/LikeDialogFeature.class
@@ -1050,10 +975,6 @@ com/google/android/gms/internal/zzkk.class
 com/google/android/gms/internal/zzig.class
 com/google/android/gms/internal/zzls.class
 android/support/v7/app/AppCompatActivity.class
-<<<<<<< Updated upstream
-android/support/v4/media/session/PlaybackStateCompat$MediaKeyAction.class
-=======
->>>>>>> Stashed changes
 com/google/android/gms/ads/internal/overlay/zze$zzb.class
 com/google/android/gms/internal/zzvv.class
 com/google/android/gms/common/data/DataBuffer.class
@@ -1093,11 +1014,6 @@ com/google/android/gms/internal/zzfe.class
 com/google/android/gms/location/places/internal/zzs.class
 com/google/android/gms/internal/zzph.class
 com/google/android/gms/internal/zzly.class
-<<<<<<< Updated upstream
-com/google/android/gms/auth/api/credentials/CredentialRequest.class
-com/google/android/gms/internal/zzzk.class
-=======
->>>>>>> Stashed changes
 android/support/v7/media/MediaRouteDescriptor$Builder.class
 com/google/android/gms/auth/api/credentials/CredentialRequest.class
 com/google/android/gms/internal/zzzk.class
@@ -1133,16 +1049,8 @@ com/google/android/gms/internal/zzqz.class
 com/google/android/gms/internal/zzgw.class
 com/google/android/gms/ads/mediation/customevent/CustomEventExtras.class
 com/google/android/gms/drive/DriveApi.class
-<<<<<<< Updated upstream
-android/support/v4/app/NotificationCompat$NotificationCompatImplJellybean.class
-android/support/design/widget/BaseTransientBottomBar$3.class
-android/support/design/widget/TabLayout$1.class
-android/support/design/widget/CoordinatorLayout$DispatchChangeEvent.class
-=======
 com/google/android/gms/cast/framework/media/ImagePicker.class
->>>>>>> Stashed changes
 com/google/android/gms/internal/zznp.class
-com/google/android/gms/cast/framework/media/ImagePicker.class
 com/google/android/gms/nearby/messages/internal/zzh.class
 com/google/android/gms/ads/internal/overlay/zzab.class
 com/google/android/gms/internal/zzmi$zza.class
@@ -1200,18 +1108,8 @@ com/google/android/gms/games/snapshot/SnapshotMetadata.class
 com/google/android/gms/internal/zzpm.class
 com/google/android/gms/internal/zzit.class
 com/google/android/gms/internal/zzqt.class
-<<<<<<< Updated upstream
-com/google/android/gms/common/api/Api$zzh.class
 com/google/android/gms/internal/zzlt.class
 android/support/v7/widget/LinearLayoutManager.class
-com/google/android/gms/awareness/fence/TimeFence$TimeInstant.class
-com/google/android/gms/common/internal/zzl.class
-com/google/android/gms/nearby/messages/Distance$Accuracy.class
-android/support/annotation/ArrayRes.class
-=======
-com/google/android/gms/internal/zzlt.class
-android/support/v7/widget/LinearLayoutManager.class
->>>>>>> Stashed changes
 com/google/android/gms/internal/zzhm.class
 com/google/android/gms/wallet/MaskedWalletRequest.class
 com/google/android/gms/internal/zzmm.class
@@ -1249,10 +1147,6 @@ com/google/android/gms/ads/internal/zzj.class
 com/facebook/share/internal/LikeActionController.class
 com/facebook/share/internal/LikeStatusClient.class
 com/google/android/gms/wearable/internal/zzbh.class
-<<<<<<< Updated upstream
-com/google/android/gms/auth/api/credentials/zzb.class
-=======
->>>>>>> Stashed changes
 com/google/android/gms/internal/zzabt.class
 com/google/ads/mediation/MediationAdapter.class
 com/google/android/gms/internal/zzku.class
@@ -1264,14 +1158,8 @@ com/google/android/gms/internal/zzgn.class
 com/google/android/gms/ads/internal/zzd.class
 com/facebook/share/model/AppInviteContent$Builder.class
 com/squareup/picasso/Downloader$Response.class
-bolts/AggregateException.class
-<<<<<<< Updated upstream
 com/google/android/gms/common/util/zzt.class
-android/support/v7/widget/LinearLayoutCompat.class
-android/support/design/widget/ValueAnimatorCompat$AnimatorUpdateListener.class
-com/google/android/gms/appindexing/AppIndexApi.class
-=======
->>>>>>> Stashed changes
+bolts/AggregateException.class
 com/google/android/gms/internal/zzmh.class
 com/google/android/gms/appindexing/AppIndexApi.class
 com/nostra13/universalimageloader/core/ImageLoaderConfiguration$Builder.class
@@ -1280,16 +1168,8 @@ android/support/v4/widget/SearchViewCompat$OnCloseListenerCompat.class
 com/google/android/gms/internal/zzqk.class
 com/google/android/gms/ads/internal/zze.class
 com/google/android/gms/wallet/ProxyCard.class
-<<<<<<< Updated upstream
-com/google/android/gms/common/internal/zzg.class
-android/support/v4/media/MediaBrowserCompatApi21.class
-com/google/android/gms/internal/zzaad.class
-android/support/v7/widget/ViewBoundsCheck.class
-=======
 com/google/android/gms/internal/zzrh.class
->>>>>>> Stashed changes
 com/google/android/gms/analytics/ecommerce/ProductAction.class
-com/google/android/gms/internal/zzrh.class
 com/google/zxing/common/BitMatrix.class
 com/google/android/gms/games/achievement/Achievement.class
 com/google/android/gms/location/places/ui/PlacePicker.class
@@ -1311,18 +1191,7 @@ com/google/android/gms/internal/zzjw.class
 com/facebook/share/widget/CreateAppGroupDialog.class
 com/google/android/gms/internal/zznb.class
 com/google/android/gms/internal/zzfe$zza.class
-<<<<<<< Updated upstream
-com/google/android/gms/internal/zznb.class
 com/google/android/gms/common/zzg.class
-android/support/multidex/ZipUtil$CentralDirectory.class
-com/google/android/gms/wearable/DataApi$DataListener.class
-android/support/design/widget/FloatingActionButton$Size.class
-android/support/v7/app/ActionBarDrawerToggle.class
-android/support/v7/app/ActionBar$OnMenuVisibilityListener.class
-com/google/android/gms/fitness/data/Goal$Recurrence$RecurrenceUnit.class
-=======
-com/google/android/gms/common/zzg.class
->>>>>>> Stashed changes
 android/support/v7/graphics/Palette$Builder.class
 com/google/android/gms/internal/zzfp.class
 com/google/android/gms/internal/zzdy.class
@@ -1341,10 +1210,6 @@ android/support/v4/widget/CursorAdapter.class
 com/google/android/gms/internal/zzpu.class
 com/google/android/gms/internal/zzor.class
 com/google/android/gms/internal/zzdz.class
-<<<<<<< Updated upstream
-com/google/android/gms/internal/zzor.class
-=======
->>>>>>> Stashed changes
 com/google/firebase/iid/zzc.class
 com/google/android/gms/internal/zzcw.class
 com/google/android/gms/auth/GoogleAuthUtil.class
@@ -1387,11 +1252,6 @@ com/google/android/gms/internal/zzqe.class
 com/google/android/gms/internal/zzcy.class
 com/google/android/gms/internal/zzcm.class
 android/support/v4/media/TransportStateListener.class
-<<<<<<< Updated upstream
-android/support/v4/view/ViewPager$SimpleOnPageChangeListener.class
-android/support/multidex/MultiDex$V4.class
-=======
->>>>>>> Stashed changes
 com/google/android/gms/wallet/firstparty/zzd.class
 com/google/android/gms/internal/zzhk.class
 com/google/android/gms/internal/zzky.class
@@ -1403,19 +1263,8 @@ com/google/android/gms/internal/zzoc.class
 com/google/android/gms/internal/zzgc.class
 com/google/android/gms/internal/zzhx.class
 org/anima/activities/FirebasePixActivity.class
-<<<<<<< Updated upstream
-com/google/android/gms/common/api/Releasable.class
-com/google/android/gms/wallet/Payments.class
-com/google/android/gms/internal/zzbmt.class
-com/google/android/gms/R$style.class
-com/google/android/gms/internal/zzzf$zza.class
-android/support/design/widget/ValueAnimatorCompat$Creator.class
-com/google/android/gms/wallet/fragment/WalletFragmentStyle$LogoImageType.class
-com/google/gson/annotations/Until.class
-=======
 com/google/android/gms/internal/zzbmt.class
 com/google/android/gms/wallet/Payments.class
->>>>>>> Stashed changes
 com/google/android/gms/internal/zzkw.class
 com/google/android/gms/internal/zzmn.class
 com/google/android/gms/internal/zzqg.class
@@ -1443,28 +1292,16 @@ com/google/ads/mediation/customevent/CustomEventServerParameters.class
 com/google/android/gms/gcm/GoogleCloudMessaging.class
 com/google/android/gms/internal/zzoi.class
 com/google/android/gms/ads/search/DynamicHeightSearchAdRequest.class
-<<<<<<< Updated upstream
-android/support/v4/media/session/PlaybackStateCompat$RepeatMode.class
-com/google/android/gms/common/internal/safeparcel/zzb$zza.class
-com/google/android/gms/wallet/Wallet.class
-com/google/android/gms/internal/zzei.class
-com/facebook/share/widget/LikeView$ObjectType.class
-=======
 com/facebook/share/widget/LikeView$ObjectType.class
 com/google/android/gms/internal/zzei.class
 com/google/android/gms/wallet/Wallet.class
->>>>>>> Stashed changes
 android/support/v4/view/accessibility/AccessibilityRecordCompat.class
 com/google/android/gms/internal/zzfx.class
 com/facebook/share/widget/AppInviteDialog.class
 com/google/android/gms/internal/zzbmj.class
 com/google/android/gms/ads/internal/overlay/zzj.class
 com/facebook/share/model/ShareMedia.class
-<<<<<<< Updated upstream
-android/support/v7/appcompat/R$dimen.class
-=======
 com/google/android/gms/games/Games.class
->>>>>>> Stashed changes
 com/google/android/gms/internal/zzjm.class
 android/support/v4/app/FragmentManager.class
 com/google/android/gms/internal/zzec.class
@@ -1477,11 +1314,6 @@ com/google/android/gms/ads/internal/overlay/zzd.class
 com/google/android/gms/appindexing/AppIndexApi$ActionResult.class
 com/google/android/gms/internal/zzon.class
 com/google/android/gms/common/data/AbstractDataBuffer.class
-<<<<<<< Updated upstream
-android/support/annotation/Size.class
-com/google/android/gms/internal/zzbmp.class
-=======
->>>>>>> Stashed changes
 com/google/android/gms/internal/zzct.class
 com/google/android/gms/internal/zzbmp.class
 com/google/android/gms/appindexing/AppIndexApi$AppIndexingLink.class

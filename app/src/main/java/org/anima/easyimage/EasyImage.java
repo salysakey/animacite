@@ -12,6 +12,8 @@ import android.os.Parcelable;
 import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.FileProvider;
+import android.util.Log;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,6 +21,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 
 /**
@@ -46,11 +49,21 @@ public class EasyImage implements EasyImageConfig {
     private static final String KEY_TYPE = "pl.aprilapps.easyphotopicker.type";
 
     private static Uri createCameraPictureFile(Context context) throws IOException {
-        File imagePath = EasyImageFiles.getCameraPicturesLocation(context);
-        Uri uri = Uri.fromFile(imagePath);
+        //Log.d("-----Image Path", ""+imagePath.getName());
+        Log.d("-----authority", ""+context.getApplicationContext().getPackageName());
+        File imageFile = EasyImageFiles.getCameraPicturesLocation(context);
+       // File imagePath = new File(context.getApplicationContext().getPackageName());
+        //if (!imagePath.exists()) imagePath.mkdirs();
+        //File imageFile = File.createTempFile(UUID.randomUUID().toString(), ".jpg", imagePath);
+        Log.d("-----Image Path", ""+imageFile.getAbsolutePath());
+        Log.d("-----authority", ""+context.getApplicationContext().getPackageName());
+        //Uri uri = Uri.fromFile(imagePath);
+        Uri uri = FileProvider.getUriForFile( context, context.getApplicationContext().getPackageName()+".provider",imageFile);
+        Log.d("-----URI", ""+uri.getPath());
         SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
-        editor.putString(KEY_PHOTO_URI, uri.toString());
-        editor.putString(KEY_LAST_CAMERA_PHOTO, imagePath.toString());
+        //editor.putString(KEY_PHOTO_URI, uri.toString());
+        editor.putString(KEY_PHOTO_URI, imageFile.getAbsolutePath());
+        editor.putString(KEY_LAST_CAMERA_PHOTO, imageFile.toString());
         editor.apply();
         return uri;
     }
@@ -80,6 +93,23 @@ public class EasyImage implements EasyImageConfig {
 
         return intent;
     }
+    private static Intent createCameraIntent2(Context context, int type) {
+        storeType(context, type);
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        try {
+            Uri apkURI = FileProvider.getUriForFile(
+                    context,
+                    context.getApplicationContext()
+                            .getPackageName() + ".provider", new File(""));
+            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, apkURI);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return intent;
+    }
+
 
     private static Intent createChooserIntent(Context context, String chooserTitle, int type) throws IOException {
         return createChooserIntent(context, chooserTitle, SHOW_GALLERY_IN_CHOOSER, type);
@@ -227,14 +257,23 @@ public class EasyImage implements EasyImageConfig {
         @SuppressWarnings("ConstantConditions")
         URI imageUri = new URI(PreferenceManager.getDefaultSharedPreferences(context).getString(KEY_PHOTO_URI, null));
         notifyGallery(context, imageUri);
-        return new File(imageUri);
+        return new File(imageUri.getPath());
     }
 
 
-    private static void notifyGallery(Context context, URI pictureUri) throws URISyntaxException {
+    private static void notifyGallery2(Context context, URI pictureUri) throws URISyntaxException {
         Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
         File f = new File(pictureUri);
         Uri contentUri = Uri.fromFile(f);
+        mediaScanIntent.setData(contentUri);
+        context.sendBroadcast(mediaScanIntent);
+    }
+    private static void notifyGallery(Context context, URI pictureUri) throws URISyntaxException {
+        Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+        File f = new File(pictureUri.getPath());
+        Log.d("+++++", ""+f.getPath());
+        Uri contentUri = FileProvider.getUriForFile(context, context.getApplicationContext()
+                        .getPackageName()+".provider" , f);
         mediaScanIntent.setData(contentUri);
         context.sendBroadcast(mediaScanIntent);
     }

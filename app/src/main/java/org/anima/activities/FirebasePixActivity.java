@@ -1,8 +1,10 @@
 package org.anima.activities;
 import org.anima.animacite.R;
 
+import android.Manifest;
 import android.annotation.TargetApi;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -11,6 +13,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.ImageButton;
@@ -79,6 +82,20 @@ public class FirebasePixActivity extends AppCompatActivity {
         return;
     }
 
+    public void showEasyImagePicker2(){
+        if (!EasyPermissions.hasPermissions(this, cameraPerms)) {
+            //EasyImage.openChooserWithGallery(this, "Choisir", 0);
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
+                //ActivityCompat.requestPermissions(FirebaseCCImage.this, new String[]{Manifest.permission.CAMERA}, MY_PERMISSIONS_REQUESTS_CAMERA);
+            }
+            else {
+
+            }
+
+        }
+
+        EasyImage.openCamera(this, 0);
+    }
 
 
 

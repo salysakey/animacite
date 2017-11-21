@@ -6248,6 +6248,10 @@
         "source": "/Users/macbookpro/.gradle/caches/transforms-1/files-1.1/play-services-plus-10.2.0.aar/c9cde7bdacb8aa283697e80426520498/res/drawable-mdpi-v4/ic_plusone_small_off_client.png"
     },
     {
+        "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/xml_provider_paths.xml.flat",
+        "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/xml/provider_paths.xml"
+    },
+    {
         "merged": "/Users/macbookpro/Documents/GitHub/animacite/app/build/intermediates/res/merged/debug/drawable_fondsecondaire2.png.flat",
         "source": "/Users/macbookpro/Documents/GitHub/animacite/app/src/main/res/drawable/fondsecondaire2.png"
     },

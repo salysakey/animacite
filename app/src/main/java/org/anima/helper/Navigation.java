@@ -170,8 +170,8 @@ public class Navigation {
                         break;
 
                     case R.id.login:
-                        Intent intent = new Intent(context.getApplicationContext(), LoginActivity.class);
-                        context.startActivity(intent);
+                        Intent intent_login = new Intent(context.getApplicationContext(), LoginActivity.class);
+                        context.startActivity(intent_login);
                         break;
                     case R.id.logout:
                         FacebookSdk.sdkInitialize(context.getApplicationContext());

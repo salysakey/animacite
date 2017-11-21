@@ -57,7 +57,12 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
             //question.setGloablereponse( globalnbrselection=0);
             List<Proposition> propositions = question.getPropositions();
             for (Proposition proposition : propositions) {
-                questionResponses.add(new QuestionResponse(question.getId(), proposition.getId()));
+                try{
+                    questionResponses.add(new QuestionResponse(question.getId(), proposition.getId()));
+                }catch(Exception ex){
+                    ex.printStackTrace();
+                }
+
             }
         }
         return questionResponses;
@@ -84,7 +89,7 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
         question = getItem(position);
         View view = convertView;
 
-
+        /*
         if (view == null) {
             view = ((Activity) context).getLayoutInflater().inflate(R.layout.list_item_question, null);
             holder = new ListViewHolder();
@@ -95,6 +100,15 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
         } else {
             holder = (ListViewHolder) view.getTag();
         }
+        */
+
+        // solution for proposition not display when there are many question
+        view = ((Activity) context).getLayoutInflater().inflate(R.layout.list_item_question, null);
+        holder = new ListViewHolder();
+        holder.txtQuestionDesc = (TextView) view.findViewById(R.id.question_description);
+        holder.ratingBar = (RatingBar) view.findViewById(R.id.question_rating_bar);
+        holder.listView = (ListView) view.findViewById(R.id.list);
+        view.setTag(holder);
 
         if (question != null) {
             int num = position +1;
@@ -231,29 +245,36 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
                 }
             }else{//NOT RESULTAT
 
-
                 if (isStarQuestion(question)) {
                     holder.listView.setVisibility(View.GONE);
                     holder.ratingBar.setVisibility(View.VISIBLE);
                     holder.ratingBar.setId(question.getId());
                     holder.ratingBar.setOnRatingBarChangeListener(this);
-
-                } else {
+                } else{
                     String [] propositions = getPropositions(question);
                     allReponses = getReponses(question);
 
-                    Object tag = holder.listView.getTag();
-                    Log.i("", "tag : " + tag);
+                    //Object tag = holder.listView.getTag();
+                    //Log.i("", "tag : " + tag);
+                    Log.d("XSP: ",""+question.getName()+", prop: "+question.getPropositions().size());
+                    Log.d("","prop: "+propositions.toString());
 
-
+                    ArrayAdapter<String> adapter = new ArrayAdapter<>(context,
+                            android.R.layout.simple_list_item_1,
+                            propositions);
                     if(question.getType()==1){
-
+                        holder.listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+                    }else{
+                        holder.listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+                    }
+                    holder.listView.setAdapter(adapter);
+                    /*
+                    if(question.getType()==1){
                         ArrayAdapter<String> adapter = new ArrayAdapter<>(context,
                                 android.R.layout.simple_list_item_1,
                                 propositions);
                         holder.listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
                         holder.listView.setAdapter(adapter);
-
                     }else{
                         ArrayAdapter<String> adapter2 = new ArrayAdapter<>(context,
                                 android.R.layout.simple_list_item_1,
@@ -262,10 +283,8 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
                         //holder.listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
                         holder.listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
                         holder.listView.setAdapter(adapter2);
-
-
-
                     }
+                    */
 
 
                     holder.listView.setTag(AVAILABLE_TAG);

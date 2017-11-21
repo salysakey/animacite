@@ -3849,3 +3849,4 @@ int styleable com_facebook_profile_picture_view_com_facebook_preset_size 1
 int xml app_tracker 0x7f110000
 int xml ecommerce_tracker 0x7f110001
 int xml global_tracker 0x7f110002
+int xml provider_paths 0x7f110003
