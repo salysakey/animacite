@@ -186,7 +186,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
                         public void onClick(DialogInterface dialog, int which) {
                             // Cancel Dialog
 
-                            Intent intent4 = new Intent(SignalementActivity.this, ImagePickActivity.class);
+                            Intent intent4 = new Intent(SignalementActivity.this, SignalementActivity.class);
                             startActivity(intent4);
                             dialog.cancel();
                         }
@@ -244,49 +244,18 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         type = (Spinner) findViewById(R.id.type);
         type.setOnItemSelectedListener(new CustomOnItemSelectedListener());
         type.setBackgroundColor(Color.WHITE);
-
         addItemsOnSpinner();
-
         photo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showEasyImagePicker();
             }
         });
-
         //initializeEvaluation();
-
         //initializeControls();
     }
 
-    /**
-     *
-     */
-    @RequiresApi(api = Build.VERSION_CODES.M)
-    public void requestLocation() {
 
-        LocationManager locManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        LocationListener locationChangeListener = new LocationListener() {
-            public void onLocationChanged(Location l) {
-                if (l != null) {
-                    Log.i("SuperMap", "Location changed : Lat: " + l.getLatitude() + " Lng: " +
-                            l.getLongitude());
-                }
-            }
-
-            public void onProviderEnabled(String p) {
-            }
-
-            public void onProviderDisabled(String p) {
-            }
-
-            public void onStatusChanged(String p, int status, Bundle extras) {
-            }
-
-        };
-
-
-    }// end function getLocation
     /**
      * @author salysakey
      * @param context
@@ -325,17 +294,11 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
                             l.getLongitude());
                 }
             }
-
-            public void onProviderEnabled(String p) {
-            }
-
-            public void onProviderDisabled(String p) {
-            }
-
-            public void onStatusChanged(String p, int status, Bundle extras) {
-            }
-
+            public void onProviderEnabled(String p) {}
+            public void onProviderDisabled(String p) {}
+            public void onStatusChanged(String p, int status, Bundle extras) {}
         };
+
         if (locManager.isProviderEnabled(LocationManager.GPS_PROVIDER) == false &&
                 locManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER) == false) {
             AlertDialog.Builder alertDialog = new AlertDialog.Builder(SignalementActivity.this);

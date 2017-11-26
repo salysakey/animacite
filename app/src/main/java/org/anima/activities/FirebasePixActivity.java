@@ -46,7 +46,7 @@ public class FirebasePixActivity extends AppCompatActivity {
             android.Manifest.permission.READ_EXTERNAL_STORAGE,
             android.Manifest.permission.WRITE_EXTERNAL_STORAGE
     };
-    public ImageButton photo;
+    public ImageView photo;
     public ImageView imagephoto;
     private Uri fileUri;
     private  Uri fullSizeUrl;
@@ -56,7 +56,7 @@ public class FirebasePixActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.signalement);
-        photo = (ImageButton) findViewById(R.id.takephoto);
+        photo = (ImageView) findViewById(R.id.takephoto);
         imagephoto = (ImageView) findViewById(R.id.image_photo);
 
 

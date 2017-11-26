@@ -13,115 +13,95 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical">
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/includes_toolbar" />
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/includes_toolbar" />
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
 
-        <LinearLayout
-            android:background="@color/background"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical"
-            android:paddingRight="@dimen/signalement_layout_padding_lateral"
-            android:paddingLeft="@dimen/signalement_layout_padding_lateral"
-            >
-
-
-            <!-- View Title Label -->
-            <TextView
-                android:id="@+id/select_type_signalement_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/select_type_signalement_text"
-                android:textSize="@dimen/signalement_action_title"
-                android:textColor="@color/dark_grey" />
-            <!-- Name Label -->
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <Spinner
-                    android:id="@+id/type"
-                    android:layout_marginTop="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:layout_centerInParent="true"
-                    />
-
-            </RelativeLayout>
-
-            <TextView
-                android:id="@+id/take_photo_signalement_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/take_photo_signalement_text"
-                android:textSize="@dimen/signalement_action_title"
-                android:textColor="@color/dark_grey" />
-            <ImageButton
-                android:layout_marginTop="5dp"
+            <LinearLayout
                 android:background="@color/background"
-                android:id="@+id/takephoto"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/takephotoblack"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:hint="Prendre photo"/>
-
-            <ImageView
-                android:visibility="gone"
-                android:id="@+id/image_photo"
-                android:layout_width="100dp"
-                android:layout_height="100dp" />
-
-            <TextView
-                android:id="@+id/describ_signalement_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/describ_signalement_text"
-                android:textSize="@dimen/signalement_action_title"
-                android:textColor="@color/dark_grey"/>
-
-            <EditText
-                android:layout_marginTop="3dp"
-                android:background="@color/white"
-                android:id="@+id/description"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:minLines="3"
-                android:hint="@string/describ_signalement_text_hint"
-                android:gravity="top|left"
-                android:textColorHint="@color/grey">
-            </EditText>
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/signalement_layout_padding_lateral"
+                android:paddingLeft="@dimen/signalement_layout_padding_lateral"
+                >
 
 
-            <TextView
-                android:id="@+id/register_error"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="#e30000"
-                android:textStyle="bold" />
+                <!-- View Title Label -->
+                <!-- Name Label -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/btnRegister"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:background="#ff6347"
-                android:onClick="signaler"
-                android:text="Signaler"
-                android:textColor="#fff"/>
+                    <Spinner
+                        android:id="@+id/type"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        />
 
-            <!-- Link to Login Screen -->
+                </RelativeLayout>
 
-        </LinearLayout>
+                <ImageView
+                    android:id="@+id/image_photo"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:visibility="gone" />
 
-    </ScrollView>
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/white"
+                    android:gravity="top|left"
+                    android:hint="@string/describ_signalement_text"
+                    android:minLines="3"
+                    android:textColorHint="@color/grey"></EditText>
+
+
+                <TextView
+                    android:id="@+id/register_error"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#e30000"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/btn_camera2"
+                    tools:layout_editor_absoluteX="-230dp"
+                    tools:layout_editor_absoluteY="379dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cc_camera_active" />
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#ff6347"
+                    android:onClick="signaler"
+                    android:text="Signaler"
+                    android:textColor="#fff"/>
+
+                <!-- Link to Login Screen -->
+
+            </LinearLayout>
+
+        </ScrollView>
     </LinearLayout>
     <android.support.design.widget.NavigationView
         android:background="@android:color/white"
