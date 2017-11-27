@@ -21,6 +21,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -428,4 +430,28 @@ public class MyAccountActivity  extends AppCompatActivity {
 
         return true;
     }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (Integer.parseInt(android.os.Build.VERSION.SDK) > 5
+                && keyCode == KeyEvent.KEYCODE_BACK
+                && event.getRepeatCount() == 0) {
+            Log.d("CDA", "onKeyDown Called");
+            onBackPressed();
+            return true;
+        }
+
+        mTracker.send(new HitBuilders.EventBuilder()
+                .setCategory("Fails")
+                .setAction("WentBackWithoutAnswerQuestions")
+                .setLabel("FailVote")
+                .build());
+
+        return true;
+    }
+    @Override
+    public void onBackPressed() {
+        //Intent intent = new Intent(Sondage.this, EmptyActivity.class);
+        finish();
+    }// end function
 }

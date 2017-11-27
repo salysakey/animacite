@@ -136,21 +136,6 @@ public class InfoContactActivity extends AppCompatActivity {
         setupDrawerLayout();
     }
 
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event)
-    {
-
-        mTracker.send(new HitBuilders.EventBuilder()
-                .setCategory("Fails")
-                .setAction("wentBackWhileModifyingProfil")
-                .setLabel("FailModifProfil")
-                .build());
-
-        return true;
-
-
-    }
-
     public void addItemsOnSpinner() {
 
 
@@ -1062,4 +1047,30 @@ public class InfoContactActivity extends AppCompatActivity {
         }
     }
 
+
+
+    // fix keyback not working
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (Integer.parseInt(android.os.Build.VERSION.SDK) > 5
+                && keyCode == KeyEvent.KEYCODE_BACK
+                && event.getRepeatCount() == 0) {
+            Log.d("CDA", "onKeyDown Called");
+            onBackPressed();
+            return true;
+        }
+
+        mTracker.send(new HitBuilders.EventBuilder()
+                .setCategory("Fails")
+                .setAction("WentBackWithoutAnswerQuestions")
+                .setLabel("FailVote")
+                .build());
+
+        return true;
+    }
+    @Override
+    public void onBackPressed() {
+        //Intent intent = new Intent(Sondage.this, EmptyActivity.class);
+        finish();
+    }// end function
 }

@@ -28,6 +28,8 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -889,5 +891,30 @@ public class RegisterActivity extends AppCompatActivity {
         super.onResume();
         //checkPlayServices();
     }
+
+    // fix keyback not working
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (Integer.parseInt(android.os.Build.VERSION.SDK) > 5
+                && keyCode == KeyEvent.KEYCODE_BACK
+                && event.getRepeatCount() == 0) {
+            Log.d("CDA", "onKeyDown Called");
+            onBackPressed();
+            return true;
+        }
+
+        mTracker.send(new HitBuilders.EventBuilder()
+                .setCategory("Fails")
+                .setAction("WentBackWithoutAnswerQuestions")
+                .setLabel("FailVote")
+                .build());
+
+        return true;
+    }
+    @Override
+    public void onBackPressed() {
+        //Intent intent = new Intent(Sondage.this, EmptyActivity.class);
+        finish();
+    }// end function
 }
 
