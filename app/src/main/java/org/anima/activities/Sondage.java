@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.SoundEffectConstants;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -171,6 +172,14 @@ public class Sondage extends AppCompatActivity {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (Integer.parseInt(android.os.Build.VERSION.SDK) > 5
+                && keyCode == KeyEvent.KEYCODE_BACK
+                && event.getRepeatCount() == 0) {
+            Log.d("CDA", "onKeyDown Called");
+            onBackPressed();
+            return true;
+        }
+
         mTracker.send(new HitBuilders.EventBuilder()
                 .setCategory("Fails")
                 .setAction("WentBackWithoutAnswerQuestions")
@@ -606,6 +615,13 @@ public class Sondage extends AppCompatActivity {
         }
 
     }
+
+    @Override
+    public void onBackPressed() {
+        //Intent intent = new Intent(Sondage.this, EmptyActivity.class);
+        finish();
+    }// end function
+
 
 
 }
