@@ -160,6 +160,22 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
 
         checkStoragePermission();
         checkLocationPermission();
+
+        type = (Spinner) findViewById(R.id.type);
+        type.setOnItemSelectedListener(new CustomOnItemSelectedListener());
+        type.setBackgroundColor(Color.WHITE);
+        addItemsOnSpinner();
+        photo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showEasyImagePicker();
+            }
+        });
+        //initializeEvaluation();
+        //initializeControls();
+    }
+
+    public void getLocation(){
         LocationManager locManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
         LocationListener locationChangeListener = new LocationListener() {
@@ -174,8 +190,6 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
             public void onProviderDisabled(String p) {}
             public void onStatusChanged(String p, int status, Bundle extras) {}
         };
-
-
         if (locManager.isProviderEnabled(LocationManager.GPS_PROVIDER) == false && locManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER) == false) {
             AlertDialog.Builder alertDialog = new AlertDialog.Builder(SignalementActivity.this);
             // Setting Dialog Title
@@ -239,22 +253,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
                 }
             }
         }
-
-
-        type = (Spinner) findViewById(R.id.type);
-        type.setOnItemSelectedListener(new CustomOnItemSelectedListener());
-        type.setBackgroundColor(Color.WHITE);
-        addItemsOnSpinner();
-        photo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showEasyImagePicker();
-            }
-        });
-        //initializeEvaluation();
-        //initializeControls();
     }
-
 
     /**
      * @author salysakey
@@ -277,45 +276,32 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
                         }
                     }).show();
 
-        }else {
-            // permission has not been granted yet. Request it directly.
-            ActivityCompat.requestPermissions((Activity)context,
-                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                    REQUEST_WRITE_EXTERNAL_STORAGE);
         }
     }
 
     public void checkLocationPermission(){
-        LocationManager locManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        LocationListener locationChangeListener = new LocationListener() {
-            public void onLocationChanged(Location l) {
-                if (l != null) {
-                    Log.i("SuperMap", "Location changed : Lat: " + l.getLatitude() + " Lng: " +
-                            l.getLongitude());
-                }
-            }
-            public void onProviderEnabled(String p) {}
-            public void onProviderDisabled(String p) {}
-            public void onStatusChanged(String p, int status, Bundle extras) {}
-        };
-
-        if (locManager.isProviderEnabled(LocationManager.GPS_PROVIDER) == false &&
-                locManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER) == false) {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             AlertDialog.Builder alertDialog = new AlertDialog.Builder(SignalementActivity.this);
             // Setting Dialog Title
-            alertDialog.setTitle("Activer la localisation pour participer.");
+            alertDialog.setTitle("Veuillez activer votre localisation");
             alertDialog.setIcon(R.drawable.petite_image);
+            // Setting Dialog Message
+            // Setting Positive "Yes" Button
+            // Setting Negative "NO" Button
             alertDialog.setNegativeButton("Ok",
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
+                            ActivityCompat.requestPermissions(SignalementActivity.this,
+                                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.CAMERA},
+                                    MY_PERMISSIONS_SIGNALEMENT);
                         }
                     });
             // Showing Alert Message
             AlertDialog alert = alertDialog.create();
             alert.show();
         }
-    }
+    }// end function
+
     /**
      * @author salysakey
      */
@@ -350,73 +336,11 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         }// end if request code
 
         //Demande d'autorisations pour le Signalement LOCALISATION + CAMERA
-        if (requestCode == MY_PERMISSIONS_SIGNALEMENT && grantResults[0] == MY_PERMISSIONS_GRANTED && grantResults[1] == MY_PERMISSIONS_GRANTED) {
-            Log.d(TAG, " - onRequestPermissionsResult.LOCALISATION");
-            LocationManager locManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-            LocationListener locationChangeListener = new LocationListener() {
-                public void onLocationChanged(Location l) {
-                    if (l != null) {
-                        Log.i("SuperMap", "Location changed : Lat: " + l.getLatitude() + " Lng: " +
-                                l.getLongitude());
-                    }
-                }
-
-                public void onProviderEnabled(String p) {
-                }
-
-                public void onProviderDisabled(String p) {
-                }
-
-                public void onStatusChanged(String p, int status, Bundle extras) {
-                }
-
-            };
-
-            //locManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, locationChangeListener);
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                // TODO: Consider calling
-                //    ActivityCompat#requestPermissions
-                // here to request the missing permissions, and then overriding
-                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                //                                          int[] grantResults)
-                // to handle the case where the user grants the permission. See the documentation
-                // for ActivityCompat#requestPermissions for more details.
-                location = locManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-            }
-            if (location == null) {
-                locManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, locationChangeListener);
-                location = locManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-            }
-            if(location!=null){
-
-
-                longitude = location.getLongitude();
-                latitude = location.getLatitude();
-            }else{
-                AlertDialog.Builder alertDialog = new AlertDialog.Builder(SignalementActivity.this);
-                // Setting Dialog Title
-                alertDialog.setTitle("Nous ne pouvons vous localiser, réessayer plus tard.");
-                alertDialog.setIcon(R.drawable.petite_image);
-                alertDialog.setNegativeButton("Ok",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                Intent intent4 = new Intent(SignalementActivity.this, ImagePickActivity.class);
-                                startActivity(intent4);
-                                dialog.cancel();
-                            }
-                        });
-                // Showing Alert Message
-                AlertDialog alert = alertDialog.create();
-                alert.show();
-            }// end if location!=null
-
-            return;
+        if ( grantResults.length>0 && requestCode == MY_PERMISSIONS_SIGNALEMENT && grantResults[0] == MY_PERMISSIONS_GRANTED && grantResults[1] == MY_PERMISSIONS_GRANTED) {
+            checkLocationPermission();
         }
-        else if(requestCode == MY_PERMISSIONS_SIGNALEMENT && (grantResults[0] != MY_PERMISSIONS_GRANTED || grantResults[1] != MY_PERMISSIONS_GRANTED)){
-            Intent intent4 = new Intent(SignalementActivity.this, ImagePickActivity.class);
-            startActivity(intent4);
-            //Toast.makeText(getApplicationContext(), "Veuillez autoriser les permissions.", Toast.LENGTH_LONG).show();
-            return;
+        else if(grantResults.length > 0 && requestCode == MY_PERMISSIONS_SIGNALEMENT && (grantResults[0] != MY_PERMISSIONS_GRANTED || grantResults[1] != MY_PERMISSIONS_GRANTED)){
+            getLocation();
         }
 
 
