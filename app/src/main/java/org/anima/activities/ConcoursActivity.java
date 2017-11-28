@@ -1,5 +1,6 @@
 package org.anima.activities;
 import org.anima.helper.Navigation;
+import org.anima.helper.Permissions;
 import org.anima.utils.ConfigurationVille;
 import org.anima.utils.OnSwipeTouchListener;
 import org.json.JSONArray;
@@ -11,6 +12,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -73,6 +75,7 @@ public class ConcoursActivity extends AppCompatActivity implements View.OnClickL
     Drawable d;
     ImageView btn_camera, btn_back, btn_next, btn_prev, btn_like;
     private File mFile;
+    private final int REQUEST_WRITE_EXTERNAL_STORAGE = 19;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +88,7 @@ public class ConcoursActivity extends AppCompatActivity implements View.OnClickL
         RequestParams params = new RequestParams();
         // Put Http parameter username with value of Email Edit View control
         params.put("userId", ""+PrefManager.getUserId(getApplicationContext()));
+        //Permissions.checkStoragePermission(ConcoursActivity.this, REQUEST_WRITE_EXTERNAL_STORAGE);
         invokeWS(params);
 
     }// end function
@@ -522,4 +526,8 @@ public class ConcoursActivity extends AppCompatActivity implements View.OnClickL
         new Navigation(ConcoursActivity.this, drawerLayout, view);
     }// end function
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        //Permissions.storagePermissionResult(requestCode, permissions, grantResults, ConcoursActivity.this, REQUEST_WRITE_EXTERNAL_STORAGE);
+    }
 }// end class

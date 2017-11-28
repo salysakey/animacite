@@ -1,6 +1,7 @@
 package org.anima.activities;
 
 import org.anima.helper.Navigation;
+import org.anima.helper.Permissions;
 import org.anima.utils.ConfigurationVille;
 import org.anima.animacite.R;
 
@@ -54,6 +55,7 @@ import com.facebook.login.LoginManager;
 
 import android.location.LocationListener;
 
+import com.google.android.gms.auth.api.signin.SignInAccount;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -158,7 +160,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         // Set Cancelable as False
         prgDialog.setCancelable(false);
 
-        checkStoragePermission();
+        Permissions.checkStoragePermission(SignalementActivity.this, REQUEST_WRITE_EXTERNAL_STORAGE);
         checkLocationPermission();
 
         type = (Spinner) findViewById(R.id.type);
@@ -255,29 +257,6 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         }
     }
 
-    /**
-     * @author salysakey
-     * @param context
-     */
-    private static void requestPermission(final Context context){
-        if(ActivityCompat.shouldShowRequestPermissionRationale((Activity)context,Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-            // Provide an additional rationale to the user if the permission was not granted
-            // and the user would benefit from additional context for the use of the permission.
-            // For example if the user has previously denied the permission.
-
-            new AlertDialog.Builder(context)
-                    .setMessage("Please allow access to storage")
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            ActivityCompat.requestPermissions((Activity) context,
-                                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                                    REQUEST_WRITE_EXTERNAL_STORAGE);
-                        }
-                    }).show();
-
-        }
-    }
 
     public void checkLocationPermission(){
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -302,38 +281,12 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         }
     }// end function
 
-    /**
-     * @author salysakey
-     */
-    public void checkStoragePermission(){
-        File storageDir = null;
-        if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
-            //RUNTIME PERMISSION Android M
-            if(PackageManager.PERMISSION_GRANTED==ActivityCompat.checkSelfPermission(getApplicationContext(),Manifest.permission.WRITE_EXTERNAL_STORAGE)){
-                storageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "");
-            }else{
-                requestPermission(SignalementActivity.this);
-            }
 
-        }// end if
-    }// end function
 
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         Log.d(TAG, " - onRequestPermissionsResult");
-
-        // check storage permission (salysakey)
-        if (requestCode == REQUEST_WRITE_EXTERNAL_STORAGE){
-            if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(getApplicationContext(),"Storage Permission is granted.",
-                        Toast.LENGTH_SHORT).show();
-
-            } else {
-                Toast.makeText(getApplicationContext(),"No permission on storage",
-                        Toast.LENGTH_SHORT).show();
-                super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-            }
-            return;
-        }// end if request code
+        Permissions.storagePermissionResult(requestCode, permissions, grantResults,
+                SignalementActivity.this, REQUEST_WRITE_EXTERNAL_STORAGE);
 
         //Demande d'autorisations pour le Signalement LOCALISATION + CAMERA
         if ( grantResults.length>0 && requestCode == MY_PERMISSIONS_SIGNALEMENT && grantResults[0] == MY_PERMISSIONS_GRANTED && grantResults[1] == MY_PERMISSIONS_GRANTED) {

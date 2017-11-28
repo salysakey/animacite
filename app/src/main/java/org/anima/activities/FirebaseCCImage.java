@@ -4,6 +4,7 @@ import org.anima.animacite.R;
 
 import android.Manifest;
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -20,6 +21,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.StrictMode;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
@@ -48,6 +50,7 @@ import com.loopj.android.http.RequestParams;
 
 import org.anima.easyimage.DefaultCallback;
 import org.anima.easyimage.EasyImage;
+import org.anima.helper.Permissions;
 import org.anima.utils.PrefManager;
 import org.anima.utils.UploadFileSuccessEvent;
 import org.anima.utils.ConfigurationVille;
@@ -75,6 +78,7 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
             android.Manifest.permission.READ_EXTERNAL_STORAGE,
             android.Manifest.permission.WRITE_EXTERNAL_STORAGE
     };
+    private static final int REQUEST_WRITE_EXTERNAL_STORAGE=19;
     private static final int MY_PERMISSIONS_GRANTED = 0;
     private static final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 1;
     private static final int MY_PERMISSIONS_REQUESTS_POSITION = MY_PERMISSIONS_REQUEST_READ_CONTACTS + 1;
@@ -105,9 +109,9 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
         Intent intent = getIntent();
         concoursId = intent.getIntExtra("concoursId", 0);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        Permissions.checkStoragePermission(FirebaseCCImage.this, REQUEST_WRITE_EXTERNAL_STORAGE);
+        //checkStoragePermission();
         requestLocation();
-
-
     }
 
 
@@ -214,7 +218,21 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
 
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         Log.d(TAG, " - onRequestPermissionsResult");
+        Permissions.storagePermissionResult(requestCode, permissions, grantResults, FirebaseCCImage.this, REQUEST_WRITE_EXTERNAL_STORAGE);
+        /*
+        if (requestCode == REQUEST_WRITE_EXTERNAL_STORAGE){
+            if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(getApplicationContext(),"Storage Permission is granted.",
+                        Toast.LENGTH_SHORT).show();
 
+            } else {
+                Toast.makeText(getApplicationContext(),"No permission on storage",
+                        Toast.LENGTH_SHORT).show();
+                super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+            }
+            return;
+        }// end if request code
+        */
         //Demande d'autorisations pour le concours LOCALISATION + CAMERA
         if (requestCode == MY_PERMISSIONS_CONCOURS && grantResults[0] == MY_PERMISSIONS_GRANTED) {
             Log.d(TAG, " - onRequestPermissionsResult.LOCALISATION");
@@ -372,6 +390,7 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
 
         super.onActivityResult(requestCode, resultCode, data);
         EasyImage.configuration(this)
@@ -542,5 +561,48 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
 
         }
     }// end class UploadPostTask
+
+
+    /**
+     * @author salysakey
+     * @param context
+     */
+    private static void requestPermission(final Context context){
+        if(ActivityCompat.shouldShowRequestPermissionRationale((Activity)context,Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+            // Provide an additional rationale to the user if the permission was not granted
+            // and the user would benefit from additional context for the use of the permission.
+            // For example if the user has previously denied the permission.
+
+            new AlertDialog.Builder(context)
+                    .setMessage("Please allow access to storage")
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            ActivityCompat.requestPermissions((Activity) context,
+                                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                                    REQUEST_WRITE_EXTERNAL_STORAGE);
+                        }
+                    }).show();
+
+        }// end if
+    }// end function
+
+    /**
+     * @author salysakey
+     */
+    public void checkStoragePermission(){
+        File storageDir = null;
+        if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
+            //RUNTIME PERMISSION Android M
+            if(PackageManager.PERMISSION_GRANTED==ActivityCompat.checkSelfPermission(getApplicationContext(),Manifest.permission.WRITE_EXTERNAL_STORAGE)){
+                storageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "");
+            }else{
+                requestPermission(FirebaseCCImage.this);
+            }
+
+        }// end if
+    }// end function
+
+
 
 }// end class
