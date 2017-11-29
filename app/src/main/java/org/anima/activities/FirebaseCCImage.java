@@ -110,8 +110,8 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
         concoursId = intent.getIntExtra("concoursId", 0);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         Permissions.checkStoragePermission(FirebaseCCImage.this, REQUEST_WRITE_EXTERNAL_STORAGE);
-        //checkStoragePermission();
-        requestLocation();
+        Permissions.checkLocationPermission(FirebaseCCImage.this, MY_PERMISSIONS_CONCOURS);
+        showEasyImagePicker();
     }
 
 
@@ -128,184 +128,19 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
         display_upload.setImageDrawable(d);
     }
 
-    /**
-     *
-     */
-    @RequiresApi(api = Build.VERSION_CODES.M)
-    public void requestLocation() {
 
-        LocationManager locManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        LocationListener locationChangeListener = new LocationListener() {
-            public void onLocationChanged(Location l) {
-                if (l != null) {
-                    Log.i("SuperMap", "Location changed : Lat: " + l.getLatitude() + " Lng: " +
-                            l.getLongitude());
-                }
-            }
-
-            public void onProviderEnabled(String p) {
-            }
-
-            public void onProviderDisabled(String p) {
-            }
-
-            public void onStatusChanged(String p, int status, Bundle extras) {
-            }
-
-        };
-        if (locManager.isProviderEnabled(LocationManager.GPS_PROVIDER) == false &&
-                locManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER) == false) {
-            //if(locManager.isProviderEnabled(LocationManager.GPS_PROVIDER)==false){
-
-            AlertDialog.Builder alertDialog = new AlertDialog.Builder(FirebaseCCImage.this);
-            // Setting Dialog Title
-            alertDialog.setTitle("Activer la localisation pour participer.");
-            alertDialog.setIcon(R.drawable.petite_image);
-            alertDialog.setNegativeButton("Ok",
-                    new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            Intent intent4 = new Intent(FirebaseCCImage.this, ConcoursActivity.class);
-                            startActivity(intent4);
-                            dialog.cancel();
-                        }
-                    });
-            // Showing Alert Message
-            AlertDialog alert = alertDialog.create();
-            alert.show();
-
-        } else {
-
-            if ((ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) || (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)) {
-
-                ActivityCompat.requestPermissions(FirebaseCCImage.this,
-                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.CAMERA},
-                        MY_PERMISSIONS_CONCOURS);
-
-                //return;
-            } else {
-                locManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, locationChangeListener);
-                location = locManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-                if (location == null) {
-                    locManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, locationChangeListener);
-                    location = locManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-                }
-                if (location != null) {
-                    longitude = location.getLongitude();
-                    latitude = location.getLatitude();
-                    showEasyImagePicker();
-                } else {
-                    AlertDialog.Builder alertDialog = new AlertDialog.Builder(FirebaseCCImage.this);
-                    // Setting Dialog Title
-                    alertDialog.setTitle("Nous ne pouvons vous localiser, réessayer plus tard.");
-                    alertDialog.setIcon(R.drawable.petite_image);
-                    alertDialog.setNegativeButton("Ok",
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                    Intent intent4 = new Intent(FirebaseCCImage.this, ConcoursActivity.class);
-                                    startActivity(intent4);
-                                    dialog.cancel();
-                                }
-                            });
-                    // Showing Alert Message
-                    AlertDialog alert = alertDialog.create();
-                    alert.show();
-                }// end if location!=null
-            }
-
-        }// end if logManager
-
-    }// end function getLocation
 
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         Log.d(TAG, " - onRequestPermissionsResult");
         Permissions.storagePermissionResult(requestCode, permissions, grantResults, FirebaseCCImage.this, REQUEST_WRITE_EXTERNAL_STORAGE);
-        /*
-        if (requestCode == REQUEST_WRITE_EXTERNAL_STORAGE){
-            if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(getApplicationContext(),"Storage Permission is granted.",
-                        Toast.LENGTH_SHORT).show();
 
-            } else {
-                Toast.makeText(getApplicationContext(),"No permission on storage",
-                        Toast.LENGTH_SHORT).show();
-                super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-            }
-            return;
-        }// end if request code
-        */
         //Demande d'autorisations pour le concours LOCALISATION + CAMERA
-        if (requestCode == MY_PERMISSIONS_CONCOURS && grantResults[0] == MY_PERMISSIONS_GRANTED) {
-            Log.d(TAG, " - onRequestPermissionsResult.LOCALISATION");
-            LocationManager locManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-            LocationListener locationChangeListener = new LocationListener() {
-                public void onLocationChanged(Location l) {
-                    if (l != null) {
-                        Log.i("SuperMap", "Location changed : Lat: " + l.getLatitude() + " Lng: " +
-                                l.getLongitude());
-                    }
-                }
-
-                public void onProviderEnabled(String p) {
-                }
-
-                public void onProviderDisabled(String p) {
-                }
-
-                public void onStatusChanged(String p, int status, Bundle extras) {
-                }
-
-            };
-
-            locManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, locationChangeListener);
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                // TODO: Consider calling
-                //    ActivityCompat#requestPermissions
-                // here to request the missing permissions, and then overriding
-                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                //                                          int[] grantResults)
-                // to handle the case where the user grants the permission. See the documentation
-                // for ActivityCompat#requestPermissions for more details.
-                location = locManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-            }
-            if (location == null) {
-                locManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, locationChangeListener);
-                location = locManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-            }
-            if(location!=null){
-
-
-                longitude = location.getLongitude();
-                latitude = location.getLatitude();
-                showEasyImagePicker();
-            }else{
-                AlertDialog.Builder alertDialog = new AlertDialog.Builder(FirebaseCCImage.this);
-                // Setting Dialog Title
-                alertDialog.setTitle("Nous ne pouvons vous localiser, réessayer plus tard.");
-                alertDialog.setIcon(R.drawable.petite_image);
-                alertDialog.setNegativeButton("Ok",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                Intent intent4 = new Intent(FirebaseCCImage.this, ConcoursActivity.class);
-                                startActivity(intent4);
-                                dialog.cancel();
-                            }
-                        });
-                // Showing Alert Message
-                AlertDialog alert = alertDialog.create();
-                alert.show();
-            }// end if location!=null
-
-            return;
+        if (grantResults.length > 0 && requestCode == MY_PERMISSIONS_CONCOURS && grantResults[0] == MY_PERMISSIONS_GRANTED) {
+            showEasyImagePicker();
+        } else if(requestCode == MY_PERMISSIONS_CONCOURS && grantResults[0] != MY_PERMISSIONS_GRANTED){
+            Permissions.getLocation(FirebaseCCImage.this, MY_PERMISSIONS_CONCOURS, location,
+                    latitude, longitude,MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES);
         }
-        else if(requestCode == MY_PERMISSIONS_CONCOURS && grantResults[0] != MY_PERMISSIONS_GRANTED){
-            Intent intent4 = new Intent(FirebaseCCImage.this, ConcoursActivity.class);
-            startActivity(intent4);
-            Toast.makeText(getApplicationContext(), "Veuillez autoriser les permissions.", Toast.LENGTH_LONG).show();
-            return;
-        }
-
-
-
     }
 
     public void addNewItemToDB(int concoursId, double latitude, double longitude, String imageURL){
@@ -390,8 +225,6 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
-
         super.onActivityResult(requestCode, resultCode, data);
         EasyImage.configuration(this)
                 .saveInAppExternalFilesDir() //if you want to use root internal memory for storying images
@@ -510,11 +343,8 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
                 return null;
             }
 
-
-
             FirebaseStorage storageRef = FirebaseStorage.getInstance();
             StorageReference photoRef = storageRef.getReferenceFromUrl(ConfigurationVille.FIREBASE_STORAGE_URL);
-
 
             Long timestamp = System.currentTimeMillis();
             final StorageReference fullSizeRef = photoRef.child(ConfigurationVille.FOLDER_NAME).child("concours_photos").child(ConfigurationVille.FOLDER_NAME +"-Concours-Android-" +timestamp.toString()+ ".jpg");
@@ -561,48 +391,5 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
 
         }
     }// end class UploadPostTask
-
-
-    /**
-     * @author salysakey
-     * @param context
-     */
-    private static void requestPermission(final Context context){
-        if(ActivityCompat.shouldShowRequestPermissionRationale((Activity)context,Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-            // Provide an additional rationale to the user if the permission was not granted
-            // and the user would benefit from additional context for the use of the permission.
-            // For example if the user has previously denied the permission.
-
-            new AlertDialog.Builder(context)
-                    .setMessage("Please allow access to storage")
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            ActivityCompat.requestPermissions((Activity) context,
-                                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                                    REQUEST_WRITE_EXTERNAL_STORAGE);
-                        }
-                    }).show();
-
-        }// end if
-    }// end function
-
-    /**
-     * @author salysakey
-     */
-    public void checkStoragePermission(){
-        File storageDir = null;
-        if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
-            //RUNTIME PERMISSION Android M
-            if(PackageManager.PERMISSION_GRANTED==ActivityCompat.checkSelfPermission(getApplicationContext(),Manifest.permission.WRITE_EXTERNAL_STORAGE)){
-                storageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "");
-            }else{
-                requestPermission(FirebaseCCImage.this);
-            }
-
-        }// end if
-    }// end function
-
-
 
 }// end class

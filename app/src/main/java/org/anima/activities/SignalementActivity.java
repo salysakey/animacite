@@ -161,7 +161,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         prgDialog.setCancelable(false);
 
         Permissions.checkStoragePermission(SignalementActivity.this, REQUEST_WRITE_EXTERNAL_STORAGE);
-        checkLocationPermission();
+        Permissions.checkLocationPermission(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT);
 
         type = (Spinner) findViewById(R.id.type);
         type.setOnItemSelectedListener(new CustomOnItemSelectedListener());
@@ -177,111 +177,6 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         //initializeControls();
     }
 
-    public void getLocation(){
-        LocationManager locManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-
-        LocationListener locationChangeListener = new LocationListener() {
-            public void onLocationChanged(Location l) {
-                if (l != null) {
-                    Log.i("SuperMap", "Location changed : Lat: " + l.getLatitude() + " Lng: " +
-                            l.getLongitude());
-                }
-            }
-
-            public void onProviderEnabled(String p) {}
-            public void onProviderDisabled(String p) {}
-            public void onStatusChanged(String p, int status, Bundle extras) {}
-        };
-        if (locManager.isProviderEnabled(LocationManager.GPS_PROVIDER) == false && locManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER) == false) {
-            AlertDialog.Builder alertDialog = new AlertDialog.Builder(SignalementActivity.this);
-            // Setting Dialog Title
-            alertDialog.setTitle("Veuillez activer votre localisation");
-            alertDialog.setIcon(R.drawable.petite_image);
-            alertDialog.setNegativeButton("Ok",
-                    new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            // Cancel Dialog
-
-                            Intent intent4 = new Intent(SignalementActivity.this, SignalementActivity.class);
-                            startActivity(intent4);
-                            dialog.cancel();
-                        }
-                    });
-            // Showing Alert Message
-            AlertDialog alert = alertDialog.create();
-            alert.show();
-
-        } else {
-            if ((ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ) && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(SignalementActivity.this,
-                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.CAMERA},
-                        MY_PERMISSIONS_SIGNALEMENT);
-                //return;
-            }
-            else{
-
-                locManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, locationChangeListener);
-                location = locManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-
-                if (location == null) {
-                    locManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, locationChangeListener);
-                    location = locManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-                }
-
-                if (location != null) {
-                    longitude = location.getLongitude();
-                    latitude = location.getLatitude();
-
-                } else {
-                    AlertDialog.Builder alertDialog = new AlertDialog.Builder(SignalementActivity.this);
-                    // Setting Dialog Title
-                    alertDialog.setTitle("Veuillez activer votre localisation");
-                    alertDialog.setIcon(R.drawable.petite_image);
-                    // Setting Dialog Message
-                    // Setting Positive "Yes" Button
-                    // Setting Negative "NO" Button
-                    alertDialog.setNegativeButton("Ok",
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                    // Cancel Dialog
-                                    Intent intent4 = new Intent(SignalementActivity.this, ImagePickActivity.class);
-                                    startActivity(intent4);
-                                    dialog.cancel();
-                                }
-                            });
-                    // Showing Alert Message
-                    AlertDialog alert = alertDialog.create();
-                    alert.show();
-                }
-            }
-        }
-    }
-
-
-    public void checkLocationPermission(){
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            AlertDialog.Builder alertDialog = new AlertDialog.Builder(SignalementActivity.this);
-            // Setting Dialog Title
-            alertDialog.setTitle("Veuillez activer votre localisation");
-            alertDialog.setIcon(R.drawable.petite_image);
-            // Setting Dialog Message
-            // Setting Positive "Yes" Button
-            // Setting Negative "NO" Button
-            alertDialog.setNegativeButton("Ok",
-                    new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            ActivityCompat.requestPermissions(SignalementActivity.this,
-                                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.CAMERA},
-                                    MY_PERMISSIONS_SIGNALEMENT);
-                        }
-                    });
-            // Showing Alert Message
-            AlertDialog alert = alertDialog.create();
-            alert.show();
-        }
-    }// end function
-
-
 
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         Log.d(TAG, " - onRequestPermissionsResult");
@@ -289,16 +184,14 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
                 SignalementActivity.this, REQUEST_WRITE_EXTERNAL_STORAGE);
 
         //Demande d'autorisations pour le Signalement LOCALISATION + CAMERA
-        if ( grantResults.length>0 && requestCode == MY_PERMISSIONS_SIGNALEMENT && grantResults[0] == MY_PERMISSIONS_GRANTED && grantResults[1] == MY_PERMISSIONS_GRANTED) {
-            checkLocationPermission();
-        }
-        else if(grantResults.length > 0 && requestCode == MY_PERMISSIONS_SIGNALEMENT && (grantResults[0] != MY_PERMISSIONS_GRANTED || grantResults[1] != MY_PERMISSIONS_GRANTED)){
-            getLocation();
-        }
-
-
-
-    }
+        if(grantResults.length > 0 &&
+                requestCode == MY_PERMISSIONS_SIGNALEMENT &&
+                (grantResults[0] != MY_PERMISSIONS_GRANTED ||
+                grantResults[1] != MY_PERMISSIONS_GRANTED)){
+            Permissions.getLocation(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT, location,
+                    longitude, latitude, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES);
+        }// END IF
+    }// END FUNCTION
 
     @Override
     protected void onResume() {
