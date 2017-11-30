@@ -8,9 +8,11 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Parcelable;
 import android.preference.PreferenceManager;
 import android.provider.MediaStore;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.FileProvider;
 import android.util.Log;
@@ -48,21 +50,42 @@ public class EasyImage implements EasyImageConfig {
     private static final String KEY_LAST_CAMERA_PHOTO = "pl.aprilapps.easyphotopicker.last_photo";
     private static final String KEY_TYPE = "pl.aprilapps.easyphotopicker.type";
 
-    private static Uri createCameraPictureFile(Context context) throws IOException {
-        //Log.d("-----Image Path", ""+imagePath.getName());
-        Log.d("-----authority", ""+context.getApplicationContext().getPackageName());
+    private static Uri createCameraPictureFile(Context context) throws IOException{
+        if(Build.VERSION.SDK_INT >= 22){
+            return createCameraPictureFileAfter22(context);
+        }else{
+            return createCameraPictureFileBefore22(context);
+        }
+    }
+
+    /**
+     * @description The use of URI.fromFile is not working after android 22 for security reason
+     * @param context
+     * @return
+     * @throws IOException
+     */
+    private static Uri createCameraPictureFileAfter22(Context context) throws IOException {
         File imageFile = EasyImageFiles.getCameraPicturesLocation(context);
-        // File imagePath = new File(context.getApplicationContext().getPackageName());
-        //if (!imagePath.exists()) imagePath.mkdirs();
-        //File imageFile = File.createTempFile(UUID.randomUUID().toString(), ".jpg", imagePath);
-        Log.d("-----Image Path", ""+imageFile.getAbsolutePath());
-        Log.d("-----authority", ""+context.getApplicationContext().getPackageName());
-        //Uri uri = Uri.fromFile(imagePath);
         Uri uri = FileProvider.getUriForFile( context, context.getApplicationContext().getPackageName()+".provider",imageFile);
-        Log.d("-----URI", ""+uri.getPath());
+        SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
+        editor.putString(KEY_PHOTO_URI, imageFile.getAbsolutePath());
+        editor.putString(KEY_LAST_CAMERA_PHOTO, imageFile.toString());
+        editor.apply();
+        return uri;
+    }
+
+    /**
+     * @description The use of FileProvider is not support before android 22
+     * @param context
+     * @return
+     * @throws IOException
+     */
+    private static Uri createCameraPictureFileBefore22(@NonNull Context context) throws IOException {
+        File imageFile = EasyImageFiles.getCameraPicturesLocation(context);
+        Uri uri = Uri.fromFile(imageFile);
         SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
         //editor.putString(KEY_PHOTO_URI, uri.toString());
-        editor.putString(KEY_PHOTO_URI, imageFile.getAbsolutePath());
+        editor.putString(KEY_PHOTO_URI, uri.toString());
         editor.putString(KEY_LAST_CAMERA_PHOTO, imageFile.toString());
         editor.apply();
         return uri;
@@ -261,14 +284,28 @@ public class EasyImage implements EasyImageConfig {
     }
 
 
-    private static void notifyGallery2(Context context, URI pictureUri) throws URISyntaxException {
+    /**
+     *
+     * @param context
+     * @param pictureUri
+     * @throws URISyntaxException
+     */
+    private static void notifyGallery(Context context, URI pictureUri) throws URISyntaxException {
+        if(Build.VERSION.SDK_INT >= 22){
+            notifyGalleryAfter22(context, pictureUri);
+        }else{
+            notifyGalleryBefore22(context, pictureUri);
+        }
+    }// end function
+
+    private static void notifyGalleryBefore22(Context context, URI pictureUri) throws URISyntaxException {
         Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
         File f = new File(pictureUri);
         Uri contentUri = Uri.fromFile(f);
         mediaScanIntent.setData(contentUri);
         context.sendBroadcast(mediaScanIntent);
     }
-    private static void notifyGallery(Context context, URI pictureUri) throws URISyntaxException {
+    private static void notifyGalleryAfter22(Context context, URI pictureUri) throws URISyntaxException {
         Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
         File f = new File(pictureUri.getPath());
         Log.d("+++++", ""+f.getPath());

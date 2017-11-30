@@ -109,9 +109,15 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
         Intent intent = getIntent();
         concoursId = intent.getIntExtra("concoursId", 0);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        Permissions.checkStoragePermission(FirebaseCCImage.this, REQUEST_WRITE_EXTERNAL_STORAGE);
-        Permissions.checkLocationPermission(FirebaseCCImage.this, MY_PERMISSIONS_CONCOURS);
-        showEasyImagePicker();
+        //if(Build.VERSION.SDK_INT >= 22){
+        boolean storagePerm = Permissions.checkStoragePermission(FirebaseCCImage.this, REQUEST_WRITE_EXTERNAL_STORAGE);
+        boolean locationPerm = Permissions.checkLocationPermission(FirebaseCCImage.this, MY_PERMISSIONS_CONCOURS);
+        if( storagePerm && locationPerm){
+                showEasyImagePicker();
+        }
+
+
+       // }
     }
 
 
@@ -128,20 +134,6 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
         display_upload.setImageDrawable(d);
     }
 
-
-
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        Log.d(TAG, " - onRequestPermissionsResult");
-        Permissions.storagePermissionResult(requestCode, permissions, grantResults, FirebaseCCImage.this, REQUEST_WRITE_EXTERNAL_STORAGE);
-
-        //Demande d'autorisations pour le concours LOCALISATION + CAMERA
-        if (grantResults.length > 0 && requestCode == MY_PERMISSIONS_CONCOURS && grantResults[0] == MY_PERMISSIONS_GRANTED) {
-            showEasyImagePicker();
-        } else if(requestCode == MY_PERMISSIONS_CONCOURS && grantResults[0] != MY_PERMISSIONS_GRANTED){
-            Permissions.getLocation(FirebaseCCImage.this, MY_PERMISSIONS_CONCOURS, location,
-                    latitude, longitude,MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES);
-        }
-    }
 
     public void addNewItemToDB(int concoursId, double latitude, double longitude, String imageURL){
         setContentView(R.layout.loading);
@@ -239,6 +231,7 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
             //quand il prend la photo
             @Override
             public void onImagePicked(File imageFile, EasyImage.ImageSource source, int type) {
+
                 try {
                     compressAndUpload(imageFile, source, type);
                 } catch (IOException e) {
@@ -391,5 +384,18 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
 
         }
     }// end class UploadPostTask
+
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        Log.d(TAG, " - onRequestPermissionsResult");
+        Permissions.storagePermissionResult(requestCode, permissions, grantResults, FirebaseCCImage.this, REQUEST_WRITE_EXTERNAL_STORAGE);
+        //Demande d'autorisations pour le concours LOCALISATION + CAMERA
+        if (grantResults.length > 0 && requestCode == MY_PERMISSIONS_CONCOURS && grantResults[0] == MY_PERMISSIONS_GRANTED) {
+            showEasyImagePicker();
+        } else if(requestCode == MY_PERMISSIONS_CONCOURS && grantResults[0] != MY_PERMISSIONS_GRANTED){
+            Permissions.getLocation(FirebaseCCImage.this, MY_PERMISSIONS_CONCOURS, location,
+                    latitude, longitude,MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES);
+        }// end if
+
+    }// end function
 
 }// end class

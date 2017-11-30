@@ -5,6 +5,8 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Environment;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
+import android.support.v4.content.FileProvider;
 import android.webkit.MimeTypeMap;
 
 import java.io.File;
@@ -132,6 +134,12 @@ class EasyImageFiles {
         }
 
         return extension;
+    }
+
+    static Uri getUriToFile(@NonNull Context context, @NonNull File file) {
+        String packageName = context.getApplicationContext().getPackageName();
+        String authority = packageName + ".provider";
+        return FileProvider.getUriForFile(context, authority, file);
     }
 
 }

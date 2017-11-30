@@ -31,17 +31,20 @@ public class Permissions {
     /**
      * @author salysakey
      */
-    public static void checkStoragePermission(final Context context, final int REQUEST_WRITE_EXTERNAL_STORAGE){
+    public static boolean checkStoragePermission(final Context context, final int REQUEST_WRITE_EXTERNAL_STORAGE){
         File storageDir = null;
+        boolean result = false;
         if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
             //RUNTIME PERMISSION Android M
-            if(PackageManager.PERMISSION_GRANTED==ActivityCompat.checkSelfPermission(context,Manifest.permission.WRITE_EXTERNAL_STORAGE)){
+            if(PackageManager.PERMISSION_GRANTED==ActivityCompat.checkSelfPermission((Activity)context,Manifest.permission.WRITE_EXTERNAL_STORAGE)){
                 storageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "");
+                result = true;
             }else{
                 requestStoragePermission(context, REQUEST_WRITE_EXTERNAL_STORAGE);
             }
 
         }// end if
+        return result;
     }// end function
 
     /**
@@ -49,22 +52,23 @@ public class Permissions {
      * @param context
      */
     public static void requestStoragePermission(final Context context, final int REQUEST_WRITE_EXTERNAL_STORAGE){
-        if(ActivityCompat.shouldShowRequestPermissionRationale((Activity)context, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-            // Provide an additional rationale to the user if the permission was not granted
-            // and the user would benefit from additional context for the use of the permission.
-            // For example if the user has previously denied the permission.
-
-            new AlertDialog.Builder(context)
-                    .setMessage("Please allow access to storage")
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
+        if(ActivityCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
+            AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
+            alertDialog.setTitle("Please allow storage permission");
+            // Setting Dialog Message
+            // Setting Positive "Yes" Button
+            // Setting Negative "NO" Button
+            alertDialog.setNegativeButton("Ok",
+                    new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-                            ActivityCompat.requestPermissions((Activity) context,
+                            ActivityCompat.requestPermissions((Activity)context,
                                     new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
                                     REQUEST_WRITE_EXTERNAL_STORAGE);
                         }
-                    }).show();
-
+                    });
+            // Showing Alert Message
+            AlertDialog alert = alertDialog.create();
+            alert.show();
         }// end if
     }// end function
 
@@ -186,7 +190,7 @@ public class Permissions {
         }// end if
     }// end function
 
-    public static void checkLocationPermission(final Context context, final int MY_PERMISSIONS_SIGNALEMENT){
+    public static boolean checkLocationPermission(final Context context, final int MY_PERMISSIONS_SIGNALEMENT){
         if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
                 ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
@@ -207,7 +211,10 @@ public class Permissions {
             // Showing Alert Message
             AlertDialog alert = alertDialog.create();
             alert.show();
+            return false;
         }
+
+        return true;
     }// end function
 
 
