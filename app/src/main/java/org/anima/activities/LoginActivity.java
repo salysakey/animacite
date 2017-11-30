@@ -153,7 +153,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (AccessToken.getCurrentAccessToken() != null) {
                     Log.d(TAG," -  In the IF of Acess Token");
                     //loginResult.getAccessToken().getPermissions();
-                    GraphRequest request = GraphRequest.newMeRequest(AccessToken.getCurrentAccessToken(), new GraphRequest.GraphJSONObjectCallback() {
+                    GraphRequest request = GraphRequest.newMeRequest(AccessToken.getCurrentAccessToken(),  new GraphRequest.GraphJSONObjectCallback() {
                         @Override
                         public void onCompleted(JSONObject object, GraphResponse response) {
                             //JSONObject json = response.getJSONObject();
@@ -218,7 +218,7 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onError(FacebookException e) {
-                Log.d(TAG," - Error Facebook register callback");
+                Log.d(TAG," - Error Facebook register callback"+e.toString());
                 //Log.d("LoginActivity", e.getCause().toString());
                 Toast.makeText(getApplicationContext(), "Login attempt failed.", Toast.LENGTH_LONG).show();
             }
