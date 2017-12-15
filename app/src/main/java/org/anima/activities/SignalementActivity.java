@@ -441,7 +441,6 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
     {
 
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            PrefManager.setImageUrl(getApplicationContext(),null);
             Intent intent5 = new Intent(SignalementActivity.this, ImagePickActivity.class);
             startActivity(intent5);
         }

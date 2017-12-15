@@ -137,6 +137,10 @@ public class FirebasePixActivity extends AppCompatActivity {
 
     public void enregistrementBdd() {
                 // Insert network call here!
+                //fileUri = Uri.fromFile(new File(PrefManager.getImageUrl(getApplicationContext())));
+                if(null == fileUri){
+                    fileUri = Uri.fromFile(new File(PrefManager.getImageUrl(getApplicationContext()).replace("file://","")));
+                }
                 UploadPostTask uploadTask = new FirebasePixActivity.UploadPostTask(FirebasePixActivity.this, fileUri, fileUri.getLastPathSegment());
                 uploadTask.execute();
     }
