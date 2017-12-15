@@ -41,7 +41,6 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
 
     public SondageListAdapter(Context context, List<Question> questions, boolean resultat) {
         super(context, 0, questions);
-        Log.d(TAG," - Create SondageListAdapter");
         globalnbrselection=0;
         this.resultat=resultat;
         this.context = context;
@@ -50,10 +49,8 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
     }
 
     private List<QuestionResponse> getAllresponses(List<Question> questions) {
-        Log.d(TAG," - in getAllresponses");
         List<QuestionResponse> questionResponses = new ArrayList<>();
         for (Question question : questions) {
-            Log.d(TAG," - in the getAllresponses.for");
             //question.setGloablereponse( globalnbrselection=0);
             List<Proposition> propositions = question.getPropositions();
             for (Proposition proposition : propositions) {
@@ -61,36 +58,44 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
             }
         }
         return questionResponses;
-    }
+    }// end method
 
     @Override
     public int getCount() {
         return questions != null ? questions.size() : -1;
-    }
+    }// end method
 
     @Override
     public Question getItem(int position) {
         return questions != null && questions.size() > 0 ? questions.get(position) : null;
-    }
+    }// end method
 
     @Override
     public long getItemId(int position) {
         return position;
-    }
+    }// end method
 
+    /**
+     * This function will fire every time we user scroll the list
+     * @param position
+     * @param convertView
+     * @param parent
+     * @return
+     */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
         question = getItem(position);
         View view = convertView;
-
+        /*
         view = ((Activity) context).getLayoutInflater().inflate(R.layout.list_item_question, null);
         holder = new ListViewHolder();
         holder.txtQuestionDesc = (TextView) view.findViewById(R.id.question_description);
         holder.ratingBar = (RatingBar) view.findViewById(R.id.question_rating_bar);
         holder.listView = (ListView) view.findViewById(R.id.list);
         view.setTag(holder);
-        /*
+        */
+
         if (view == null) {
             view = ((Activity) context).getLayoutInflater().inflate(R.layout.list_item_question, null);
             holder = new ListViewHolder();
@@ -100,14 +105,13 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
             view.setTag(holder);
         } else {
             holder = (ListViewHolder) view.getTag();
-        }*/
+        }
 
         if (question != null) {
             int num = position +1;
             holder.txtQuestionDesc.setText(num+" "+")"+" "+question.getName());
 
             if(resultat){
-
                 if (isStarQuestion(question)) {
                     holder.listView.setVisibility(View.GONE);
                     holder.ratingBar.setVisibility(View.VISIBLE);
@@ -124,68 +128,46 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
                     Object tag = holder.listView.getTag();
                     Log.i("", "tag : " + tag);
 
-
                     if(question.getType()==1){
-
                            /* ArrayAdapter<String> adapter = new ArrayAdapter<>(context,
                                     R.layout.item1,
                                     propositions); */
-
                         ArrayAdapter<String> adapter = new ArrayAdapter<>(context,
                                 R.layout.item1,
                                 propositions);
-
                         //holder.listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
                         // holder.listView.setAdapter(adapter);
 
-
-
-
                         holder.listView.setAdapter(new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1,propositions) {
-
                             @Override
                             public View getView(int position, View convertView, ViewGroup parent) {
-
                                 List<Proposition> propositions2 = question.getPropositions();
                                 double max=0;
                                 int a= 0;
                                 int b=0;
                                 for(Proposition proposition : propositions2){
-
                                     if(proposition.getResultat()>max){
                                         b=a;
                                         max=proposition.getResultat();
-
                                     }
                                     a++;
-
                                 }
-
                                 TextView textView = (TextView) super.getView(position, convertView, parent);
                                 if(position==b) {
                                     textView.setTextColor(getContext().getResources().getColor(R.color.orange));
                                 }
-
                                 return  textView;
-
                             }
                         });
-
-
                         holder.listView.getChildAt(position);
-
-
                     }else{
-
                         ArrayAdapter<String> adapter2 = new ArrayAdapter<>(context,
                                 android.R.layout.simple_list_item_1,
                                 propositions);
                         //holder.listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
                         //holder.listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
                         holder.listView.setAdapter(adapter2);
-
                     }
-
 
                     holder.listView.setTag(AVAILABLE_TAG);
                     holder.listView.setId(question.getId());
@@ -229,53 +211,86 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
                             params.height = (question.getPropositions().size())*195;
                             holder.listView.setLayoutParams(params);
                             holder.listView.requestLayout();
-
-
                         }
                         */
 
                 }
             }else{//NOT RESULTAT
-
-
                 if (isStarQuestion(question)) {
                     holder.listView.setVisibility(View.GONE);
                     holder.ratingBar.setVisibility(View.VISIBLE);
                     holder.ratingBar.setId(question.getId());
                     holder.ratingBar.setOnRatingBarChangeListener(this);
-
+                    // for highlight selected answer
+                    List<Proposition> propositions = question.getPropositions();
+                    for (Proposition proposition : propositions) {
+                        // holder.ratingBar.setNumStars((int)proposition.getResultat());
+                        holder.ratingBar.setRating((float)proposition.getResultat());
+                    }
                 } else {
                     String [] propositions = getPropositions(question);
                     allReponses = getReponses(question);
-
                     Object tag = holder.listView.getTag();
                     Log.i("", "tag : " + tag);
 
-
                     if(question.getType()==1){
-
-                        ArrayAdapter<String> adapter = new ArrayAdapter<>(context,
-                                android.R.layout.simple_list_item_1,
-                                propositions);
                         holder.listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
-                        holder.listView.setAdapter(adapter);
-
+                        // check and put background color back for selected answer
+                        holder.listView.setAdapter(new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1,propositions) {
+                            @Override
+                            public View getView(int position, View convertView, ViewGroup parent) {
+                                List<Proposition> propositions2 = question.getPropositions();
+                                int a=0;
+                                int found = -1;
+                                for(Proposition proposition : propositions2){
+                                    if (found>-1) break;
+                                    for(QuestionResponse response : finalResponses2){
+                                        if(found>-1) break;
+                                        if(response.getQuestionId()==question.getId() && response.getResponseId() == proposition.getId()){
+                                            found = a;
+                                            break;
+                                        }// end if found
+                                    }// end for response
+                                    a++;
+                                }// end for proposition
+                                TextView textView = textView = (TextView) super.getView(position, convertView, parent);
+                                if(position==found){
+                                    textView.setBackgroundResource(R.drawable.qcm);
+                                }
+                                return textView;
+                            }
+                        });
                     }else{
-                        ArrayAdapter<String> adapter2 = new ArrayAdapter<>(context,
-                                android.R.layout.simple_list_item_1,
-                                propositions);
-                        //holder.listView.getAdapter().
-                        //holder.listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
                         holder.listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
-                        holder.listView.setAdapter(adapter2);
-
-
-
-                    }
-
+                        holder.listView.setAdapter(new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1,propositions) {
+                            @Override
+                            public View getView(int position, View convertView, ViewGroup parent) {
+                                List<Proposition> propositions2 = question.getPropositions();
+                                int a=0;
+                                int[] found = new int[question.getPropositions().size()];
+                                for(Proposition proposition : propositions2){
+                                    for(QuestionResponse response : finalResponses){
+                                        if(response.getQuestionId()==question.getId() && response.getResponseId() == proposition.getId()){
+                                            found[a]=1;
+                                        }// end if found
+                                    }// end for response
+                                    a++;
+                                }// end for proposition
+                                TextView textView = textView = (TextView) super.getView(position, convertView, parent);
+                                // find the position that answer is selected to change background color
+                                for(int index =0; index<found.length; index++){
+                                    if(position==index && found[index]==1){
+                                        textView.setBackgroundResource(R.drawable.qcm);
+                                    }// end if position
+                                }// end for index
+                                return textView;
+                            }// end function getView
+                        });// end holer.listView.setAdapter
+                    }// end else (multiple proposition)
 
                     holder.listView.setTag(AVAILABLE_TAG);
                     holder.listView.setId(question.getId());
+
                     holder.listView.setOnItemClickListener(this);
                     ViewGroup.LayoutParams params = holder.listView.getLayoutParams();
 
@@ -294,7 +309,6 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
                     }
                     Double d = new Double(i*(0.3)*density);
                     int valeur = d.intValue();
-                    Log.d(TAG," - Valeur hauteur = "+ valeur);
                     params.height = valeur;
                     holder.listView.setLayoutParams(params);
                     holder.listView.requestLayout();
@@ -309,15 +323,11 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
 
 
                 }
-
             }
-
-
-
         }
-
         return view;
     }
+
 
     public void onWindowFocusChanged(boolean hasFocus) {
         // get content height
@@ -328,7 +338,6 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
         lp.height = contentHeight;
         holder.listView.setLayoutParams(lp);
         holder.listView.requestLayout();
-        Log.d(TAG," - In the Focus change height= " + lp);
     }
 
     private void affecteritem(AdapterView<?> parent,int i){
@@ -369,62 +378,53 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
         return values;
     }
 
+    /**
+     * @author Saly Sakey
+     */
+    public void setColorToSelectedQuestion(Question question, AdapterView<?> parent, int position){
+        for(int i=0;i<question.getPropositions().size();i++){
+            if(i==position){
+                parent.getChildAt(i).setBackgroundResource(R.drawable.qcm);
+                // parent.getChildAt(i).setBackgroundColor(getContext().getResources().getColor(R.color.vert));
+            }else{
+                parent.getChildAt(i).setBackgroundColor(getContext().getResources().getColor(R.color.white));
+            }// end if i
+        }// end for
+    }// end function
+
+    /**
+     * This function is fire when user select the answer
+     * The answer can be single(question.type ==1) answer or multiple answer (question.type==2)
+     * @param parent
+     * @param view
+     * @param position
+     * @param id
+     */
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        //TODO
-        //view.setBackgroundColor(context.getResources().getColor(R.color.vert));
-        //mSelectedItemsIds.put(position, true);
-
-        //Question question = getQuestion(id);
-        //if (id == 1) {
-
-        //
-        //} else {
         int questionId = parent.getId();
+        /* specificResponses is a list of answer for the question question*/
         List<QuestionResponse> specificResponses = getSpecificResponses(questionId);
         Question question = getQuestion(specificResponses.get(position).getQuestionId());
         globalnbrselection=question.getGloablereponse();
 
+        /* if the question is only one proposition(answer) possible */
         if(question.getType()==1){
-
             finalResponses2.removeAll(specificResponses);
-            for(int i=0;i<question.getPropositions().size();i++){
-                if(i==position){
-                    parent.getChildAt(i).setBackgroundResource(R.drawable.qcm);
-                    // parent.getChildAt(i).setBackgroundColor(getContext().getResources().getColor(R.color.vert));
-
-                }else{
-                    parent.getChildAt(i).setBackgroundColor(getContext().getResources().getColor(R.color.white));
-
-                }
-
-
-            }
-
+            setColorToSelectedQuestion(question, parent, position);
             finalResponses2.add(specificResponses.get(position));
 
+        /* if the question is multiple answer possible */
         }else{
-
             if (finalResponses.contains(specificResponses.get(position))) {
-
-
                 for(int i=0;i<question.getPropositions().size();i++){
-
                     parent.getChildAt(i).setActivated(true);
                 }
-
                 globalnbrselection--;
                 question.setGloablereponse(globalnbrselection);
                 parent.getChildAt(position).setBackgroundColor(getContext().getResources().getColor(R.color.white));
-
-
-
                 finalResponses.remove(specificResponses.get(position));
-
-
             }else{
-
-
                 if(question.getGloablereponse()<question.getType()) {
 
                     //ajouter question nombre de clique
@@ -442,15 +442,13 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
                                 // parent.getChildAt(i).setEnabled(false);
                                 parent.getChildAt(i).setActivated(false);
                                 //    parent.getChildAt(i).setClickable(false);
-
-                            }
-                        }
-
-                    }
-                }
-            }
-        }
-    }
+                            }// end if
+                        }// end for
+                    }// end if question
+                }// if
+            }// end else
+        } // end if question.getType
+    }// end function
 
     private List<QuestionResponse> getSpecificResponses(int questionId) {
         List<QuestionResponse> specificResponses = new ArrayList<>();
@@ -498,16 +496,12 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
 
     @Override
     public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-
         int questionId = ratingBar.getId();
         int nombre = Math.round(rating);
         List<QuestionResponse> specificResponses = getSpecificResponses(questionId);
         QuestionResponse lala =getSpecificResponsesQuestionReponse(questionId);
         // RatingResponse ratingResponse = new RatingResponse(questionId,ratingBar.getId(), (int)rating);
         RatingResponseNUm banane =new RatingResponseNUm(questionId, lala.responseId, nombre);
-
-
-
         if(ratingResponses.contains(lala)){
             ratingResponses.removeAll(specificResponses);
 
@@ -523,13 +517,8 @@ public class SondageListAdapter extends ArrayAdapter<Question> implements Rating
             ratingResponses.add(lala);
             ratingResponses2.add(banane);
 
-        }
-
-
-
-
-
-    }
+        }// end if
+    }// end function
 
 
     public List<RatingResponseNUm> getRatingResponsesNum() {

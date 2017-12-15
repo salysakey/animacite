@@ -15,7 +15,6 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
@@ -69,7 +68,7 @@ import java.util.List;
  * @author Momo
  * 
  */
-public class ImagePickActivity extends ActionBarActivity {
+public class ImagePickActivity extends AppCompatActivity {
     private String TAG = "ImagePickActivity";
 	int votes_minimum_signalement = 3;
 
