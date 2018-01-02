@@ -132,7 +132,7 @@ public class ImagePickActivity extends AppCompatActivity {
 
         FacebookSdk.sdkInitialize(getApplicationContext());
 
-		mGridView = (StaggeredGridView) findViewById(R.id.grid);
+		mGridView = findViewById(R.id.grid);
 		search = (EditText) findViewById(R.id.search);
 
 		swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);

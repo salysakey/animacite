@@ -54,7 +54,7 @@ public class Permissions {
     public static void requestStoragePermission(final Context context, final int REQUEST_WRITE_EXTERNAL_STORAGE){
         if(ActivityCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
             AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
-            alertDialog.setTitle("Please allow storage permission");
+            alertDialog.setTitle("Veuillez autoriser l'autorisation de stockage");
             // Setting Dialog Message
             // Setting Positive "Yes" Button
             // Setting Negative "NO" Button
@@ -84,11 +84,7 @@ public class Permissions {
                                                  final int REQUEST_WRITE_EXTERNAL_STORAGE){
         // check storage permission (salysakey)
         if (requestCode == REQUEST_WRITE_EXTERNAL_STORAGE){
-            if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(context,"Storage Permission is granted.",
-                        Toast.LENGTH_SHORT).show();
-
-            }
+            if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {}
             return;
         }// end if request code
     }// end function

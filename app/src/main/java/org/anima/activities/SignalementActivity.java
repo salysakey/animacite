@@ -175,6 +175,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         });
         //initializeEvaluation();
         //initializeControls();
+        descriptionET.clearFocus();
     }
 
 
@@ -374,7 +375,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
                 }
                 // When Http response code is '500'
                 else if (statusCode == 500) {
-                    Toast.makeText(getApplicationContext(), "Veuillez activer votre localisation.", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), "Veuillez activer votre localisation.", Toast.LENGTH_LONG).show();
                 }
                 // When Http response code other than 404, 500
                 else {
