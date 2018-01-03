@@ -13,8 +13,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -48,6 +50,8 @@ public class FirebasePixActivity extends AppCompatActivity {
     };
     public ImageView photo;
     public ImageView imagephoto;
+    public ImageView delete_btn;
+    public RelativeLayout layout_photo;
     private Uri fileUri;
     private  Uri fullSizeUrl;
 
@@ -58,7 +62,8 @@ public class FirebasePixActivity extends AppCompatActivity {
         setContentView(R.layout.signalement);
         photo = (ImageView) findViewById(R.id.takephoto);
         imagephoto = (ImageView) findViewById(R.id.image_photo);
-
+        layout_photo = (RelativeLayout) findViewById(R.id.layout_photo);
+        delete_btn = (ImageView) findViewById(R.id.delete_photo);
 
        // EventBus.getDefault().register(this);
 
@@ -116,7 +121,8 @@ public class FirebasePixActivity extends AppCompatActivity {
             //quand il prend la photo
             @Override
             public void onImagePicked(File imageFile, EasyImage.ImageSource source, int type) {
-
+                photo.setVisibility(View.GONE);
+                layout_photo.setVisibility(View.VISIBLE);
                 PrefManager.setImageUrl(getApplicationContext(), null);
                 fileUri = Uri.fromFile(imageFile);
                 PrefManager.setImageUrl(getApplicationContext(), fileUri.toString());

@@ -173,6 +173,17 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
                 showEasyImagePicker();
             }
         });
+
+        delete_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                layout_photo.setVisibility(View.GONE);
+                PrefManager.setImageUrl(getApplicationContext(), null);
+                photo.setVisibility(View.VISIBLE);
+            }
+        });
+
+
         //initializeEvaluation();
         //initializeControls();
         descriptionET.clearFocus();
@@ -198,10 +209,14 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
     protected void onResume() {
         super.onResume();
         if (!PrefManager.getImageUrl(getApplicationContext()).isEmpty()) {
-            imagephoto.setVisibility(View.VISIBLE);
+            layout_photo.setVisibility(View.VISIBLE);
+            photo.setVisibility(View.GONE);
             Picasso.with(getApplicationContext()).load(PrefManager.getImageUrl(getApplicationContext())).into(imagephoto);
+        }else{
+            layout_photo.setVisibility(View.GONE);
+            photo.setVisibility(View.VISIBLE);
         }
-    }
+    }// end resume
 
     public void addItemsOnSpinner() {
         list.add("Bris");
