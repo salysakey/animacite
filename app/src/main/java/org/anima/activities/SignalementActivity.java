@@ -104,6 +104,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
     private static final int MY_PERMISSIONS_SIGNALEMENT = MY_PERMISSIONS_REQUEST_READ_CONTACTS + 2;
     private static final int REQUEST_WRITE_EXTERNAL_STORAGE=19;
     private static final int REQUEST_LOCATION_PERMISSION=20;
+    private static final int RC_CAMERA_PERMISSIONS = 102;
 
     // The minimum time between updates in milliseconds
     private static final long MIN_TIME_BW_UPDATES = 1; // 1 minute
@@ -203,6 +204,11 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
             Permissions.getLocation(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT, location,
                     longitude, latitude, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES);
         }// END IF
+
+
+        if (grantResults.length > 0 && requestCode == RC_CAMERA_PERMISSIONS && grantResults[0] == MY_PERMISSIONS_GRANTED) {
+            showEasyImagePicker();
+        }
     }// END FUNCTION
 
     @Override

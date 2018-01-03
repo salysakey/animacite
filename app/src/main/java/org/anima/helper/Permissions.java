@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 import org.anima.animacite.R;
@@ -188,7 +189,8 @@ public class Permissions {
 
     public static boolean checkLocationPermission(final Context context, final int MY_PERMISSIONS_SIGNALEMENT){
         if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
-                ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                ActivityCompat.checkSelfPermission(context, Manifest.permission.CAMERA)== PackageManager.PERMISSION_DENIED) {
             AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
             // Setting Dialog Title
             alertDialog.setTitle("Veuillez activer votre localisation");
@@ -208,9 +210,32 @@ public class Permissions {
             AlertDialog alert = alertDialog.create();
             alert.show();
             return false;
+        }else{
+            return true;
         }
 
-        return true;
+    }// end function
+
+    public static boolean checkCameraPermission(final Context context, final int PERMISSION_CONSTANT){
+        boolean result = true;
+        if(ActivityCompat.checkSelfPermission(context, Manifest.permission.CAMERA)
+                !=PackageManager.PERMISSION_GRANTED){
+            AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
+            alertDialog.setTitle("Veuillez activer votre camera");
+            alertDialog.setIcon(R.drawable.petite_image);
+            alertDialog.setNegativeButton("Ok",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            ActivityCompat.requestPermissions((Activity)context,
+                                    new String[]{Manifest.permission.CAMERA},
+                                    PERMISSION_CONSTANT);
+                        }
+                    });
+            AlertDialog alert = alertDialog.create();
+            alert.show();
+            result = false;
+        }
+        return result;
     }// end function
 
 

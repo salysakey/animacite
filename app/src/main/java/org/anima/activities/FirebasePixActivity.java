@@ -1,14 +1,17 @@
 package org.anima.activities;
 import org.anima.animacite.R;
 
+import android.Manifest;
 import android.annotation.TargetApi;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -27,6 +30,7 @@ import com.google.firebase.storage.UploadTask;
 
 import org.anima.easyimage.DefaultCallback;
 import org.anima.easyimage.EasyImage;
+import org.anima.helper.Permissions;
 import org.anima.utils.PrefManager;
 import org.anima.utils.ProgressDialogFragment;
 import org.anima.utils.UploadFileSuccessEvent;
@@ -44,6 +48,7 @@ public class FirebasePixActivity extends AppCompatActivity {
 
     private static final String TAG_DIALOG_FRAGMENT = "tagDialogFragment";
     private static final int RC_CAMERA_PERMISSIONS = 102;
+    private static final int MY_PERMISSIONS_GRANTED = 0;
     private static final String[] cameraPerms = new String[]{
             android.Manifest.permission.READ_EXTERNAL_STORAGE,
             android.Manifest.permission.WRITE_EXTERNAL_STORAGE
@@ -68,7 +73,6 @@ public class FirebasePixActivity extends AppCompatActivity {
        // EventBus.getDefault().register(this);
 
 
-
        // showEasyImagePicker();
     }
 
@@ -78,10 +82,10 @@ public class FirebasePixActivity extends AppCompatActivity {
 
     @AfterPermissionGranted(RC_CAMERA_PERMISSIONS)
     public void showEasyImagePicker() {
-        EasyImage.openCamera(FirebasePixActivity.this,0);
-
+        if(Permissions.checkCameraPermission(FirebasePixActivity.this, RC_CAMERA_PERMISSIONS)){
+            EasyImage.openCamera(FirebasePixActivity.this,0);
+        }
         //EasyImage.openChooserWithGallery(this, "Choisir", 0);
-        return;
     }
 
 
@@ -230,9 +234,7 @@ public class FirebasePixActivity extends AppCompatActivity {
 
             File photoFile = EasyImage.lastlyTakenButCanceledPhoto(FirebasePixActivity.this);
             if (photoFile != null) photoFile.delete();
-
-
-
         }
     }
+
 }
