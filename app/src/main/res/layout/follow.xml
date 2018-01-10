@@ -10,9 +10,9 @@
 
 
 <LinearLayout
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:background="@color/background"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <include
@@ -44,18 +44,20 @@
         android:layout_height="150dp"
         android:gravity="center"
         android:visibility="gone"/>
-
-    <com.etsy.android.grid.StaggeredGridView
-
-        android:gravity="center"
-        android:columnWidth="0dp"
-        android:stretchMode="columnWidth"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/grid"
-        android:numColumns="2"
-        app:item_margin="10dp"
-        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.etsy.android.grid.StaggeredGridView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:column_count="2"
+            app:item_margin="10dp"
+            app:grid_paddingBottom="10dp"
+            />
+    </LinearLayout>
 
 
 </LinearLayout>
