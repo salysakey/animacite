@@ -127,9 +127,9 @@ public class FirebasePixActivity extends AppCompatActivity {
             public void onImagePicked(File imageFile, EasyImage.ImageSource source, int type) {
                 photo.setVisibility(View.GONE);
                 layout_photo.setVisibility(View.VISIBLE);
-                PrefManager.setImageUrl(getApplicationContext(), null);
+                PrefManager.setImageUrlSignal(getApplicationContext(), null);
                 fileUri = Uri.fromFile(imageFile);
-                PrefManager.setImageUrl(getApplicationContext(), fileUri.toString());
+                PrefManager.setImageUrlSignal(getApplicationContext(), fileUri.toString());
                 //  UploadPostTask uploadTask = new FirebasePixActivity.UploadPostTask(FirebasePixActivity.this, fileUri, fileUri.getLastPathSegment());
                 // uploadTask.execute();
             }
@@ -149,7 +149,7 @@ public class FirebasePixActivity extends AppCompatActivity {
                 // Insert network call here!
                 //fileUri = Uri.fromFile(new File(PrefManager.getImageUrl(getApplicationContext())));
                 if(null == fileUri){
-                    fileUri = Uri.fromFile(new File(PrefManager.getImageUrl(getApplicationContext()).replace("file://","")));
+                    fileUri = Uri.fromFile(new File(PrefManager.getImageUrlSignal(getApplicationContext()).replace("file://","")));
                 }
                 UploadPostTask uploadTask = new FirebasePixActivity.UploadPostTask(FirebasePixActivity.this, fileUri, fileUri.getLastPathSegment());
                 uploadTask.execute();
@@ -198,11 +198,11 @@ public class FirebasePixActivity extends AppCompatActivity {
                      fullSizeUrl = taskSnapshot.getDownloadUrl();
                     if (fullSizeUrl != null) {
 
-                        PrefManager.setImageUrl(getApplicationContext(), null);
+                        PrefManager.setImageUrlSignal(getApplicationContext(), null);
                         Log.d(TAG, "fullSizeUrl: " + fullSizeUrl.toString());
-                        PrefManager.setImageUrl(getApplicationContext(), fullSizeUrl.toString());
+                        PrefManager.setImageUrlSignal(getApplicationContext(), fullSizeUrl.toString());
 //                       Picasso.with(getApplicationContext()).load(PrefManager.getImageUrl(getApplicationContext())).into(imagephoto);
-                        Log.d(TAG, PrefManager.getImageUrl(getApplicationContext()));
+                        Log.d(TAG, PrefManager.getImageUrlSignal(getApplicationContext()));
                         EventBus.getDefault().post(new UploadFileSuccessEvent(taskSnapshot));
 
 

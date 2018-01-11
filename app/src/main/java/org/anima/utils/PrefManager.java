@@ -80,6 +80,19 @@ public class PrefManager {
                 .getString("imageUrl", "");
     }
 
+    public static void setImageUrlSignal(Context context, String imageUrl) {
+        PreferenceManager.getDefaultSharedPreferences(context)
+                .edit()
+                .putString("imageUrlSignal", imageUrl)
+                .apply();
+    }
+
+    public static String getImageUrlSignal(Context context) {
+        return PreferenceManager
+                .getDefaultSharedPreferences(context)
+                .getString("imageUrlSignal", "");
+    }
+
     public static void setLongitude(Context context, String longitude) {
         PreferenceManager.getDefaultSharedPreferences(context)
                 .edit()

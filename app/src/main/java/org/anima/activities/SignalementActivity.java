@@ -179,7 +179,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
             @Override
             public void onClick(View v) {
                 layout_photo.setVisibility(View.GONE);
-                PrefManager.setImageUrl(getApplicationContext(), null);
+                PrefManager.setImageUrlSignal(getApplicationContext(), null);
                 photo.setVisibility(View.VISIBLE);
             }
         });
@@ -214,10 +214,10 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
     @Override
     protected void onResume() {
         super.onResume();
-        if (!PrefManager.getImageUrl(getApplicationContext()).isEmpty()) {
+        if (!PrefManager.getImageUrlSignal(getApplicationContext()).isEmpty()) {
             layout_photo.setVisibility(View.VISIBLE);
             photo.setVisibility(View.GONE);
-            Picasso.with(getApplicationContext()).load(PrefManager.getImageUrl(getApplicationContext())).into(imagephoto);
+            Picasso.with(getApplicationContext()).load(PrefManager.getImageUrlSignal(getApplicationContext())).into(imagephoto);
         }else{
             layout_photo.setVisibility(View.GONE);
             photo.setVisibility(View.VISIBLE);
@@ -239,7 +239,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
 
         description = descriptionET.getText().toString();
 
-        if(description=="" || PrefManager.getImageUrl(getApplicationContext())=="" || description.isEmpty() || PrefManager.getImageUrl(getApplicationContext()).isEmpty()){
+        if(description=="" || PrefManager.getImageUrlSignal(getApplicationContext())=="" || description.isEmpty() || PrefManager.getImageUrlSignal(getApplicationContext()).isEmpty()){
             //if(description==""){
 
             AlertDialog.Builder alertDialog = new AlertDialog.Builder(SignalementActivity.this);
@@ -282,7 +282,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         Uri uri= event.getTaskSnapshot().getDownloadUrl();
         if(uri!=null){
             String url = uri.toString();
-            PrefManager.setImageUrl(getApplicationContext(), url);
+            PrefManager.setImageUrlSignal(getApplicationContext(), url);
             sendWS();
             //Toast.makeText(getApplicationContext(), "Merci, votre signalement a été pris en compte !", Toast.LENGTH_LONG).show();
 
@@ -311,7 +311,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         //params.put("type", "TravauxPublics");
         params.put("latitude", "" + latitude);
         params.put("longitude", "" + longitude);
-        params.put("parcoursphoto", PrefManager.getImageUrl(getApplicationContext()));
+        params.put("parcoursphoto", PrefManager.getImageUrlSignal(getApplicationContext()));
 
         invokeWSsignalement(params);
 
@@ -331,7 +331,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
                     "Bien cordialement,\n" +
                     "L’équipe de Feuch'App";
 
-            lolo.sendSignalement("Signalement d'un utilisateur", contenu, "noreply@animacite.com", mail, PrefManager.getImageUrl(getApplicationContext()));
+            lolo.sendSignalement("Signalement d'un utilisateur", contenu, "noreply@animacite.com", mail, PrefManager.getImageUrlSignal(getApplicationContext()));
 
         } catch (Exception e) {
 
@@ -365,7 +365,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
                     // When the JSON response has status boolean value assigned with true
                     if (obj.getBoolean("status")) {
 
-                        PrefManager.setImageUrl(getApplicationContext(), null);
+                        PrefManager.setImageUrlSignal(getApplicationContext(), null);
                         dismissProgressDialog();
 
                         Intent intent4 = new Intent(SignalementActivity.this, ImagePickActivity.class);
