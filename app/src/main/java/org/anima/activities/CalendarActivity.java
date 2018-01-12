@@ -72,8 +72,9 @@ public class CalendarActivity extends AppCompatActivity{
     private CustomCalendarView calendarView;
     private String url;
     private  int n =56;
+    int current_index;
     ArrayList<Food> listFood;
-
+    String[] couleurs;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,6 +102,7 @@ public class CalendarActivity extends AppCompatActivity{
         // Make RESTful webservice call using AsyncHttpClient object
         AsyncHttpClient client = new AsyncHttpClient();
         client.get(ConfigurationVille.Debut_WS+"/evenement/doshow", params, new AsyncHttpResponseHandler() {
+
             //client.get("http://192.168.0.10:8080/Anima/rest/showfollow/doshow",params, new AsyncHttpResponseHandler() {
             // When the response returned by REST has Http response code '200'
             @Override
@@ -123,6 +125,7 @@ public class CalendarActivity extends AppCompatActivity{
                         types = new int[jarray.length()];
                         date = new long[jarray.length()];
                         idents = new int[jarray.length()];
+                        couleurs = new String[jarray.length()];
 
                         for (int i = 0; i < jarray.length(); i++) {
                             JSONObject object = jarray.getJSONObject(i);
@@ -133,6 +136,7 @@ public class CalendarActivity extends AppCompatActivity{
                             project.setResume(object.getString("resume"));
                             project.setType(object.getInt("type"));
                             project.setDate_debut(object.getLong("date_debut"));
+                            //project.setCouleur(object.getString("couleur"));
 
                             date[i] = project.getDate_debut();
                             Log.d("Date:",""+date[i]);
@@ -143,104 +147,75 @@ public class CalendarActivity extends AppCompatActivity{
                             //	listPictures[i]="http://i.imgur.com/DvpvklR.png";
                             listPictures[i] = project.getPicture();
                             idents[i] = object.getInt("id");
+                            //couleurs[i] = project.getCouleur();
                             //	Picasso.with(ImagePickActivity.this).load(R.drawable.piscine).placeholder(listPictures[i]);
                             listFood.add(new Food(i + 1, titles[i], listPictures[i], resumes[i],
                                     descriptifs[i], types[i], idents[i], date[i]));
                             // Navigate to Home screen
-                        }
-                        prgDialog.hide();
-                        calendarView = (CustomCalendarView) findViewById(R.id.calendar_view);
+                            prgDialog.hide();
+                            calendarView = (CustomCalendarView) findViewById(R.id.calendar_view);
 
-                        //Initialize calendar with date
-                        currentCalendar = Calendar.getInstance(Locale.getDefault());
+                            //Initialize calendar with date
+                            currentCalendar = Calendar.getInstance(Locale.getDefault());
 
-                        //Show Monday as first date of week
-                        calendarView.setFirstDayOfWeek(Calendar.MONDAY);
-                        //Show/hide overflow days of a month
-                        calendarView.setShowOverflowDate(false);
+                            //Show Monday as first date of week
+                            calendarView.setFirstDayOfWeek(Calendar.MONDAY);
+                            //Show/hide overflow days of a month
+                            calendarView.setShowOverflowDate(false);
 
-                        // Use API from here: http://stacktips.com/tutorials/android/custom-calendar-view-library-in-android
-                        decorators.add(new ColorDecorator(date));
-                        calendarView.setDecorators(decorators);
+                            // Use API from here: http://stacktips.com/tutorials/android/custom-calendar-view-library-in-android
+                            decorators.add(new ColorDecorator(date));
+                            calendarView.setDecorators(decorators);
 
-                        //call refreshCalendar to update calendar the view
-                        calendarView.refreshCalendar(currentCalendar);
+                            //call refreshCalendar to update calendar the view
+                            calendarView.refreshCalendar(currentCalendar);
 
-                        //Handling custom calendar events
-                        calendarView.setCalendarListener(new CalendarListener() {
+                            //Handling custom calendar events
+                            calendarView.setCalendarListener(new CalendarListener() {
 
-                            @Override
-                            public void onDateSelected(Date calendarDate) {
-                                //listView.removeAllViews();
-
-
-                                mAdapter.delete();
-                                SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
-                                try {
-                                    calendarDate = new SimpleDateFormat("dd-MM-yyyy", Locale.ENGLISH).parse(df.format(calendarDate));
-                                } catch (ParseException e) {
-                                    e.printStackTrace();
-                                }
-                                //long milliseconds = date.getTime();
-                                // Toast.makeText(CalendarActivity.this, ""+milliseconds, Toast.LENGTH_SHORT).show();
-                                String strCalDate = calendarDate.getDate()+"/"+calendarDate.getMonth()+"/"+calendarDate.getYear();
-
-                                for(int i=0;i<listFood.size();i++){
-
-                                    Long timestamp = listFood.get(i).getDate();
-                                    Date eventDate = new Date(timestamp);
-                                    String strEventDate = eventDate.getDate()+"/"+eventDate.getMonth()+"/"+eventDate.getYear();
-                                    if(strCalDate.equals(strEventDate)){
-                                        mAdapter.addItem(listFood.get(i).getName(),listFood.get(i).getPictureUrl(),listFood.get(i).getPrice());
+                                @Override
+                                public void onDateSelected(Date calendarDate) {
+                                    //listView.removeAllViews();
+                                    mAdapter = new AdapterCalendar(CalendarActivity.this);
+                                    SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+                                    try {
+                                        calendarDate = new SimpleDateFormat("dd-MM-yyyy", Locale.ENGLISH).parse(df.format(calendarDate));
+                                    } catch (ParseException e) {
+                                        e.printStackTrace();
                                     }
-                                    listView.setAdapter(mAdapter);
-                                }
-                                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                                    @Override
-                                    public void onItemClick(AdapterView<?> parent, final View view,
-                                                            int position, long id) {
-                                            //Toast.makeText(KiosqueActivity.this, "No Application available to view PDF", Toast.LENGTH_SHORT).show();
-                                            //download
-                                            showPickActivity(position);
-                                    /*      AlertDialog.Builder alertDialog = new AlertDialog.Builder(CalendarActivity.this);
-                                            // Setting Dialog Title
-                                            alertDialog.setTitle(listFood.get(position).getName());
-                                            ImageView image = new ImageView(getApplicationContext());
+                                    String strCalDate = calendarDate.getDate()+"/"+calendarDate.getMonth()+"/"+calendarDate.getYear();
 
-                                            Picasso.with(getBaseContext()).load(listFood.get(position).getPictureUrl()).into(image);
-                                            Drawable drawImage = image.getDrawable();
-                                        drawImage.setBounds(0,0,10,10);
-                                        //drawImage.setHotspot(10,10);
-                                            alertDialog.setIcon(drawImage);
-                                            // Setting Dialog Message
-                                            alertDialog.setMessage(listFood.get(position).getDescriptif());
-                                            // Setting Positive "Yes" Button
-                                            alertDialog.setPositiveButton("Ok",
-                                                    new DialogInterface.OnClickListener() {
-                                                        public void onClick(DialogInterface dialog, int which) {
+                                    for(int j=0;j<listFood.size();j++){
 
-                                                            //Move to Next screen
-                                                            dialog.cancel();
-                                                        }
-                                                    });
-                                            // Setting Negative "NO" Button
-
-                                            // Showing Alert Message
-                                            AlertDialog alert = alertDialog.create();
-                                            alert.show(); */
-
+                                        Long timestamp = listFood.get(j).getDate();
+                                        Date eventDate = new Date(timestamp);
+                                        String strEventDate = eventDate.getDate()+"/"+eventDate.getMonth()+"/"+eventDate.getYear();
+                                        if(strCalDate.equals(strEventDate)){
+                                            current_index = j;
+                                            mAdapter.addItem(listFood.get(j).getName(),listFood.get(j).getPictureUrl(),listFood.get(j).getPrice());
+                                            //Log.d("Calendar", "=============="+listFood.get(j).getName()+"|"+listFood.get(j).getPictureUrl()+"|"+listFood.get(j).getPrice());
                                         }
 
-                                });
+                                    }
+                                    listView.setAdapter(mAdapter);
+                                    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                                        @Override
+                                        public void onItemClick(AdapterView<?> parent, final View view,
+                                                                int position, long id) {
+                                            showPickActivity(position);
+                                        }
+                                    });
+                                }
 
-                            }
+                                @Override
+                                public void onMonthChanged(Date date) {
+                                    SimpleDateFormat df = new SimpleDateFormat("MM-yyyy");
+                                    mAdapter.delete();
 
-                            @Override
-                            public void onMonthChanged(Date date) {
-                                SimpleDateFormat df = new SimpleDateFormat("MM-yyyy");
-                                //Toast.makeText(CalendarActivity.this, df.format(date), Toast.LENGTH_SHORT).show();
-                            }
-                        });
+                                }
+                            });
+                        }
+
 
                         //Toast.makeText(getApplicationContext(), "You are successfully logged in!", Toast.LENGTH_LONG).show();
                     }
@@ -282,8 +257,9 @@ public class CalendarActivity extends AppCompatActivity{
 
     public void showPickActivity(int index) {
         Log.d("index", ""+index);
+        Toast.makeText(getApplicationContext(), "Index:"+index, Toast.LENGTH_LONG).show();
         Intent intent = new Intent( CalendarActivity.this , EmptyActivity.class);
-        Food selectedFood = listFood.get(index);
+        Food selectedFood = listFood.get(current_index);
 
         Bundle b = new Bundle();
         b.putString("description", selectedFood.getName());
@@ -294,9 +270,10 @@ public class CalendarActivity extends AppCompatActivity{
         b.putInt("tipe", selectedFood.getType());
         b.putBoolean("affichercalendar",false);
         b.putLong("date", selectedFood.getDate());
+        //b.putString("color", selectedFood.getCouleur());
+        b.putString("color", "#C0C0C0");
 
         intent.putExtras(b);
-
         startActivity(intent);
 
     }
@@ -326,6 +303,7 @@ public class CalendarActivity extends AppCompatActivity{
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Toast.makeText(CalendarActivity.this, "Click Item", Toast.LENGTH_SHORT).show();
         switch (item.getItemId()) {
             case android.R.id.home:
                 drawerLayout.openDrawer(GravityCompat.START);
