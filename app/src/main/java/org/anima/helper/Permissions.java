@@ -101,7 +101,7 @@ public class Permissions {
      * @param MIN_DISTANCE_CHANGE_FOR_UPDATES
      */
     @RequiresApi(api = Build.VERSION_CODES.M)
-    public static void getLocation(final Context context, int LOCATION_PERMISSION, Location location,
+    public static Location getLocation(final Context context, int LOCATION_PERMISSION, Location location,
                             double longitude, double latitude, long MIN_TIME_BW_UPDATES,
                             long MIN_DISTANCE_CHANGE_FOR_UPDATES){
         LocationManager locManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
@@ -147,8 +147,7 @@ public class Permissions {
                         new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.CAMERA},
                         LOCATION_PERMISSION);
                 //return;
-            }
-            else{
+            }else{
 
                 locManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
                         MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, locationChangeListener);
@@ -185,6 +184,7 @@ public class Permissions {
                 }// end if
             }// end if
         }// end if
+        return location;
     }// end function
 
     public static boolean checkLocationPermission(final Context context, final int MY_PERMISSIONS_SIGNALEMENT){

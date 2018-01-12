@@ -1,5 +1,6 @@
 package org.anima.activities;
 
+import org.anima.easyimage.EasyImage;
 import org.anima.helper.Navigation;
 import org.anima.helper.Permissions;
 import org.anima.utils.ConfigurationVille;
@@ -161,25 +162,33 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         // Set Cancelable as False
         prgDialog.setCancelable(false);
 
-        Permissions.checkStoragePermission(SignalementActivity.this, REQUEST_WRITE_EXTERNAL_STORAGE);
-        Permissions.checkLocationPermission(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT);
-
+        final boolean storagePerm = Permissions.checkStoragePermission(SignalementActivity.this, REQUEST_WRITE_EXTERNAL_STORAGE);
+        final boolean locationPerm = Permissions.checkLocationPermission(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT);
+        Location locat = Permissions.getLocation(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT, location, longitude, latitude, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES);
         type = (Spinner) findViewById(R.id.type);
         type.setOnItemSelectedListener(new CustomOnItemSelectedListener());
         type.setBackgroundColor(Color.WHITE);
+        if(storagePerm==true && locationPerm==true && null!=locat) {
+            longitude = locat.getLongitude();
+            latitude = locat.getLatitude();
+        }
         addItemsOnSpinner();
         photo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showEasyImagePicker();
-            }
-        });
+                if(storagePerm==true && locationPerm==true){
+                    showEasyImagePicker();
+                }
+            }// end onclick
+        });// end listenter
 
         delete_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 layout_photo.setVisibility(View.GONE);
                 PrefManager.setImageUrlSignal(getApplicationContext(), null);
+                File photoFile = new File(PrefManager.getImageUrlSignal(getApplicationContext()).replace("file://",""));
+                if (photoFile != null) photoFile.delete();
                 photo.setVisibility(View.VISIBLE);
             }
         });
@@ -195,20 +204,14 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         Log.d(TAG, " - onRequestPermissionsResult");
         Permissions.storagePermissionResult(requestCode, permissions, grantResults,
                 SignalementActivity.this, REQUEST_WRITE_EXTERNAL_STORAGE);
-
         //Demande d'autorisations pour le Signalement LOCALISATION + CAMERA
-        if(grantResults.length > 0 &&
-                requestCode == MY_PERMISSIONS_SIGNALEMENT &&
-                (grantResults[0] != MY_PERMISSIONS_GRANTED ||
-                grantResults[1] != MY_PERMISSIONS_GRANTED)){
-            Permissions.getLocation(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT, location,
-                    longitude, latitude, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES);
-        }// END IF
-
-
+        Location locat = Permissions.getLocation(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT, location, longitude, latitude, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES);
+        longitude = locat.getLongitude();
+        latitude = locat.getLatitude();
+        Toast.makeText(getApplicationContext(), ""+longitude+"|"+latitude, Toast.LENGTH_LONG).show();
         if (grantResults.length > 0 && requestCode == RC_CAMERA_PERMISSIONS && grantResults[0] == MY_PERMISSIONS_GRANTED) {
             showEasyImagePicker();
-        }
+        }// end if camera permission
     }// END FUNCTION
 
     @Override
@@ -236,7 +239,6 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
     }
 
     public void signaler(View view) {
-
         description = descriptionET.getText().toString();
 
         if(description=="" || PrefManager.getImageUrlSignal(getApplicationContext())=="" || description.isEmpty() || PrefManager.getImageUrlSignal(getApplicationContext()).isEmpty()){
@@ -285,11 +287,11 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
             PrefManager.setImageUrlSignal(getApplicationContext(), url);
             sendWS();
             //Toast.makeText(getApplicationContext(), "Merci, votre signalement a été pris en compte !", Toast.LENGTH_LONG).show();
-
-
         }
+        EventBus.getDefault().removeStickyEvent(this);
 
     }
+
 
     public void sendWS(){
 
@@ -367,10 +369,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
 
                         PrefManager.setImageUrlSignal(getApplicationContext(), null);
                         dismissProgressDialog();
-
-                        Intent intent4 = new Intent(SignalementActivity.this, ImagePickActivity.class);
-                        startActivity(intent4);
-
+                        finish();
                     }
                     // Else display error message
                     else {
@@ -463,8 +462,9 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
     {
 
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            Intent intent5 = new Intent(SignalementActivity.this, ImagePickActivity.class);
-            startActivity(intent5);
+            //Intent intent5 = new Intent(SignalementActivity.this, ImagePickActivity.class);
+            //startActivity(intent5);
+            finish();
         }
         return true;
 
@@ -483,11 +483,12 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
 
     @Override
     protected void onDestroy() {
+        EventBus.getDefault().unregister(this);
         super.onDestroy();
     }
 
     @Override
     public void onBackPressed() {
-        // @TODO Display a dialog to ask a confirmation to the user
+        finish();
     }
 }

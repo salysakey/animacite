@@ -177,6 +177,7 @@ public class FirebasePixActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Void... params) {
+            /*
             Uri uriToPut = uriReference.get();
             if (uriToPut == null) {
                 return null;
@@ -197,14 +198,12 @@ public class FirebasePixActivity extends AppCompatActivity {
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                      fullSizeUrl = taskSnapshot.getDownloadUrl();
                     if (fullSizeUrl != null) {
-
                         PrefManager.setImageUrlSignal(getApplicationContext(), null);
                         Log.d(TAG, "fullSizeUrl: " + fullSizeUrl.toString());
                         PrefManager.setImageUrlSignal(getApplicationContext(), fullSizeUrl.toString());
 //                       Picasso.with(getApplicationContext()).load(PrefManager.getImageUrl(getApplicationContext())).into(imagephoto);
                         Log.d(TAG, PrefManager.getImageUrlSignal(getApplicationContext()));
                         EventBus.getDefault().post(new UploadFileSuccessEvent(taskSnapshot));
-
 
                     } else {
                         Toast.makeText(FirebasePixActivity.this, "OOps l'image n'a pu être enregistré.", Toast.LENGTH_SHORT).show();
@@ -217,6 +216,7 @@ public class FirebasePixActivity extends AppCompatActivity {
                     Toast.makeText(FirebasePixActivity.this, "OOps l'envoi de l'image à échouer.", Toast.LENGTH_SHORT).show();
                 }
             });
+            */
             // TODO: Refactor these insanely nested callbacks.
             return null;
         }
@@ -234,6 +234,49 @@ public class FirebasePixActivity extends AppCompatActivity {
 
             File photoFile = EasyImage.lastlyTakenButCanceledPhoto(FirebasePixActivity.this);
             if (photoFile != null) photoFile.delete();
+            Uri uriToPut = uriReference.get();
+            /*
+            if (uriToPut == null) {
+                return null;
+            }
+            */
+
+
+            FirebaseStorage storageRef = FirebaseStorage.getInstance();
+            StorageReference photoRef = storageRef.getReferenceFromUrl(ConfigurationVille.FIREBASE_STORAGE_URL);
+
+
+            Long timestamp = System.currentTimeMillis();
+            final StorageReference fullSizeRef = photoRef.child(ConfigurationVille.FOLDER_NAME).child("signalements_photos").child(ConfigurationVille.FOLDER_NAME+"-Signalements-Android-" +timestamp.toString()+ ".jpg");
+            Log.d(TAG, fullSizeRef.toString());
+
+            fullSizeRef.putFile(uriToPut).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                    fullSizeUrl = taskSnapshot.getDownloadUrl();
+                    if (fullSizeUrl != null) {
+                        PrefManager.setImageUrlSignal(getApplicationContext(), null);
+                        Log.d(TAG, "fullSizeUrl: " + fullSizeUrl.toString());
+                        PrefManager.setImageUrlSignal(getApplicationContext(), fullSizeUrl.toString());
+//                       Picasso.with(getApplicationContext()).load(PrefManager.getImageUrl(getApplicationContext())).into(imagephoto);
+                        Log.d(TAG, PrefManager.getImageUrlSignal(getApplicationContext()));
+                        UploadFileSuccessEvent uploadEvent = new UploadFileSuccessEvent(taskSnapshot);
+                        EventBus.getDefault().post(uploadEvent);
+                        finish();
+
+                    } else {
+                        Toast.makeText(FirebasePixActivity.this, "OOps l'image n'a pu être enregistré.", Toast.LENGTH_SHORT).show();
+                    }
+
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    Toast.makeText(FirebasePixActivity.this, "OOps l'envoi de l'image à échouer.", Toast.LENGTH_SHORT).show();
+                }
+            });
+            // TODO: Refactor these insanely nested callbacks.
+            //return null;
         }
     }
 
