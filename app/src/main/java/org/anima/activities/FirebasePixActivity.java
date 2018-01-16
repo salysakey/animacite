@@ -80,10 +80,12 @@ public class FirebasePixActivity extends AppCompatActivity {
 
 
 
-    @AfterPermissionGranted(RC_CAMERA_PERMISSIONS)
+   // @AfterPermissionGranted(RC_CAMERA_PERMISSIONS)
     public void showEasyImagePicker() {
-        if(Permissions.checkCameraPermission(FirebasePixActivity.this, RC_CAMERA_PERMISSIONS)){
+        if(Permissions.checkCameraPermission(FirebasePixActivity.this, RC_CAMERA_PERMISSIONS)==true){
             EasyImage.openCamera(FirebasePixActivity.this,0);
+        }else{
+            finish();
         }
         //EasyImage.openChooserWithGallery(this, "Choisir", 0);
     }

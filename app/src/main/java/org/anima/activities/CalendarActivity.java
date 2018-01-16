@@ -98,7 +98,7 @@ public class CalendarActivity extends AppCompatActivity{
 
     public void invokeWS(RequestParams params) {
         // Show Progress Dialog
-        prgDialog.show();
+        //prgDialog.show();
         // Make RESTful webservice call using AsyncHttpClient object
         AsyncHttpClient client = new AsyncHttpClient();
         client.get(ConfigurationVille.Debut_WS+"/evenement/doshow", params, new AsyncHttpResponseHandler() {
@@ -256,8 +256,6 @@ public class CalendarActivity extends AppCompatActivity{
     }
 
     public void showPickActivity(int index) {
-        Log.d("index", ""+index);
-        Toast.makeText(getApplicationContext(), "Index:"+index, Toast.LENGTH_LONG).show();
         Intent intent = new Intent( CalendarActivity.this , EmptyActivity.class);
         Food selectedFood = listFood.get(current_index);
 

@@ -1,6 +1,7 @@
 package org.anima.activities;
 
 import org.anima.easyimage.EasyImage;
+import org.anima.helper.AllPermission;
 import org.anima.helper.Navigation;
 import org.anima.helper.Permissions;
 import org.anima.utils.ConfigurationVille;
@@ -162,21 +163,22 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         // Set Cancelable as False
         prgDialog.setCancelable(false);
 
-        final boolean storagePerm = Permissions.checkStoragePermission(SignalementActivity.this, REQUEST_WRITE_EXTERNAL_STORAGE);
-        final boolean locationPerm = Permissions.checkLocationPermission(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT);
-        Location locat = Permissions.getLocation(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT, location, longitude, latitude, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES);
-        type = (Spinner) findViewById(R.id.type);
-        type.setOnItemSelectedListener(new CustomOnItemSelectedListener());
-        type.setBackgroundColor(Color.WHITE);
-        if(storagePerm==true && locationPerm==true && null!=locat) {
+        final boolean checkPermission = AllPermission.checkPermission(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT);
+        if(checkPermission==true){
+            Location locat = Permissions.getLocation(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT, location, longitude, latitude, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES);
             longitude = locat.getLongitude();
             latitude = locat.getLatitude();
         }
+
+        type = (Spinner) findViewById(R.id.type);
+        type.setOnItemSelectedListener(new CustomOnItemSelectedListener());
+        type.setBackgroundColor(Color.WHITE);
+
         addItemsOnSpinner();
         photo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(storagePerm==true && locationPerm==true){
+                if(checkPermission==true){
                     showEasyImagePicker();
                 }
             }// end onclick
@@ -201,18 +203,17 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
 
 
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        Log.d(TAG, " - onRequestPermissionsResult");
-        Permissions.storagePermissionResult(requestCode, permissions, grantResults,
-                SignalementActivity.this, REQUEST_WRITE_EXTERNAL_STORAGE);
-        //Demande d'autorisations pour le Signalement LOCALISATION + CAMERA
-        Location locat = Permissions.getLocation(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT, location, longitude, latitude, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES);
-        longitude = locat.getLongitude();
-        latitude = locat.getLatitude();
-        Toast.makeText(getApplicationContext(), ""+longitude+"|"+latitude, Toast.LENGTH_LONG).show();
-        if (grantResults.length > 0 && requestCode == RC_CAMERA_PERMISSIONS && grantResults[0] == MY_PERMISSIONS_GRANTED) {
-            showEasyImagePicker();
-        }// end if camera permission
-    }// END FUNCTION
+        boolean isPermited = AllPermission.permissionResult(requestCode, permissions, grantResults,SignalementActivity.this ,MY_PERMISSIONS_SIGNALEMENT);
+        if(isPermited==false){
+            //Intent intent5 = new Intent(SignalementActivity.this, ImagePickActivity.class);
+            //startActivity(intent5);
+            finish();
+        }else{
+            finish();
+            Intent intent5 = new Intent(SignalementActivity.this, SignalementActivity.class);
+            startActivity(intent5);
+        }
+    }
 
     @Override
     protected void onResume() {
