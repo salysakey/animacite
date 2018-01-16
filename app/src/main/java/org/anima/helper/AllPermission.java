@@ -58,7 +58,7 @@ public class AllPermission {
         }// end if
 
         return result;
-    }
+    }// end function
 
     public static boolean permissionResult(int requestCode, String[] permissions, int[] grantResults,Context context,
                                  final int ACTIVITY_PERMISSION){
