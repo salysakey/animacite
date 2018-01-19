@@ -47,7 +47,7 @@ public class AllPermission {
             }else{
                 ActivityCompat.requestPermissions((Activity)context,
                         new String[]{
-                            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                                Manifest.permission.WRITE_EXTERNAL_STORAGE,
                                 Manifest.permission.CAMERA,
                                 Manifest.permission.ACCESS_FINE_LOCATION,
                                 Manifest.permission.ACCESS_COARSE_LOCATION
@@ -74,7 +74,33 @@ public class AllPermission {
         }// end if request code
         return result;
     }
-
+    public static void informLocationDisabled(final Context context){
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
+        // Setting Dialog Title
+        alertDialog.setTitle("Veuillez activer votre localisation");
+        alertDialog.setIcon(R.drawable.petite_image);
+        alertDialog.setNegativeButton("Ok",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                        Activity activity = (Activity) context;
+                        activity.finish();
+                    }
+                });
+        // Showing Alert Message
+        AlertDialog alert = alertDialog.create();
+        alert.show();
+    }
+    /**
+     *
+     * @param context
+     * @param LOCATION_PERMISSION
+     * @param location
+     * @param longitude
+     * @param latitude
+     * @param MIN_TIME_BW_UPDATES
+     * @param MIN_DISTANCE_CHANGE_FOR_UPDATES
+     */
     @RequiresApi(api = Build.VERSION_CODES.M)
     public static Location getLocation(final Context context, int LOCATION_PERMISSION, Location location,
                                        double longitude, double latitude, long MIN_TIME_BW_UPDATES,
@@ -96,24 +122,7 @@ public class AllPermission {
 
         if (locManager.isProviderEnabled(LocationManager.GPS_PROVIDER) == false
                 && locManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER) == false) {
-            AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
-            // Setting Dialog Title
-            alertDialog.setTitle("Veuillez activer votre localisation");
-            alertDialog.setIcon(R.drawable.petite_image);
-            alertDialog.setNegativeButton("Ok",
-                    new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            // Cancel Dialog
-
-                            //Intent intent4 = new Intent(context, SignalementActivity.class);
-                            //startActivity(intent4);
-                            dialog.cancel();
-                        }
-                    });
-            // Showing Alert Message
-            AlertDialog alert = alertDialog.create();
-            alert.show();
-
+            return null;
         } else {
             if ((ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED )
                     && ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -122,7 +131,6 @@ public class AllPermission {
                         LOCATION_PERMISSION);
                 //return;
             }else{
-
                 locManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
                         MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, locationChangeListener);
                 location = locManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
@@ -132,30 +140,6 @@ public class AllPermission {
                             MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES, locationChangeListener);
                     location = locManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
                 }
-
-                if (location != null) {
-                    longitude = location.getLongitude();
-                    latitude = location.getLatitude();
-
-                } else {
-                    AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
-                    // Setting Dialog Title
-                    alertDialog.setTitle("Veuillez activer votre localisation");
-                    alertDialog.setIcon(R.drawable.petite_image);
-                    // Setting Dialog Message
-                    // Setting Positive "Yes" Button
-                    // Setting Negative "NO" Button
-                    alertDialog.setNegativeButton("Ok",
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                    // Cancel Dialog
-                                    dialog.cancel();
-                                }
-                            });
-                    // Showing Alert Message
-                    AlertDialog alert = alertDialog.create();
-                    alert.show();
-                }// end if
             }// end if
         }// end if
         return location;

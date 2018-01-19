@@ -95,7 +95,7 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
     private Spinner type;
     private Toolbar toolbar;
     private Location location;
-    private double longitude, latitude;
+    private double longitude=0, latitude=0;
     private List<String> list = new ArrayList<String>();
     // The minimum distance to change Updates in meters
     private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 1; // 10 meters
@@ -165,9 +165,15 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
 
         final boolean checkPermission = AllPermission.checkPermission(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT);
         if(checkPermission==true){
-            Location locat = Permissions.getLocation(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT, location, longitude, latitude, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES);
-            longitude = locat.getLongitude();
-            latitude = locat.getLatitude();
+            try{
+                Location loc= AllPermission.getLocation(SignalementActivity.this, MY_PERMISSIONS_SIGNALEMENT, location, longitude, latitude, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES);
+                latitude = loc.getLatitude();
+                longitude = loc.getLongitude();
+                location = loc;
+            }catch (NullPointerException ex){
+                ex.printStackTrace();
+                AllPermission.informLocationDisabled(SignalementActivity.this);
+            }
         }
 
         type = (Spinner) findViewById(R.id.type);
@@ -178,8 +184,10 @@ public class SignalementActivity extends FirebasePixActivity implements Chronome
         photo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(checkPermission==true){
+                if(checkPermission==true && null!=location){
                     showEasyImagePicker();
+                }else{
+                    AllPermission.informLocationDisabled(SignalementActivity.this);
                 }
             }// end onclick
         });// end listenter

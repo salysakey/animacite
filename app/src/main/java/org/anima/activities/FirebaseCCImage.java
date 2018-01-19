@@ -50,6 +50,7 @@ import com.loopj.android.http.RequestParams;
 
 import org.anima.easyimage.DefaultCallback;
 import org.anima.easyimage.EasyImage;
+import org.anima.helper.AllPermission;
 import org.anima.helper.Permissions;
 import org.anima.utils.PrefManager;
 import org.anima.utils.UploadFileSuccessEvent;
@@ -110,14 +111,21 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
         concoursId = intent.getIntExtra("concoursId", 0);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         //if(Build.VERSION.SDK_INT >= 22){
-        boolean storagePerm = Permissions.checkStoragePermission(FirebaseCCImage.this, REQUEST_WRITE_EXTERNAL_STORAGE);
-        boolean locationPerm = Permissions.checkLocationPermission(FirebaseCCImage.this, MY_PERMISSIONS_CONCOURS);
-        if( storagePerm && locationPerm){
+        //boolean storagePerm = Permissions.checkStoragePermission(FirebaseCCImage.this, REQUEST_WRITE_EXTERNAL_STORAGE);
+        //boolean locationPerm = Permissions.checkLocationPermission(FirebaseCCImage.this, MY_PERMISSIONS_CONCOURS);
+        boolean checkPermission = AllPermission.checkPermission(FirebaseCCImage.this, MY_PERMISSIONS_CONCOURS);
+        if(checkPermission==true){
+            try{
+                Location loc= AllPermission.getLocation(FirebaseCCImage.this, MY_PERMISSIONS_CONCOURS, location, longitude, latitude, MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES);
+                latitude = loc.getLatitude();
+                longitude = loc.getLongitude();
+                location = loc;
                 showEasyImagePicker();
+            }catch (NullPointerException ex){
+                ex.printStackTrace();
+                AllPermission.informLocationDisabled(FirebaseCCImage.this);
+            }
         }
-
-
-       // }
     }
 
 
@@ -386,15 +394,14 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
     }// end class UploadPostTask
 
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        Log.d(TAG, " - onRequestPermissionsResult");
-        Permissions.storagePermissionResult(requestCode, permissions, grantResults, FirebaseCCImage.this, REQUEST_WRITE_EXTERNAL_STORAGE);
-        //Demande d'autorisations pour le concours LOCALISATION + CAMERA
-        if (grantResults.length > 0 && requestCode == MY_PERMISSIONS_CONCOURS && grantResults[0] == MY_PERMISSIONS_GRANTED) {
-            showEasyImagePicker();
-        } else if(requestCode == MY_PERMISSIONS_CONCOURS && grantResults[0] != MY_PERMISSIONS_GRANTED){
-            Permissions.getLocation(FirebaseCCImage.this, MY_PERMISSIONS_CONCOURS, location,
-                    latitude, longitude,MIN_TIME_BW_UPDATES, MIN_DISTANCE_CHANGE_FOR_UPDATES);
-        }// end if
+        boolean isPermited = AllPermission.permissionResult(requestCode, permissions, grantResults,FirebaseCCImage.this ,MY_PERMISSIONS_CONCOURS);
+        if(isPermited==false){
+            finish();
+        }else{
+            finish();
+            Intent intent5 = new Intent(FirebaseCCImage.this, FirebaseCCImage.class);
+            startActivity(intent5);
+        }
 
     }// end function
 
