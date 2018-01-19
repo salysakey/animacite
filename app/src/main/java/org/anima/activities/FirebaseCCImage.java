@@ -103,16 +103,12 @@ public class FirebaseCCImage extends AppCompatActivity implements View.OnClickLi
     @SuppressWarnings("VisibleForTests")
     public Uri fullSizeUrl;
     private int concoursId;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         concoursId = intent.getIntExtra("concoursId", 0);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        //if(Build.VERSION.SDK_INT >= 22){
-        //boolean storagePerm = Permissions.checkStoragePermission(FirebaseCCImage.this, REQUEST_WRITE_EXTERNAL_STORAGE);
-        //boolean locationPerm = Permissions.checkLocationPermission(FirebaseCCImage.this, MY_PERMISSIONS_CONCOURS);
         boolean checkPermission = AllPermission.checkPermission(FirebaseCCImage.this, MY_PERMISSIONS_CONCOURS);
         if(checkPermission==true){
             try{
